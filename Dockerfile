@@ -7,7 +7,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libpq-dev gcc curl ffmpeg \
+    libpq-dev gcc curl ffmpeg gettext \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Node.js for Tailwind build
@@ -19,6 +19,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
+RUN msgfmt --check -o locale/zh_Hans/LC_MESSAGES/django.mo locale/zh_Hans/LC_MESSAGES/django.po
 
 # Build Tailwind CSS
 RUN cd theme/static_src && npm ci && npm run build

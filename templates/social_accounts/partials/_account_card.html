@@ -1,4 +1,4 @@
-{% comment %}
+{% load i18n %}{% comment %}
 Single connected account card - HTMX-swappable.
 Usage: {% include "social_accounts/partials/_account_card.html" with account=account workspace_id=workspace_id %}
 {% endcomment %}
@@ -82,7 +82,7 @@ Usage: {% include "social_accounts/partials/_account_card.html" with account=acc
                     {% endif %}
                 </p>
                 <div class="flex gap-2 justify-end">
-                    <button @click="confirmDisconnect = false" class="px-3 py-1.5 text-xs font-semibold text-stone-600 bg-stone-100 rounded-full hover:bg-stone-200 transition-colors cursor-pointer">Cancel</button>
+                    <button @click="confirmDisconnect = false" class="px-3 py-1.5 text-xs font-semibold text-stone-600 bg-stone-100 rounded-full hover:bg-stone-200 transition-colors cursor-pointer">{% translate "Cancel" %}</button>
                     <form method="post"
                           action="{% url 'social_accounts:disconnect' workspace_id=workspace_id account_id=account.id %}"
                           hx-post="{% url 'social_accounts:disconnect' workspace_id=workspace_id account_id=account.id %}"

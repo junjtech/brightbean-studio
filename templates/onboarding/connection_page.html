@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html" %}{% load i18n %}
 {% load static %}
 
 {% block title %}Connect your accounts - {{ org.name }}{% endblock %}
@@ -101,15 +101,15 @@
                 <div style="font-size: 0.75rem; color: var(--text-tertiary); margin-top: 1px;">
                     {% if value == 'facebook' %}Pages &amp; Groups
                     {% elif value == 'instagram' %}Business &amp; Creator
-                    {% elif value == 'linkedin_personal' %}Personal profile
-                    {% elif value == 'linkedin_company' %}Company pages
-                    {% elif value == 'tiktok' %}Video content
-                    {% elif value == 'youtube' %}Videos &amp; Shorts
-                    {% elif value == 'pinterest' %}Pins &amp; Boards
-                    {% elif value == 'threads' %}Text &amp; Media
+                    {% elif value == 'linkedin_personal' %}{% translate "Personal profile" %}
+                    {% elif value == 'linkedin_company' %}{% translate "Company pages" %}
+                    {% elif value == 'tiktok' %}{% translate "Video content" %}
+                    {% elif value == 'youtube' %}{% translate "Videos &amp; Shorts" %}
+                    {% elif value == 'pinterest' %}{% translate "Pins &amp; Boards" %}
+                    {% elif value == 'threads' %}{% translate "Text &amp; Media" %}
                     {% elif value == 'bluesky' %}AT Protocol
-                    {% elif value == 'google_business' %}Local posts
-                    {% elif value == 'mastodon' %}Federated social
+                    {% elif value == 'google_business' %}{% translate "Local posts" %}
+                    {% elif value == 'mastodon' %}{% translate "Federated social" %}
                     {% endif %}
                 </div>
             </div>
@@ -147,7 +147,7 @@
                     box-shadow: var(--shadow-primary);
                     transition: all 200ms ease;
                 ">
-                    Connect
+                    {% translate "Connect" %}
                     <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                 </button>
                 <div x-show="showForm" x-cloak style="
@@ -195,13 +195,13 @@
                                 background: var(--surface-0); color: var(--text-primary);
                                 border: 1px solid var(--border); border-radius: var(--radius-full);
                                 cursor: pointer;
-                            ">Cancel</button>
+                            ">{% translate "Cancel" %}</button>
                             <button type="submit" style="
                                 padding: 8px 16px; font-size: 0.8125rem; font-weight: 600;
                                 background: var(--primary); color: white;
                                 border: none; border-radius: var(--radius-full);
                                 cursor: pointer; box-shadow: var(--shadow-primary);
-                            ">Connect</button>
+                            ">{% translate "Connect" %}</button>
                         </div>
                     </form>
                 </div>
@@ -221,7 +221,7 @@
                     box-shadow: var(--shadow-primary);
                     transition: all 200ms ease;
                 ">
-                    Connect
+                    {% translate "Connect" %}
                     <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                 </button>
                 <div x-show="showForm" x-cloak style="
@@ -256,13 +256,13 @@
                                 background: var(--surface-0); color: var(--text-primary);
                                 border: 1px solid var(--border); border-radius: var(--radius-full);
                                 cursor: pointer;
-                            ">Cancel</button>
+                            ">{% translate "Cancel" %}</button>
                             <button type="submit" style="
                                 padding: 8px 16px; font-size: 0.8125rem; font-weight: 600;
                                 background: var(--primary); color: white;
                                 border: none; border-radius: var(--radius-full);
                                 cursor: pointer; box-shadow: var(--shadow-primary);
-                            ">Connect</button>
+                            ">{% translate "Connect" %}</button>
                         </div>
                     </form>
                 </div>
@@ -284,7 +284,7 @@
                     box-shadow: var(--shadow-primary);
                     transition: all 200ms ease;
                 ">
-                    Connect
+                    {% translate "Connect" %}
                     <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                 </button>
             </form>

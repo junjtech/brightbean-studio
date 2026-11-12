@@ -1,4 +1,4 @@
-{% comment %}
+{% load i18n %}{% comment %}
 One approval row per Post (bundled actions on post.id). Matches the approved
 "ApprovalRow" design. Context: post (+ post.visible_comments), workspace,
 can_approve, display_timezone, and the parent Alpine scope (selectedPosts, diffOpen).
@@ -99,23 +99,23 @@ can_approve, display_timezone, and the parent Alpine scope (selectedPosts, diffO
         {% if can_approve and post.is_actionable %}
         <div class="flex items-center gap-1.5 flex-shrink-0">
             <button hx-post="{% url 'approvals:approve' workspace_id=workspace.id post_id=post.id %}" hx-swap="none"
-                    class="px-3 py-1.5 text-[0.8125rem] font-semibold rounded-full bg-emerald-500 hover:bg-emerald-600 text-white transition-colors">Approve</button>
+                    class="px-3 py-1.5 text-[0.8125rem] font-semibold rounded-full bg-emerald-500 hover:bg-emerald-600 text-white transition-colors">{% translate "Approve" %}</button>
             <button @click="panel = panel ? null : 'changes'"
                     class="px-3 py-1.5 text-[0.8125rem] font-semibold rounded-full border transition-colors"
-                    :class="panel ? 'border-stone-300 bg-stone-50 text-stone-700' : 'border-stone-200 text-stone-600 hover:bg-stone-50'">Review</button>
+                    :class="panel ? 'border-stone-300 bg-stone-50 text-stone-700' : 'border-stone-200 text-stone-600 hover:bg-stone-50'">{% translate "Review" %}</button>
         </div>
         {% elif post.status == 'changes_requested' or post.status == 'rejected' or post.status == 'approved' %}
         <div class="flex items-center gap-1.5 flex-shrink-0">
             <a href="{% url 'composer:compose_edit' workspace_id=workspace.id post_id=post.id %}"
                class="px-3.5 py-1.5 text-[0.8125rem] font-semibold rounded-full text-white inline-flex items-center gap-1.5 transition-colors" style="background: var(--primary);">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7M18.5 2.5a2.12 2.12 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg> Edit
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7M18.5 2.5a2.12 2.12 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg> {% translate "Edit" %}
             </a>
         </div>
         {% elif post.status == 'on_hold' and can_approve %}
         <div class="flex items-center gap-1.5 flex-shrink-0">
             <button hx-post="{% url 'approvals:resume' workspace_id=workspace.id post_id=post.id %}" hx-swap="none"
                     class="px-3.5 py-1.5 text-[0.8125rem] font-semibold rounded-full text-white inline-flex items-center gap-1.5 transition-colors" style="background: #7C3AED;">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg> Resume
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg> {% translate "Resume" %}
             </button>
         </div>
         {% endif %}
@@ -126,8 +126,8 @@ can_approve, display_timezone, and the parent Alpine scope (selectedPosts, diffO
     <div x-show="panel" x-cloak class="px-4 pb-4 anim-collapse">
         <div class="pt-3 border-t border-stone-100">
             <div class="flex gap-1.5 mb-2">
-                <button @click="panel = 'changes'" class="px-3 py-1.5 text-[0.75rem] font-semibold rounded-full transition-colors" :class="panel === 'changes' ? 'bg-amber-100 text-amber-800' : 'text-stone-500 hover:bg-stone-100'">Request changes</button>
-                <button @click="panel = 'reject'" class="px-3 py-1.5 text-[0.75rem] font-semibold rounded-full transition-colors" :class="panel === 'reject' ? 'bg-red-100 text-red-800' : 'text-stone-500 hover:bg-stone-100'">Reject</button>
+                <button @click="panel = 'changes'" class="px-3 py-1.5 text-[0.75rem] font-semibold rounded-full transition-colors" :class="panel === 'changes' ? 'bg-amber-100 text-amber-800' : 'text-stone-500 hover:bg-stone-100'">{% translate "Request changes" %}</button>
+                <button @click="panel = 'reject'" class="px-3 py-1.5 text-[0.75rem] font-semibold rounded-full transition-colors" :class="panel === 'reject' ? 'bg-red-100 text-red-800' : 'text-stone-500 hover:bg-stone-100'">{% translate "Reject" %}</button>
             </div>
             <textarea id="review-comment-{{ post.id }}" name="comment" x-model="comment" rows="2"
                       :placeholder="panel === 'reject' ? 'Reason for rejection (required), shared with the creator…' : 'What needs to change? (required)…'"
@@ -137,14 +137,14 @@ can_approve, display_timezone, and the parent Alpine scope (selectedPosts, diffO
                         hx-post="{% url 'approvals:request_changes' workspace_id=workspace.id post_id=post.id %}"
                         hx-include="#review-comment-{{ post.id }}" hx-swap="none" :disabled="!comment.trim()"
                         class="px-3.5 py-1.5 text-[0.75rem] font-semibold rounded-full text-white transition-colors"
-                        :class="comment.trim() ? 'bg-amber-500 hover:bg-amber-600' : 'bg-stone-300 cursor-not-allowed'">Send back for changes</button>
+                        :class="comment.trim() ? 'bg-amber-500 hover:bg-amber-600' : 'bg-stone-300 cursor-not-allowed'">{% translate "Send back for changes" %}</button>
                 <button x-show="panel === 'reject'"
                         hx-post="{% url 'approvals:reject' workspace_id=workspace.id post_id=post.id %}"
                         hx-include="#review-comment-{{ post.id }}" hx-swap="none" :disabled="!comment.trim()"
                         class="px-3.5 py-1.5 text-[0.75rem] font-semibold rounded-full text-white transition-colors"
-                        :class="comment.trim() ? 'bg-red-500 hover:bg-red-600' : 'bg-stone-300 cursor-not-allowed'">Reject post</button>
-                <button @click="panel = null; comment = ''" class="px-3 py-1.5 text-[0.75rem] font-medium rounded-full text-stone-500 hover:bg-stone-100">Cancel</button>
-                <span x-show="!comment.trim()" class="text-[0.6875rem] text-stone-400 ml-auto">A comment is required</span>
+                        :class="comment.trim() ? 'bg-red-500 hover:bg-red-600' : 'bg-stone-300 cursor-not-allowed'">{% translate "Reject post" %}</button>
+                <button @click="panel = null; comment = ''" class="px-3 py-1.5 text-[0.75rem] font-medium rounded-full text-stone-500 hover:bg-stone-100">{% translate "Cancel" %}</button>
+                <span x-show="!comment.trim()" class="text-[0.6875rem] text-stone-400 ml-auto">{% translate "A comment is required" %}</span>
             </div>
         </div>
     </div>

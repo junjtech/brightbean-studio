@@ -1,4 +1,4 @@
-<div x-data="{ showAddModal: {% if show_add_modal %}true{% else %}false{% endif %}, customUrl: '{{ add_rss_url|default:''|escapejs }}' }"
+{% load i18n %}<div x-data="{ showAddModal: {% if show_add_modal %}true{% else %}false{% endif %}, customUrl: '{{ add_rss_url|default:''|escapejs }}' }"
      class="h-full"
      x-init="if (showAddModal) { $nextTick(() => $refs.customUrlInput && $refs.customUrlInput.focus()) }">
 {% if feeds %}
@@ -101,7 +101,7 @@
                         <button type="button"
                                 @click="showDeleteFeedModal = false"
                                 class="px-3 py-2 text-sm text-stone-500 hover:text-stone-700 cursor-pointer">
-                            Cancel
+                            {% translate "Cancel" %}
                         </button>
                         <button type="submit"
                                 class="px-4 py-2 text-sm font-semibold text-white rounded-xl bg-red-600 hover:bg-red-700 transition-colors cursor-pointer">
@@ -190,7 +190,7 @@
                 <button type="button"
                         @click="showAddModal = false"
                         class="px-3 py-2 text-sm text-stone-500 hover:text-stone-700 cursor-pointer">
-                    Cancel
+                    {% translate "Cancel" %}
                 </button>
                 <button type="submit"
                         class="px-4 py-2 text-sm font-semibold text-white rounded-xl transition-colors cursor-pointer"

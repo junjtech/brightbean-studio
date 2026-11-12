@@ -1,4 +1,4 @@
-{% comment %}
+{% load i18n %}{% comment %}
 Client approval card (design "ClientCard"). Context: post (+ post.visible_comments
 = external/team comments), workspace. Pending posts get approve/request-changes/reject;
 already-approved posts get "Put on hold"; held posts show their state.
@@ -61,11 +61,11 @@ already-approved posts get "Put on hold"; held posts show their state.
         <div class="px-5 py-4 border-t border-stone-100 flex flex-wrap items-center gap-2 bg-stone-50">
             {% if post.client_pending %}
             <button hx-post="{% url 'client_portal:approve' post_id=post.id %}" hx-swap="none"
-                    class="px-4 py-2 text-[0.8125rem] font-semibold rounded-full text-white transition-all hover:-translate-y-px" style="background:#22C55E;">Approve</button>
+                    class="px-4 py-2 text-[0.8125rem] font-semibold rounded-full text-white transition-all hover:-translate-y-px" style="background:#22C55E;">{% translate "Approve" %}</button>
             <button @click="panel = panel === 'changes' ? null : 'changes'"
-                    class="px-4 py-2 text-[0.8125rem] font-semibold rounded-full" style="background:#FEFCE8;color:#A16207;border:1px solid rgba(234,179,8,0.25);">Request changes</button>
+                    class="px-4 py-2 text-[0.8125rem] font-semibold rounded-full" style="background:#FEFCE8;color:#A16207;border:1px solid rgba(234,179,8,0.25);">{% translate "Request changes" %}</button>
             <button @click="panel = panel === 'reject' ? null : 'reject'"
-                    class="px-4 py-2 text-[0.8125rem] font-semibold rounded-full" style="background:#FEF2F2;color:#B91C1C;border:1px solid rgba(239,68,68,0.18);">Reject</button>
+                    class="px-4 py-2 text-[0.8125rem] font-semibold rounded-full" style="background:#FEF2F2;color:#B91C1C;border:1px solid rgba(239,68,68,0.18);">{% translate "Reject" %}</button>
             {% elif post.client_on_hold %}
             <span class="text-[0.8125rem] text-stone-500 inline-flex items-center gap-1.5">
                 <svg class="w-[15px] h-[15px]" style="color:#7C3AED;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
@@ -101,7 +101,7 @@ already-approved posts get "Put on hold"; held posts show their state.
                 <button x-show="panel === 'hold'" hx-post="{% url 'client_portal:request_hold' post_id=post.id %}" hx-include="#client-comment-{{ post.id }}" hx-swap="none"
                         :disabled="!comment.trim()" :class="!comment.trim() && 'opacity-50 cursor-not-allowed'"
                         class="px-4 py-2 text-[0.8125rem] font-semibold rounded-full text-white" style="background:#7C3AED;">Request hold</button>
-                <button @click="panel = null; comment = ''" class="px-4 py-2 text-[0.8125rem] font-medium rounded-full text-stone-500 hover:bg-stone-100">Cancel</button>
+                <button @click="panel = null; comment = ''" class="px-4 py-2 text-[0.8125rem] font-medium rounded-full text-stone-500 hover:bg-stone-100">{% translate "Cancel" %}</button>
             </div>
         </div>
         {% endif %}

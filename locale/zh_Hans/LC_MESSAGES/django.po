@@ -1,0 +1,470 @@
+msgid ""
+msgstr ""
+"Language: zh_Hans\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Account"
+msgstr "账号"
+
+msgid "Actions"
+msgstr "操作"
+
+msgid "Add to Queue"
+msgstr "加入发布队列"
+
+msgid "Add to top of queue"
+msgstr "加入队首"
+
+msgid "All"
+msgstr "全部"
+
+msgid "All Tags"
+msgstr "所有标签"
+
+msgid "Analytics"
+msgstr "数据分析"
+
+msgid "Approval History"
+msgstr "审核记录"
+
+msgid "Approvals"
+msgstr "审核"
+
+msgid "Approve"
+msgstr "批准"
+
+msgid "Approved"
+msgstr "已批准"
+
+msgid "Approved - saving changes sends it back for re-approval"
+msgstr "已批准，保存修改后需重新审核"
+
+msgid "Articles &amp; posts"
+msgstr "文章和帖子"
+
+msgid "Author"
+msgstr "作者"
+
+msgid "Awaiting client approval"
+msgstr "等待客户审核"
+
+msgid "Awaiting internal review"
+msgstr "等待内部审核"
+
+msgid "Back to Social Accounts"
+msgstr "返回社媒账号"
+
+msgid "Calendar"
+msgstr "日历"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Caption"
+msgstr "帖子正文"
+
+msgid "Category"
+msgstr "分类"
+
+msgid "Changes Requested"
+msgstr "需要修改"
+
+msgid "Changes requested - edit and resubmit"
+msgstr "需修改，请编辑后重新提交"
+
+msgid "Channels"
+msgstr "渠道"
+
+msgid "Choose a specific time"
+msgstr "选择指定时间"
+
+msgid "Clone"
+msgstr "复制"
+
+msgid "Comments"
+msgstr "评论"
+
+msgid "Company pages"
+msgstr "公司主页"
+
+msgid "Connect"
+msgstr "连接"
+
+msgid "Connect Channels"
+msgstr "连接渠道"
+
+msgid "Connect Social Account"
+msgstr "连接社媒账号"
+
+msgid "Connect a Channel"
+msgstr "连接渠道"
+
+msgid "Connect a Platform"
+msgstr "连接社媒平台"
+
+msgid "Connect a channel to start posting and managing your comments"
+msgstr "连接一个渠道后即可发布帖子和管理评论"
+
+msgid "Connect social accounts"
+msgstr "连接社媒账号"
+
+msgid "Create"
+msgstr "创建"
+
+msgid "Create Idea"
+msgstr "创建选题"
+
+msgid "Create your first idea"
+msgstr "创建第一个选题"
+
+msgid "Create your first post"
+msgstr "创建第一篇帖子"
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "Delete post?"
+msgstr "删除帖子？"
+
+msgid "Draft"
+msgstr "草稿"
+
+msgid "Drafts"
+msgstr "草稿"
+
+msgid "Drag & drop or"
+msgstr "拖放文件或"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Edit Post"
+msgstr "编辑帖子"
+
+msgid "Failed"
+msgstr "失败"
+
+msgid "Federated social"
+msgstr "联邦社交"
+
+msgid "First Comment"
+msgstr "首条评论"
+
+msgid "First comment failed"
+msgstr "首条评论发布失败"
+
+msgid "For accounts linked to a Facebook Page"
+msgstr "适用于已关联 Facebook 主页的账号"
+
+msgid "Get started"
+msgstr "开始使用"
+
+msgid "History"
+msgstr "历史记录"
+
+msgid "Hold"
+msgstr "已暂停"
+
+msgid "Internal team notes - not visible to clients…"
+msgstr "内部备注，客户不可见…"
+
+msgid "Internal team only"
+msgstr "仅团队可见"
+
+msgid "Invite your team"
+msgstr "邀请团队成员"
+
+msgid "Leave a comment…"
+msgstr "添加评论…"
+
+msgid "List"
+msgstr "列表"
+
+msgid "Local posts"
+msgstr "本地动态"
+
+msgid "Media Library"
+msgstr "素材库"
+
+msgid "More channels"
+msgstr "更多渠道"
+
+msgid "New"
+msgstr "新建"
+
+msgid "New Post"
+msgstr "新建帖子"
+
+msgid "New Post -"
+msgstr "新建帖子 -"
+
+msgid "New post"
+msgstr "新建帖子"
+
+msgid "Next Available"
+msgstr "下一个可用时段"
+
+msgid "Next available"
+msgstr "下一个可用时段"
+
+msgid "No accounts connected"
+msgstr "尚未连接社媒账号"
+
+msgid "No drafts"
+msgstr "暂无草稿"
+
+msgid "No posts pending approval"
+msgstr "暂无待审核帖子"
+
+msgid "No preview yet"
+msgstr "暂无预览"
+
+msgid "No queued posts"
+msgstr "发布队列为空"
+
+msgid "No sent posts"
+msgstr "暂无发送记录"
+
+msgid "Not Configured"
+msgstr "尚未配置"
+
+msgid "Notes"
+msgstr "备注"
+
+msgid "Notifications"
+msgstr "通知"
+
+msgid "Now"
+msgstr "现在"
+
+msgid "Pending"
+msgstr "待处理"
+
+msgid "Pending Client"
+msgstr "待客户审核"
+
+msgid "Pending Review"
+msgstr "待审核"
+
+msgid "Personal profile"
+msgstr "个人主页"
+
+msgid "Pins &amp; Boards"
+msgstr "图钉和图板"
+
+msgid "Place in next available slot"
+msgstr "安排到下一个可用时段"
+
+msgid "Platform"
+msgstr "平台"
+
+msgid "Platform credentials not configured. Contact your administrator."
+msgstr "平台凭据尚未配置，请联系管理员。"
+
+msgid "Post"
+msgstr "帖子"
+
+msgid "Preview"
+msgstr "预览"
+
+msgid "Prioritise"
+msgstr "优先发布"
+
+msgid "Private"
+msgstr "私密"
+
+msgid "Public"
+msgstr "公开"
+
+msgid "Publish"
+msgstr "发布"
+
+msgid "Publish -"
+msgstr "发布 -"
+
+msgid "Publish Now"
+msgstr "立即发布"
+
+msgid "Publish immediately"
+msgstr "立即发布"
+
+msgid "Publish now"
+msgstr "立即发布"
+
+msgid "Published"
+msgstr "已发布"
+
+msgid "Published posts will appear here after they go live"
+msgstr "成功发布后，帖子将显示在这里"
+
+msgid "Publishing"
+msgstr "发布中"
+
+msgid "Queue"
+msgstr "发布队列"
+
+msgid "Reason"
+msgstr "原因"
+
+msgid "Reject"
+msgstr "拒绝"
+
+msgid "Rejected"
+msgstr "已拒绝"
+
+msgid "Rejected - edit and resubmit or delete"
+msgstr "已拒绝，请编辑后重新提交或删除"
+
+msgid "Request Changes"
+msgstr "要求修改"
+
+msgid "Request changes"
+msgstr "要求修改"
+
+msgid "Resubmit"
+msgstr "重新提交"
+
+msgid "Retry"
+msgstr "重试"
+
+msgid "Review"
+msgstr "审核"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Save Draft"
+msgstr "保存草稿"
+
+msgid "Schedule"
+msgstr "排期"
+
+msgid "Schedule Post"
+msgstr "安排发布"
+
+msgid "Scheduled"
+msgstr "已排期"
+
+msgid "Select a platform and start writing to see how your post will look"
+msgstr "选择平台并填写正文后即可预览"
+
+msgid "Select a platform to connect your social media account."
+msgstr "请选择要连接的社媒平台。"
+
+msgid "Select tags..."
+msgstr "选择标签…"
+
+msgid "Sent"
+msgstr "发送记录"
+
+msgid "Set Date and Time"
+msgstr "设置日期和时间"
+
+msgid "Set Schedule"
+msgstr "保存排期"
+
+msgid "Set date and time"
+msgstr "设置日期和时间"
+
+msgid "Sign in with Instagram &middot; no Facebook needed"
+msgstr "使用 Instagram 登录，无需 Facebook 账号"
+
+msgid "Social Accounts"
+msgstr "社媒账号"
+
+msgid "Social Inbox"
+msgstr "社媒收件箱"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Submit"
+msgstr "提交"
+
+msgid "Submit for Approval"
+msgstr "提交审核"
+
+msgid "Tags"
+msgstr "标签"
+
+msgid "Text &amp; Media"
+msgstr "文字和媒体"
+
+msgid "Time"
+msgstr "时间"
+
+msgid "Title"
+msgstr "标题"
+
+msgid "Use Template"
+msgstr "使用模板"
+
+msgid "Video content"
+msgstr "视频内容"
+
+msgid "Videos &amp; Shorts"
+msgstr "视频和短片"
+
+msgid "View Post"
+msgstr "查看帖子"
+
+msgid "View post"
+msgstr "查看帖子"
+
+msgid "Visibility"
+msgstr "可见范围"
+
+msgid "Welcome 👋"
+msgstr "欢迎 👋"
+
+msgid "What needs to change?"
+msgstr "请说明需要修改的内容"
+
+msgid "What would you like to share?"
+msgstr "写下你想分享的内容"
+
+msgid "Workflow"
+msgstr "流程"
+
+msgid "Your Pages &amp; Groups"
+msgstr "你的主页和小组"
+
+msgid "select files"
+msgstr "选择文件"
+
+msgid "Welcome &#x1F44B;"
+msgstr "欢迎 👋"
+
+msgid "Send back for changes"
+msgstr "退回修改"
+
+msgid "Reject post"
+msgstr "拒绝此帖"
+
+msgid "Resume"
+msgstr "恢复"
+
+msgid "A comment is required"
+msgstr "请填写审核意见"
+
+msgid "No sent posts yet"
+msgstr "暂无发送记录"
+
+msgid "Pending review"
+msgstr "待审核"
+
+msgid "Pending client"
+msgstr "待客户审核"
+
+msgid "Changes requested"
+msgstr "需修改"
+
+msgid "On hold"
+msgstr "已暂停"
+
+msgid "Back to calendar"
+msgstr "返回日历"

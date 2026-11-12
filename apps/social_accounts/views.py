@@ -15,14 +15,17 @@ from django.contrib.auth.decorators import login_required
 from django.core import signing
 from django.core.exceptions import PermissionDenied
 from django.db import transaction
+from django.http import Http404
 from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
 from django.utils.translation import gettext
-from django.views.decorators.http import require_GET, require_POST
+from django.views.decorators.cache import never_cache
+from django.views.decorators.debug import sensitive_post_parameters
+from django.views.decorators.http import require_GET, require_http_methods, require_POST
 from django_ratelimit.decorators import ratelimit
 
 from apps.common.validators import is_safe_url as _is_safe_url
-from apps.credentials.models import PlatformCredential, derive_is_configured
+from apps.credentials.models import REQUIRED_CREDENTIAL_KEYS, PlatformCredential, derive_is_configured
 from apps.members.decorators import require_permission
 from providers.exceptions import QuotaExceededError
 
@@ -203,6 +206,58 @@ def account_list(request, workspace_id):
 # ------------------------------------------------------------------
 
 
+@sensitive_post_parameters("client_secret")
+@never_cache
+@login_required
+@require_permission("manage_social_accounts")
+@require_http_methods(["GET", "POST"])
+def platform_setup(request, workspace_id, platform):
+    membership = request.workspace_membership
+    if not request.user.is_superuser or membership.workspace_id != workspace_id:
+        raise PermissionDenied
+    if platform not in REQUIRED_CREDENTIAL_KEYS or platform not in dict(_get_visible_platform_choices()):
+        raise Http404
+    org = membership.workspace.organization
+    managed = derive_is_configured(platform, settings.PLATFORM_CREDENTIALS_FROM_ENV.get(platform, {}))
+    error = ""
+    if request.method == "POST":
+        if managed:
+            raise PermissionDenied
+        app_id = request.POST.get("client_id", "").strip()
+        secret = request.POST.get("client_secret", "").strip()
+        if app_id and secret:
+            id_keys, secret_keys = REQUIRED_CREDENTIAL_KEYS[platform]
+            with transaction.atomic():
+                row, _created = PlatformCredential.objects.select_for_update().get_or_create(
+                    organization=org, platform=platform, defaults={"credentials": {}}
+                )
+                values = dict(row.credentials or {})
+                for key in (*id_keys, *secret_keys):
+                    values.pop(key, None)
+                values.update({id_keys[0]: app_id, secret_keys[0]: secret})
+                row.credentials = values
+                row.test_result = PlatformCredential.TestResult.UNTESTED
+                row.tested_at = None
+                row.save()
+            messages.success(request, "平台配置已保存，可以连接社媒账号了。")
+            return redirect("social_accounts:connect", workspace_id=workspace_id)
+        error = "请填写应用 ID 和应用密钥。"
+    return render(
+        request,
+        "social_accounts/platform_setup.html",
+        {
+            "workspace_id": workspace_id,
+            "platform": platform,
+            "label": PlatformCredential.Platform(platform).label,
+            "organization": org.name,
+            "managed": managed,
+            "configured": platform in _get_configured_platforms(org.id),
+            "callback": _build_redirect_uri(request, platform),
+            "error": error,
+        },
+    )
+
+
 @login_required
 @require_permission("manage_social_accounts")
 @ratelimit(key="user", rate="20/m", method="POST", block=True)
@@ -218,6 +273,7 @@ def connect_platform(request, workspace_id):
             {
                 "workspace_id": workspace_id,
                 "platform_choices": visible_platform_choices,
+                "credential_platforms": REQUIRED_CREDENTIAL_KEYS.keys(),
                 "configured_platforms": configured_platforms,
             },
         )

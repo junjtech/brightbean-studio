@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block page_title %}平台配置{% endblock %}
+{% block content %}
+<div class="max-w-xl">
+    <a href="{% url 'social_accounts:connect' workspace_id %}" class="text-sm underline">返回平台列表</a>
+    <h2 class="mt-6 text-xl font-semibold">{% translate label %} 应用配置</h2>
+    <p class="mt-1 text-sm text-stone-600">此配置适用于「{{ organization }}」的工作区。</p>
+    <section class="mt-6 rounded-xl border border-stone-200 bg-white p-5">
+        <label for="callback" class="block text-sm font-semibold">OAuth 回调地址</label>
+        <p class="my-2 text-sm text-stone-600">复制此地址，填入平台开发者后台的授权回调设置。</p>
+        <input id="callback" class="form-input-styled w-full" value="{{ callback }}" readonly>
+    </section>
+    {% if managed %}
+        <p class="mt-5">此平台使用服务器统一配置，可返回平台列表连接账号。</p>
+    {% else %}
+        <form method="post" class="mt-4 space-y-4 rounded-xl border border-stone-200 bg-white p-5">
+            {% csrf_token %}
+            {% if configured %}<p class="text-sm">已配置。更换应用时，请同时填写新 ID 和密钥。</p>{% endif %}
+            <div><label for="client_id" class="block text-sm font-semibold">应用 ID（{% if platform == 'tiktok' %}Client Key{% else %}Client ID / App ID{% endif %}）</label>
+                <input id="client_id" name="client_id" class="form-input-styled mt-1 w-full" required autocomplete="off" spellcheck="false"></div>
+            <div><label for="client_secret" class="block text-sm font-semibold">应用密钥（Client Secret / App Secret）</label>
+                <input id="client_secret" type="password" name="client_secret" class="form-input-styled mt-1 w-full" required autocomplete="new-password"></div>
+            {% if error %}<p role="alert" class="text-sm text-red-600">{{ error }}</p>{% endif %}
+            <button class="btn-brand px-4 py-2" type="submit">保存配置</button>
+        </form>
+    {% endif %}
+</div>
+{% endblock %}

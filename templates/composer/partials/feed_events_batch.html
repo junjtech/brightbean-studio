@@ -1,4 +1,4 @@
-{% if events %}
+{% load i18n %}{% if events %}
 {% for event in events %}
 {% with event_url=event.link|default:event.feed_website_url|default:'#' %}
 <article class="flex items-start gap-4 p-3 border border-stone-200 rounded-xl hover:bg-stone-50/50 transition-colors">
@@ -37,7 +37,7 @@
         {% endif %}
         <div class="mt-2 text-sm text-stone-500">
             {% if event.published_at %}
-            {{ event.published_at|timesince }} ago
+            {{ event.published_at|timesince }} {% translate "ago" %}
             {% else %}
             Recently
             {% endif %}

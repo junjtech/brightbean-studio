@@ -4,6 +4,7 @@ from django.utils import timezone, translation
 
 from apps.accounts.models import User
 from apps.members.models import WorkspaceMembership
+from apps.workspaces.models import Workspace
 
 
 class WorkspaceLocalizationTests(TestCase):
@@ -13,6 +14,7 @@ class WorkspaceLocalizationTests(TestCase):
         workspace = membership.workspace
         workspace.name = "RRR Lighting"
         workspace.save(update_fields=["name"])
+        Workspace.objects.create(organization=workspace.organization, name="Second workspace")
         self.client.force_login(user)
         with translation.override("zh-hans"):
             settings = self.client.get(reverse("workspaces:settings", args=[workspace.pk]))

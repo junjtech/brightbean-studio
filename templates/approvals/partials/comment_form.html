@@ -1,4 +1,4 @@
-<form hx-post="{% url 'approvals:add_comment' workspace_id=workspace.id post_id=post.id %}"
+{% load i18n %}<form hx-post="{% url 'approvals:add_comment' workspace_id=workspace.id post_id=post.id %}"
       hx-target="#comment-list-{{ post.id }}"
       hx-swap="outerHTML"
       hx-encoding="multipart/form-data"
@@ -36,7 +36,7 @@
         <button type="submit"
                 class="px-3.5 py-1.5 text-[0.8125rem] font-semibold rounded-full text-white transition-colors"
                 style="background: var(--primary);">
-            Comment
+            {% translate "Comment" %}
         </button>
     </div>
 </form>

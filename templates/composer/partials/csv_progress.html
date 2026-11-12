@@ -1,4 +1,4 @@
-<!-- Step 4: Import Complete (loaded via HTMX after confirm) -->
+{% load i18n %}<!-- Step 4: Import Complete (loaded via HTMX after confirm) -->
 <div class="bg-white rounded-xl border border-stone-200 p-8 text-center">
     <div class="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4"
          style="background: var(--primary); opacity: 0.1;">
@@ -13,7 +13,7 @@
     <div class="flex items-center justify-center gap-4 mt-4 mb-6">
         <div class="px-4 py-2 rounded-lg bg-green-50 border border-green-200">
             <span class="text-2xl font-bold text-green-700">{{ created_count }}</span>
-            <span class="text-xs text-green-600 block">post{{ created_count|pluralize }} created</span>
+            <span class="text-xs text-green-600 block">{% translate "post" %}{{ created_count|pluralize }} created</span>
         </div>
         {% if error_count > 0 %}
         <div class="px-4 py-2 rounded-lg bg-red-50 border border-red-200">
@@ -25,7 +25,7 @@
 
     {% if drafted_count > 0 %}
     <p class="text-sm text-amber-800 bg-amber-50 border border-amber-200 rounded-lg px-4 py-2 mb-4 max-w-md mx-auto">
-        {{ drafted_count }} {{ drafted_platforms }} post{{ drafted_count|pluralize }} {{ drafted_count|pluralize:"was,were" }} kept as draft{{ drafted_count|pluralize }} on {{ drafted_count|pluralize:"its date,their dates" }},
+        {{ drafted_count }} {{ drafted_platforms }} {% translate "post" %}{{ drafted_count|pluralize }} {{ drafted_count|pluralize:"was,were" }} kept as draft{{ drafted_count|pluralize }} on {{ drafted_count|pluralize:"its date,their dates" }},
         because a CSV can't add the media or Pinterest board {{ drafted_count|pluralize:"it needs,they need" }}. Add {{ drafted_count|pluralize:"it,them" }} in the composer, then schedule.
     </p>
     {% endif %}

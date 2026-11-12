@@ -50,7 +50,7 @@ tear down the toast.
          x-transition:enter-start="translate-y-full opacity-0" x-transition:enter-end="translate-y-0 opacity-100"
          class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40">
         <div class="flex items-center gap-3 px-5 py-3 bg-stone-900 text-white rounded-2xl shadow-2xl">
-            <span class="text-[0.8125rem] font-medium" x-text="selectedPosts.length + ' selected'"></span>
+            <span class="text-[0.8125rem] font-medium" x-text="selectedPosts.length + '{% translate " selected" as ui_value %}{{ ui_value|escapejs }}'"></span>
             <div class="w-px h-5 bg-stone-700"></div>
             <button hx-post="{% url 'approvals:bulk_action' workspace_id=workspace.id %}"
                     hx-include="[name='post_ids']" hx-vals='{"action": "approve"}' hx-swap="none"
@@ -68,7 +68,7 @@ tear down the toast.
         <div class="absolute inset-0" style="background: rgba(28,25,23,.42); backdrop-filter: blur(3px);"></div>
         <div class="relative bg-white rounded-2xl shadow-2xl w-full modal-pop" style="max-width: 440px;" @click.stop>
             <div class="p-6">
-                <h3 class="text-[1.0625rem] font-bold text-stone-900 mb-1" x-text="'Reject ' + selectedPosts.length + (selectedPosts.length > 1 ? ' posts' : ' post')"></h3>
+                <h3 class="text-[1.0625rem] font-bold text-stone-900 mb-1" x-text="'{% translate "Reject " as ui_value %}{{ ui_value|escapejs }}' + selectedPosts.length + (selectedPosts.length > 1 ? '{% translate " posts" as ui_value %}{{ ui_value|escapejs }}' : '{% translate " post" as ui_value %}{{ ui_value|escapejs }}')"></h3>
                 <p class="text-[0.8125rem] text-stone-500 mb-4">Tell the creator why. This comment is shared with them.</p>
                 <textarea id="bulk-reject-comment" name="comment" x-model="bulkReason" rows="3" placeholder="Reason for rejection…"
                           class="w-full px-3 py-2 text-[0.875rem] border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-transparent resize-none"></textarea>

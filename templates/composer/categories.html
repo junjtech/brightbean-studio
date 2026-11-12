@@ -1,16 +1,16 @@
 {% extends "base.html" %}{% load i18n %}
 
-{% block title %}Content Categories - {{ workspace.name }} - Brightbean{% endblock %}
+{% block title %}{% translate "Content Categories -" %} {{ workspace.name }} - Brightbean{% endblock %}
 
 {% block page_header %}
 <div class="flex items-center justify-between mb-6">
     <div>
-        <h1 class="text-base font-semibold text-stone-900" style="letter-spacing: -0.01em;">Content Categories</h1>
-        <p class="text-sm text-stone-500 mt-1">Organize posts by category for calendar filtering and queue scheduling.</p>
+        <h1 class="text-base font-semibold text-stone-900" style="letter-spacing: -0.01em;">{% translate "Content Categories" %}</h1>
+        <p class="text-sm text-stone-500 mt-1">{% translate "Organize posts by category for calendar filtering and queue scheduling." %}</p>
     </div>
     <a href="{% url 'calendar:calendar' workspace_id=workspace.id %}" class="text-sm text-stone-500 hover:text-stone-700 flex items-center gap-1">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-        Back to Calendar
+        {% translate "Back to Calendar" %}
     </a>
 </div>
 {% endblock %}
@@ -22,7 +22,7 @@
     <div class="mb-6">
         <button @click="showForm = !showForm" class="btn-brand text-sm py-2 px-4 flex items-center gap-1.5">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-            Add Category
+            {% translate "Add Category" %}
         </button>
 
         <form x-show="showForm" x-cloak
@@ -34,10 +34,10 @@
             {% csrf_token %}
             <div class="flex-1">
                 <label class="block text-xs font-semibold text-stone-700 mb-1">{% translate "Name" %}</label>
-                <input type="text" name="name" placeholder="e.g., Educational" required class="form-input w-full text-sm">
+                <input type="text" name="name" placeholder="{% translate "e.g., Educational" %}" required class="form-input w-full text-sm">
             </div>
             <div>
-                <label class="block text-xs font-semibold text-stone-700 mb-1">Color</label>
+                <label class="block text-xs font-semibold text-stone-700 mb-1">{% translate "Color" %}</label>
                 <input type="color" name="color" value="#3B82F6" class="w-10 h-[38px] rounded-lg border border-stone-200 cursor-pointer p-0.5">
             </div>
             <button type="submit" class="btn-brand text-sm py-2 px-4">{% translate "Save" %}</button>
@@ -61,7 +61,7 @@
                     <div class="flex items-center gap-3 w-full">
                         <span class="w-4 h-4 rounded-full flex-shrink-0" style="background: {{ cat.color }};"></span>
                         <span class="flex-1 text-sm font-medium text-stone-800">{{ cat.name }}</span>
-                        <span class="text-xs text-stone-400">{{ cat.posts.count }} post{{ cat.posts.count|pluralize }}</span>
+                        <span class="text-xs text-stone-400">{{ cat.posts.count }} {% translate "post" %}{{ cat.posts.count|pluralize }}</span>
                         <button @click="editing = true" class="opacity-0 group-hover:opacity-100 text-stone-400 hover:text-stone-600 transition-all p-1">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
                         </button>
@@ -96,8 +96,8 @@
                 <div class="w-12 h-12 rounded-full bg-stone-100 flex items-center justify-center mx-auto mb-3">
                     <svg class="w-6 h-6 text-stone-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A2 2 0 013 12V7a4 4 0 014-4z"/></svg>
                 </div>
-                <p class="text-sm font-medium text-stone-700">No categories yet</p>
-                <p class="text-xs text-stone-500 mt-1">Create categories to organize your posts.</p>
+                <p class="text-sm font-medium text-stone-700">{% translate "No categories yet" %}</p>
+                <p class="text-xs text-stone-500 mt-1">{% translate "Create categories to organize your posts." %}</p>
             </div>
             {% endfor %}
         </div>

@@ -1,4 +1,4 @@
-{% load humanize %}
+{% load i18n %}{% load humanize %}
 <div id="msg-{{ message.id }}"
      class="inbox-row {% if message.status == 'unread' %}is-unread{% endif %}"
      @click="selectMessage('{{ message.id }}', '{% url 'inbox:message_detail' workspace_id=workspace.id message_id=message.id %}')"
@@ -38,7 +38,7 @@
             {% if message.sender_handle %}
             <span class="text-[11px] text-stone-400 truncate">@{{ message.sender_handle }}</span>
             {% endif %}
-            <span class="text-[11px] text-stone-400 ml-auto flex-shrink-0" title="{{ message.received_at|date:'N j, Y g:i A' }}">{{ message.received_at|timesince }} ago</span>
+            <span class="text-[11px] text-stone-400 ml-auto flex-shrink-0" title="{{ message.received_at|date:'N j, Y g:i A' }}">{{ message.received_at|timesince }} {% translate "ago" %}</span>
         </div>
         <p class="inbox-row-preview text-[12px] text-stone-500 truncate leading-snug">{{ message.body|truncatewords:20 }}</p>
         <div class="flex items-center gap-1.5 mt-1.5">

@@ -140,7 +140,7 @@ def bulk_action(request, workspace_id):
     post_ids = request.POST.getlist("post_ids")
 
     if not post_ids:
-        return _toast_response(tone="warn", title="No posts selected")
+        return _toast_response(tone="warn", title=_("No posts selected"))
 
     if action == "approve":
         results = services.bulk_approve(post_ids, request.user, workspace)
@@ -151,24 +151,24 @@ def bulk_action(request, workspace_id):
         except ValueError as e:
             return _toast_response(tone="error", title=_("Couldn't reject"), body=str(e))
     else:
-        return _toast_response(tone="error", title="Invalid action")
+        return _toast_response(tone="error", title=_("Invalid action"))
 
     n = sum(1 for _, success, _ in results if success)
     plural = "s" if n != 1 else ""
 
     if n == 0:
         return _toast_response(
-            tone="warn", title=_("Nothing to update"), body="None were still pending.", refresh="bulkActionComplete"
+            tone="warn", title=_("Nothing to update"), body=_("None were still pending."), refresh="bulkActionComplete"
         )
     if action == "approve":
         return _toast_response(
             tone="success",
             title=f"{n} post{plural} approved",
-            body="Moved to the next stage",
+            body=_("Moved to the next stage"),
             refresh="bulkActionComplete",
         )
     return _toast_response(
-        tone="error", title=f"{n} post{plural} rejected", body="Creators notified", refresh="bulkActionComplete"
+        tone="error", title=f"{n} post{plural} rejected", body=_("Creators notified"), refresh="bulkActionComplete"
     )
 
 

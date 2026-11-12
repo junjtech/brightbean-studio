@@ -1,7 +1,7 @@
-<div id="intel-panel-video-hook" class="intel-panel mt-6 grid-cols-1 gap-6 lg:grid-cols-2">
+{% load i18n %}<div id="intel-panel-video-hook" class="intel-panel mt-6 grid-cols-1 gap-6 lg:grid-cols-2">
     <div class="rounded-xl border border-stone-200 bg-white shadow-sm">
         <div class="flex items-center justify-between border-b border-stone-100 px-5 py-3.5">
-            <h2 class="text-sm font-semibold text-stone-900">Score video hook</h2>
+            <h2 class="text-sm font-semibold text-stone-900">{% translate "Score video hook" %}</h2>
             <span class="inline-flex items-center rounded-md bg-stone-100 px-2 py-0.5 text-[11px] font-mono text-stone-600">10 credits</span>
         </div>
         <div class="p-5">
@@ -20,7 +20,7 @@
                            placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                            value="{% if is_preview %}{{ preview_inputs.score_video_hook.youtube_url }}{% endif %}"
                            class="intel-input">
-                    <p class="intel-helper">Accepts <code class="font-mono text-[11px]">watch?v=…</code>, <code class="font-mono text-[11px]">youtu.be/…</code>, <code class="font-mono text-[11px]">shorts/…</code>, or <code class="font-mono text-[11px]">embed/…</code>.</p>
+                    <p class="intel-helper">{% translate "Accepts" %} <code class="font-mono text-[11px]">watch?v=…</code>, <code class="font-mono text-[11px]">youtu.be/…</code>, <code class="font-mono text-[11px]">shorts/…</code>, or <code class="font-mono text-[11px]">embed/…</code>.</p>
                 </div>
                 <div>
                     <button type="submit" class="intel-submit"{% if is_preview %} disabled aria-disabled="true"{% endif %}>
@@ -31,7 +31,7 @@
                     </button>
                     {% if is_preview %}
                     <p class="intel-activate-note">
-                        {% if can_manage_billing %}<a href="{% url 'intelligence:subscribe' org_id=organization.id %}">Activate Intelligence</a> to analyze your own video hooks.{% else %}Ask an admin to activate Intelligence to analyze your own video hooks.{% endif %}
+                        {% if can_manage_billing %}<a href="{% url 'intelligence:subscribe' org_id=organization.id %}">{% translate "Activate Intelligence" %}</a> to analyze your own video hooks.{% else %}Ask an admin to activate Intelligence to analyze your own video hooks.{% endif %}
                     </p>
                     {% else %}
                     <p class="mt-2 text-[11px] text-stone-400">First call on a video can take 25–29 s. Cache hits return instantly.</p>

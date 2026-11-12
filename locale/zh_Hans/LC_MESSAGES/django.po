@@ -1656,3 +1656,1776 @@ msgstr "星期日"
 
 msgid "Sun"
 msgstr "周日"
+
+msgid " selected"
+msgstr " 项已选中"
+
+msgid "Reject "
+msgstr "驳回 "
+
+msgid " posts"
+msgstr " 篇帖子"
+
+msgid " post"
+msgstr " 篇帖子"
+
+msgid "Disconnecting…"
+msgstr "正在断开连接…"
+
+msgid "Deleting..."
+msgstr "正在删除…"
+
+msgid "Duration: "
+msgstr "时长："
+
+msgid "Customize "
+msgstr "自定义 "
+
+msgid " platform"
+msgstr " 个平台"
+
+msgid " platforms"
+msgstr " 个平台"
+
+msgid "What changes would you like?"
+msgstr "希望修改哪些内容？"
+
+msgid "Why are you rejecting this?"
+msgstr "请说明驳回原因。"
+
+msgid "Why put this on hold? The team is notified, and nothing publishes while held."
+msgstr "请说明暂停原因。团队会收到通知，暂停期间不会发布。"
+
+msgid "Trying…"
+msgstr "正在重试…"
+
+msgid "A comment is required when requesting changes."
+msgstr "要求修改时须填写意见。"
+
+msgid "A comment is required when rejecting a post."
+msgstr "驳回帖子时须填写原因。"
+
+msgid "A comment is required when requesting a hold."
+msgstr "暂停发布时须填写原因。"
+
+msgid "A comment is required for bulk rejection."
+msgstr "批量驳回时须填写原因。"
+
+msgid "No posts selected"
+msgstr "尚未选择帖子"
+
+msgid "Invalid action"
+msgstr "操作无效"
+
+msgid "None were still pending."
+msgstr "所选帖子均已处理。"
+
+msgid "Moved to the next stage"
+msgstr "已进入下一环节"
+
+msgid "Creators notified"
+msgstr "已通知作者"
+
+msgid "Organization deletion cancelled. Reconnect any YouTube channels removed when deletion was requested."
+msgstr "已取消删除组织。请重新连接申请删除时移除的 YouTube 频道。"
+
+msgid "$19/month"
+msgstr "每月19美元"
+
+msgid "(attempt"
+msgstr "（尝试"
+
+msgid "(initial)"
+msgstr "（初始）"
+
+msgid "(optional)"
+msgstr "（可选）"
+
+msgid ", ask an owner or admin of the org to activate Intelligence."
+msgstr "联系机构的所有者或管理员来激活智能功能。"
+
+msgid "- Inbox -"
+msgstr "- 收件箱 -"
+
+msgid "-day sample"
+msgstr "-天试用"
+
+msgid ". Not reported by"
+msgstr "未由该平台提供数据"
+
+msgid ". One click finishes provisioning your API access, you'll be back on the playground in a few seconds."
+msgstr "一键即可完成API访问配置，几秒后您即可返回操作界面。"
+
+msgid ". Saving changes will affect the scheduled post."
+msgstr "。保存更改将影响已安排发布的帖子。"
+
+msgid ". Shared fields like the caption are used by that post too — editing them here changes its record."
+msgstr "发布。标题等共享字段也会被该帖子使用——在此处修改会更改其记录。"
+
+msgid "/ month"
+msgstr "/ 月"
+
+msgid "24–48 hours"
+msgstr "24–48小时内显示。"
+
+msgid "401 Unauthorized"
+msgstr "401 未授权"
+
+msgid "5 credits"
+msgstr "5个积分。"
+
+msgid "636 niches · ranked content gaps"
+msgstr "636个细分领域 · 已排序的内容缺口"
+
+msgid "? Agents using it will immediately start receiving"
+msgstr "? 使用该密钥的代理将立即开始收到"
+
+msgid "AI-generated content"
+msgstr "AI生成的内容"
+
+msgid "API Keys - Settings - Brightbean"
+msgstr "API 密钥 - 设置 - Brightbean"
+
+msgid "Accept Terms - Brightbean"
+msgstr "同意条款 - Brightbean"
+
+msgid "Accepts"
+msgstr "已接受。"
+
+msgid "Access ends"
+msgstr "访问权限即将结束"
+
+msgid "Activate"
+msgstr "激活"
+
+msgid "Activate Intelligence"
+msgstr "启用智能分析功能"
+
+msgid "Activate Intelligence -"
+msgstr "启用智能分析功能 -"
+
+msgid "Activation complete!"
+msgstr "激活完成！"
+
+msgid "Activation failed"
+msgstr "激活失败"
+
+msgid "Active"
+msgstr "活跃"
+
+msgid "Active · canceling"
+msgstr "正在使用 · 正在取消"
+
+msgid "Activity"
+msgstr "活动"
+
+msgid "Activity -"
+msgstr "活动状态 -"
+
+msgid "Add Category"
+msgstr "添加类别"
+
+msgid "Add Slot"
+msgstr "添加时段"
+
+msgid "Add TikTok's AI-generated label if the post contains AI-generated content."
+msgstr "若帖子包含AI生成内容，请添加TikTok的AI生成标签。"
+
+msgid "Add a video to schedule this post, or deselect the account."
+msgstr "添加视频以安排此帖子发布，或取消选中该账号。"
+
+msgid "Add one to schedule this post, or deselect the account."
+msgstr "点击此处添加内容并安排发布时间，或取消选择该账号。"
+
+msgid "Add posts to this queue from the composer using \"Add to Queue\"."
+msgstr "通过编辑器使用“加入队列”将帖子添加到此队列。"
+
+msgid "Advanced"
+msgstr "高级设置"
+
+msgid "After you publish, it may take a few minutes for your video to process and appear on your TikTok profile."
+msgstr "发布后，您的视频可能需要几分钟处理时间才会显示在TikTok主页上。"
+
+msgid "All caught up"
+msgstr "全部已处理完毕"
+
+msgid "All posts"
+msgstr "所有帖子"
+
+msgid "All six tools included"
+msgstr "包含全部六种工具。"
+
+msgid "All time"
+msgstr "历史数据"
+
+msgid "Allow people to comment"
+msgstr "允许用户评论"
+
+msgid "Allow users to:"
+msgstr "允许用户："
+
+msgid "Almost there"
+msgstr "几乎完成了"
+
+msgid "Already have an account?"
+msgstr "已有账户？"
+
+msgid "Already published on"
+msgstr "已在"
+
+msgid "Alt Text"
+msgstr "替代文本"
+
+msgid "An administrator can switch it on under"
+msgstr "管理员可在 Django 管理后台的“数据分析平台”中开启该功能"
+
+msgid "Analytics aren't available for"
+msgstr "该账号暂无数据分析功能"
+
+msgid "Analytics platforms"
+msgstr "数据分析平台"
+
+msgid "Analytics —"
+msgstr "数据分析 —"
+
+msgid "Any category"
+msgstr "任意类别"
+
+msgid "Approve Posts -"
+msgstr "审核帖子 -"
+
+msgid "Approve or request changes before anything goes live."
+msgstr "在发布前请审核或要求修改。"
+
+msgid "Approved &amp; scheduled"
+msgstr "已批准并安排发布"
+
+msgid "Archive"
+msgstr "归档"
+
+msgid "Are you sure you want to sign out?"
+msgstr "您确定要登出吗？"
+
+msgid "Ask an org admin to update payment."
+msgstr "请让机构管理员为您更新支付信息。"
+
+msgid "Ask your team to send you a fresh access link from the workspace settings."
+msgstr "请让您的团队通过工作空间设置发送新的访问链接给您。"
+
+msgid "Auto-resolve on Reply"
+msgstr "回复时自动处理"
+
+msgid "Auto-schedule posts into time slots by category and channel."
+msgstr "按类别和频道自动将帖子安排到指定时段。"
+
+msgid "Automatically mark messages as resolved when a reply is sent."
+msgstr "发送回复后自动将消息标记为已处理"
+
+msgid "Avg title length"
+msgstr "平均标题长度"
+
+msgid "Avg word count"
+msgstr "平均单词数"
+
+msgid "Awaiting YouTube report"
+msgstr "正在等待 YouTube 的反馈。"
+
+msgid "Awaiting first full sync"
+msgstr "正在等待首次完整同步。"
+
+msgid "Back to Calendar"
+msgstr "返回日历"
+
+msgid "Back to Composer"
+msgstr "返回编辑器"
+
+msgid "Back to Inbox"
+msgstr "返回收件箱"
+
+msgid "Back to Intelligence"
+msgstr "返回智能分析页面"
+
+msgid "Back to sign in"
+msgstr "返回登录页"
+
+msgid "Benchmark channel"
+msgstr "频道基准对比"
+
+msgid "Benchmark video"
+msgstr "视频基准对比"
+
+msgid "Benchmark vs niche peers"
+msgstr "与同领域竞品对比"
+
+msgid "Billing"
+msgstr "账单"
+
+msgid "Billing contact"
+msgstr "开票联系人"
+
+msgid "Billing →"
+msgstr "开票 →"
+
+msgid "Branded Content Policy"
+msgstr "品牌内容政策"
+
+msgid "Branded content"
+msgstr "品牌内容"
+
+msgid "Branded content isn't available until your TikTok app passes TikTok's content audit, because branded content can't be posted privately."
+msgstr "在您的TikTok应用通过TikTok的内容审核前无法使用品牌内容，因为品牌内容不能私密发布。"
+
+msgid "Branded content visibility cannot be set to private."
+msgstr "品牌内容不可设置为私密状态。"
+
+msgid "BrightBean Studio logo"
+msgstr "BrightBean Studio 徽标"
+
+msgid "Brightbean does not store the plaintext token. Once you close this modal it cannot be retrieved. Paste it into your agent or secret manager before continuing."
+msgstr "Brightbean不会存储明文令牌，关闭此弹窗后将无法找回。请在继续前将其粘贴到您的代理或密钥管理工具中。"
+
+msgid "Brightbean logo"
+msgstr "Brightbean 徽标"
+
+msgid "Bulk import posts from a CSV or TSV file."
+msgstr "从CSV或TSV文件批量导入帖子。"
+
+msgid "By"
+msgstr "由...发布"
+
+msgid "By posting, you agree to TikTok's"
+msgstr "发布即表示您同意TikTok的"
+
+msgid "By signing up, you agree to our"
+msgstr "注册即表示您同意我们的"
+
+msgid "Calculated by BrightBean"
+msgstr "由 BrightBean 计算"
+
+msgid "Calculated by BrightBean from the change in follower totals"
+msgstr "由 BrightBean 根据粉丝总数变化计算得出"
+
+msgid "Category (optional)"
+msgstr "类别（可选）"
+
+msgid "Channel"
+msgstr "频道"
+
+msgid "Check Your Email - Brightbean"
+msgstr "查看您的邮箱 - Brightbean"
+
+msgid "Check your email"
+msgstr "查看您的邮箱"
+
+msgid "Check your inbox for the verification link."
+msgstr "请在收件箱中查找验证链接。"
+
+msgid "Checking…"
+msgstr "正在检查……"
+
+msgid "Checks for niche-typical title conventions. The"
+msgstr "用于检查是否符合小众视频的典型标题规范。"
+
+msgid "Choose a plan"
+msgstr "选择套餐。"
+
+msgid "Choose a strong password for your account"
+msgstr "为您的账户选择强密码"
+
+msgid "Choose thumbnail from video"
+msgstr "从视频中选择缩略图"
+
+msgid "Clear selection"
+msgstr "清除选择"
+
+msgid "Click"
+msgstr "点击"
+
+msgid "Color"
+msgstr "颜色"
+
+msgid "Comma-separated"
+msgstr "用逗号分隔"
+
+msgid "Comment"
+msgstr "发表评论"
+
+msgid "Comments / view"
+msgstr "评论量/观看量"
+
+msgid "Common phrases in niche"
+msgstr "该细分领域的常用短语"
+
+msgid "Compare a YouTube channel against its niche. Pulls the last ~10 videos, classifies the niche from titles, and percentile-ranks engagement + title patterns."
+msgstr "可对比YouTube频道与其所属领域。会提取最近约10个视频，根据标题分类，并对互动率及标题模式进行百分位排名。"
+
+msgid "Complete activation"
+msgstr "激活已完成。"
+
+msgid "Composite rank of this video's engagement vs recent videos in the same niche."
+msgstr "该视频的互动综合排名（与同领域近期视频相比）"
+
+msgid "Composite rank vs other channels in the same niche."
+msgstr "与同领域其他渠道的综合排名对比。"
+
+msgid "Confirm Email"
+msgstr "确认邮箱"
+
+msgid "Confirm Email - Brightbean"
+msgstr "确认邮箱 - Brightbean"
+
+msgid "Confirm email address"
+msgstr "确认邮箱地址"
+
+msgid "Connect an account to see analytics"
+msgstr "连接账户即可查看数据分析。"
+
+msgid "Connected accounts"
+msgstr "已连接的账号"
+
+msgid "Contact"
+msgstr "联系我们"
+
+msgid "Contact support if you think this is a mistake."
+msgstr "如认为有误，请联系客服。"
+
+msgid "Content Categories"
+msgstr "内容类别"
+
+msgid "Content Categories -"
+msgstr "内容类别 -"
+
+msgid "Continue"
+msgstr "继续"
+
+msgid "Continue to Stripe"
+msgstr "转至Stripe支付"
+
+msgid "Continue to portal"
+msgstr "返回门户网站"
+
+msgid "Continue to review and approve scheduled posts for"
+msgstr "继续审核并批准为 [账号名] 安排的帖子"
+
+msgid "Continue with"
+msgstr "继续操作"
+
+msgid "Copy"
+msgstr "复制"
+
+msgid "Copy to clipboard"
+msgstr "复制到剪贴板"
+
+msgid "Couldn't save, billing service was unreachable. Please try again."
+msgstr "无法保存，账单服务不可达。请重试。"
+
+msgid "Cover"
+msgstr "封面图"
+
+msgid "Create -"
+msgstr "创建——"
+
+msgid "Create Account"
+msgstr "创建账户"
+
+msgid "Create Post"
+msgstr "创建帖子"
+
+msgid "Create Queue"
+msgstr "创建队列"
+
+msgid "Create a post"
+msgstr "创建新帖子。"
+
+msgid "Create a queue to auto-schedule posts into time slots."
+msgstr "创建队列以自动安排帖子到时段。"
+
+msgid "Create an editable draft copy"
+msgstr "创建可编辑的草稿版本"
+
+msgid "Create categories to organize your posts."
+msgstr "创建类别以整理您的帖子。"
+
+msgid "Create reusable response templates for common questions."
+msgstr "为常见问题创建可复用的回复模板"
+
+msgid "Create your account"
+msgstr "创建您的账户"
+
+msgid "Credits"
+msgstr "资源使用情况"
+
+msgid "Current period ends"
+msgstr "当前周期结束"
+
+msgid "Custom Thumbnail"
+msgstr "自定义缩略图"
+
+msgid "Daily average · calculated by BrightBean"
+msgstr "日均值 · 由 BrightBean 计算"
+
+msgid "Daily average, estimated"
+msgstr "日均估算值"
+
+msgid "Dashboard -"
+msgstr "控制面板 -"
+
+msgid "Define recurring time slots for automatic queue scheduling"
+msgstr "设置自动排队调度的时间间隔"
+
+msgid "Delete idea?"
+msgstr "要删除该创意吗？"
+
+msgid "Deleting…"
+msgstr "正在删除..."
+
+msgid "Describe this pin for accessibility…"
+msgstr "为无障碍功能描述此帖子……"
+
+msgid "Description (optional)…"
+msgstr "描述（可选）…"
+
+msgid "Destination Link"
+msgstr "目标链接"
+
+msgid "Didn't receive the email?"
+msgstr "未收到邮件？"
+
+msgid "Discard Checkout Session"
+msgstr "放弃当前结账会话"
+
+msgid "Disclose post content"
+msgstr "标明帖子内容"
+
+msgid "Don't have an account?"
+msgstr "还没有账户？"
+
+msgid "Drafts -"
+msgstr "草稿 -"
+
+msgid "Drop your CSV file here, or"
+msgstr "将CSV文件拖放到此处，或"
+
+msgid "Duet"
+msgstr "合拍"
+
+msgid "Each row compares one engagement ratio against the niche's distribution."
+msgstr "每行显示一个参与度比率与对应垂类分布的对比。"
+
+msgid "Each row compares this video's engagement ratio against the niche distribution."
+msgstr "每行均将此视频的互动率与小众视频的整体分布进行对比。"
+
+msgid "Edit API key"
+msgstr "编辑 API 密钥"
+
+msgid "Edit Idea"
+msgstr "编辑创意"
+
+msgid "Enable SLA Timer"
+msgstr "启用SLA计时器"
+
+msgid "Engagement rate"
+msgstr "参与率"
+
+msgid "Engagement vs niche distribution"
+msgstr "参与度与垂类分布对比"
+
+msgid "Enter your email and we'll send you a reset link"
+msgstr "输入您的邮箱，我们将发送重置链接给您"
+
+msgid "Estimated"
+msgstr "预估值"
+
+msgid "Estimated by BrightBean"
+msgstr "由 BrightBean 估算"
+
+msgid "Exemplar channels in this niche"
+msgstr "该细分领域的优秀频道示例"
+
+msgid "Expected columns: date, time, platforms, caption, media_url, category, tags, first_comment"
+msgstr "预期列名：date、time、platforms、caption、media_url、category、tags、first_comment"
+
+msgid "Expired"
+msgstr "已过期"
+
+msgid "Expires at"
+msgstr "到期时间"
+
+msgid "Explore the playground, activate to use it"
+msgstr "探索该功能区，激活后即可使用。"
+
+msgid "Feeds"
+msgstr "动态流"
+
+msgid "Finalizing…"
+msgstr "正在完成……"
+
+msgid "Finish setting up Intelligence"
+msgstr "智能功能设置已完成。"
+
+msgid "First comment not posted"
+msgstr "第一条评论尚未发布。"
+
+msgid "First comment posted after the main post…"
+msgstr "主帖发布后的第一条评论……"
+
+msgid "Fits niche patterns"
+msgstr "符合细分领域模式"
+
+msgid "Followers"
+msgstr "粉丝数"
+
+msgid "For Approval"
+msgstr "待审核"
+
+msgid "Forgot your password?"
+msgstr "忘记密码？"
+
+msgid "Frame at"
+msgstr "定位到该帧"
+
+msgid "Free high-resolution photos &middot; add one or many"
+msgstr "免费高分辨率照片 · 可添加一张或多张"
+
+msgid "From the team"
+msgstr "来自团队"
+
+msgid "Generate"
+msgstr "生成"
+
+msgid "Granted by a higher-privileged admin (locked)"
+msgstr "由权限更高的管理员授予（已锁定）"
+
+msgid "Has a number"
+msgstr "是否包含数字"
+
+msgid "Has a question mark"
+msgstr "是否包含问号"
+
+msgid "Has an emoji"
+msgstr "是否包含表情符号"
+
+msgid "Here's what's happening with"
+msgstr "当前状态如下："
+
+msgid "Hide revoked keys"
+msgstr "隐藏已撤销的密钥"
+
+msgid "Home"
+msgstr "主页"
+
+msgid "I agree to the"
+msgstr "我同意"
+
+msgid "I've saved it"
+msgstr "已保存"
+
+msgid "Ideas"
+msgstr "创意列表"
+
+msgid "If Stripe charged you and you don't see your subscription, contact"
+msgstr "若Stripe已扣款但未看到订阅项，请联系"
+
+msgid "If you believe this is a mistake, contact"
+msgstr "如认为这是错误，请联系"
+
+msgid "If you don't see it, check your spam folder."
+msgstr "若未找到，请检查垃圾邮件文件夹。"
+
+msgid "Import from CSV"
+msgstr "从CSV导入"
+
+msgid "Import from CSV -"
+msgstr "从CSV导入 -"
+
+msgid "Inbox"
+msgstr "收件箱"
+
+msgid "Inbox -"
+msgstr "收件箱 -"
+
+msgid "Instagram analytics."
+msgstr "Instagram 数据分析"
+
+msgid "Intelligence billing -"
+msgstr "智能分析账单 -"
+
+msgid "Intelligence subscription for"
+msgstr "用于智能分析的订阅"
+
+msgid "Invalid Reset Link"
+msgstr "无效的重置链接"
+
+msgid "Invoices and payment-failure notices go here. This belongs to the organization, not to whoever clicks \"Continue\" below."
+msgstr "发票和付款失败通知会发送到此邮箱。请填写组织的账单邮箱。"
+
+msgid "Issue a new API key"
+msgstr "生成新的 API 密钥"
+
+msgid "Issue new key"
+msgstr "生成新密钥"
+
+msgid "Issued by"
+msgstr "发放方"
+
+msgid "Key name:"
+msgstr "密钥名称："
+
+msgid "Last used"
+msgstr "最后使用时间"
+
+msgid "Let others know this post promotes a brand, product or service."
+msgstr "告知他人该帖子正在推广品牌、产品或服务。"
+
+msgid "Likes / view"
+msgstr "点赞量/观看量"
+
+msgid "Link Expired"
+msgstr "链接已过期"
+
+msgid "List niches"
+msgstr "垂类领域列表"
+
+msgid "Loading account settings…"
+msgstr "正在加载账户设置……"
+
+msgid "Loading boards…"
+msgstr "正在加载板块…"
+
+msgid "Loading templates…"
+msgstr "正在加载模板…"
+
+msgid "Log in"
+msgstr "登录"
+
+msgid "Log in to BrightBean Studio | Social media scheduling &amp; approvals."
+msgstr "登录 BrightBean Studio | 社交媒体排程与审核工具。"
+
+msgid "Log in with"
+msgstr "使用以下方式登录"
+
+msgid "Log in · BrightBean Studio"
+msgstr "登录 · BrightBean Studio"
+
+msgid "Made for Kids"
+msgstr "面向儿童"
+
+msgid "Magic links are valid for 30 days. Please contact your account manager to receive a new link."
+msgstr "魔法链接有效期为30天，如需新链接请联系您的账户经理。"
+
+msgid "Manage payment + invoices in Stripe"
+msgstr "在 Stripe 中管理付款与发票"
+
+msgid "Mark Read"
+msgstr "标记为已读"
+
+msgid "Median uppercase ratio"
+msgstr "大写字母比例中位数"
+
+msgid "Messages exceeding this time will show an \"Overdue\" badge."
+msgstr "超过此时间的消息将显示“逾期”标识"
+
+msgid "Most popular"
+msgstr "最受欢迎。"
+
+msgid "Music Usage Confirmation"
+msgstr "音乐使用确认"
+
+msgid "My Queue"
+msgstr "我的待处理队列"
+
+msgid "Need a new link?"
+msgstr "需要新链接？"
+
+msgid "Needs your approval"
+msgstr "需要您的批准"
+
+msgid "Never used"
+msgstr "从未使用过"
+
+msgid "New Idea"
+msgstr "新创意"
+
+msgid "New Reply"
+msgstr "新回复"
+
+msgid "New followers"
+msgstr "新粉丝数"
+
+msgid "New subscribers"
+msgstr "新订阅用户数"
+
+msgid "Niche"
+msgstr "垂类领域"
+
+msgid "Niche p50"
+msgstr "垂类中位数50分位"
+
+msgid "Niche p50:"
+msgstr "细分领域p50值："
+
+msgid "No"
+msgstr "否"
+
+msgid "No API keys issued yet."
+msgstr "尚未生成任何 API 密钥。"
+
+msgid "No active API keys."
+msgstr "暂无有效 API 密钥。"
+
+msgid "No activity yet"
+msgstr "目前暂无活动"
+
+msgid "No boards found. Create a board on Pinterest first."
+msgstr "未找到板块。请先在Pinterest上创建板块。"
+
+msgid "No categories yet"
+msgstr "尚无类别"
+
+msgid "No category"
+msgstr "无分类"
+
+msgid "No connected accounts in this workspace."
+msgstr "此工作空间中没有关联的账户。"
+
+msgid "No connected accounts in this workspace. Connect one before issuing a key."
+msgstr "该工作空间内暂无已连接的账户，生成密钥前请先连接一个账户。"
+
+msgid "No connected accounts to configure posting slots for."
+msgstr "暂无可配置发布时段的账号。"
+
+msgid "No data"
+msgstr "暂无数据"
+
+msgid "No matching tags"
+msgstr "未找到匹配标签"
+
+msgid "No niches available."
+msgstr "无可用细分领域。"
+
+msgid "No plans are available for this deployment."
+msgstr "该部署版本暂无可用套餐。"
+
+msgid "No posts are waiting for your review right now"
+msgstr "目前没有帖子等待您的审核"
+
+msgid "No posts match these filters."
+msgstr "无符合这些筛选条件的帖子。"
+
+msgid "No published posts yet"
+msgstr "目前暂无已发布帖子"
+
+msgid "No queues yet"
+msgstr "目前暂无队列"
+
+msgid "No results. Try another search."
+msgstr "未找到结果。请尝试其他搜索词。"
+
+msgid "No saved replies yet"
+msgstr "尚无已保存的回复"
+
+msgid "No slot"
+msgstr "无待处理内容"
+
+msgid "No tags yet"
+msgstr "尚无标签"
+
+msgid "No templates yet"
+msgstr "尚无模板"
+
+msgid "No version history available"
+msgstr "无版本历史记录"
+
+msgid "No, diverges from niche norms"
+msgstr "否，偏离细分领域规范"
+
+msgid "Not authorized"
+msgstr "未获授权"
+
+msgid "Not enough data to calculate yet."
+msgstr "当前数据不足，无法计算"
+
+msgid "On hold - a client paused this; resume it from the approvals queue"
+msgstr "处于等待中——客户已暂停，可从审批队列中继续处理"
+
+msgid "On hold — the team has been notified."
+msgstr "正在处理中——团队已收到通知。"
+
+msgid "One quick step before you get started."
+msgstr "开始前还需完成一步操作。"
+
+msgid "Only permissions you currently hold in this workspace are listed."
+msgstr "仅显示您当前在该工作空间中拥有的权限。"
+
+msgid "Open Intelligence →"
+msgstr "打开 Intelligence →"
+
+msgid "Org mismatch"
+msgstr "组织不匹配"
+
+msgid "Organize posts by category for calendar filtering and queue scheduling."
+msgstr "按类别整理帖子，便于日历筛选和队列调度。"
+
+msgid "Overall percentile"
+msgstr "整体百分位。"
+
+msgid "Page"
+msgstr "页面"
+
+msgid "Password Changed - Brightbean"
+msgstr "密码已更改 - Brightbean"
+
+msgid "Password changed"
+msgstr "密码已更新"
+
+msgid "Payment received"
+msgstr "支付已收到。"
+
+msgid "Per-org subscription, billed monthly. Cancel anytime."
+msgstr "按机构订阅，按月计费，可随时取消。"
+
+msgid "Performance"
+msgstr "数据表现"
+
+msgid "Performance across your connected channels."
+msgstr "所有关联渠道的运营表现。"
+
+msgid "Performance reports shared with you"
+msgstr "已与您共享的绩效报告"
+
+msgid "Permissions"
+msgstr "权限"
+
+msgid "Pick a workspace…"
+msgstr "选择工作空间…"
+
+msgid "Pinterest needs an image or a video."
+msgstr "Pinterest需要图片或视频。"
+
+msgid "Plan"
+msgstr "套餐"
+
+msgid "Please confirm that"
+msgstr "请确认"
+
+msgid "Please review and accept our terms to continue"
+msgstr "请查看并同意我们的条款以继续"
+
+msgid "Post Templates"
+msgstr "发文模板"
+
+msgid "Post Templates -"
+msgstr "发文模板 -"
+
+msgid "Post copy"
+msgstr "帖子正文"
+
+msgid "Post saved"
+msgstr "帖子已保存"
+
+msgid "Posting Slots -"
+msgstr "发布时段 -"
+
+msgid "Posts awaiting your review"
+msgstr "需您审核的帖子"
+
+msgid "Posts for your review"
+msgstr "需您审核的帖子"
+
+msgid "Posts that have been published to your social channels"
+msgstr "已发布到您社交渠道的帖子"
+
+msgid "Powered by BrightBean · Secure approval link"
+msgstr "由 BrightBean 提供支持 · 安全的审核链接"
+
+msgid "Pre-written responses for common questions. Use variables:"
+msgstr "针对常见问题的预写回复，可使用变量。"
+
+msgid "Predict CTR before publishing"
+msgstr "发布前预测点击率"
+
+msgid "Preview mode"
+msgstr "预览模式"
+
+msgid "Privacy Policy"
+msgstr "隐私政策"
+
+msgid "Product URLs or IDs (comma-separated)"
+msgstr "产品网址或编号（用逗号分隔）"
+
+msgid "Proposed"
+msgstr "待定"
+
+msgid "Proposed Publishing"
+msgstr "建议发布"
+
+msgid "Proposed publishing time"
+msgstr "建议发布时间"
+
+msgid "Publish as"
+msgstr "以…形式发布"
+
+msgid "Published Content"
+msgstr "已发布内容"
+
+msgid "Published Content -"
+msgstr "已发布内容 -"
+
+msgid "Published content will appear here"
+msgstr "已发布内容将显示在这里"
+
+msgid "Publishing Queues"
+msgstr "发布队列"
+
+msgid "Put on hold"
+msgstr "暂停处理。"
+
+msgid "Queue Name"
+msgstr "队列名称"
+
+msgid "Queue is empty"
+msgstr "队列为空"
+
+msgid "Queues -"
+msgstr "队列 -"
+
+msgid "Recent actions"
+msgstr "最近的操作记录"
+
+msgid "Recently published"
+msgstr "最新发布的帖子"
+
+msgid "Reconnect for analytics"
+msgstr "重新连接以获取数据分析"
+
+msgid "Reels use Facebook's dedicated vertical-video flow and must be 3-90 seconds. Regular Page video suits long-form and landscape uploads."
+msgstr "Reels采用Facebook专用的竖屏视频格式，时长需在3至90秒之间；普通页面视频则适合上传长视频及横屏内容。"
+
+msgid "Regular Page video"
+msgstr "普通页面视频"
+
+msgid "Remember your password?"
+msgstr "记住您的密码？"
+
+msgid "Remove from queue"
+msgstr "从队列中移除"
+
+msgid "Remove override"
+msgstr "取消覆盖"
+
+msgid "Remove thumbnail"
+msgstr "移除缩略图"
+
+msgid "Reports"
+msgstr "报告"
+
+msgid "Reports -"
+msgstr "报告 -"
+
+msgid "Reports coming soon"
+msgstr "即将推出的报告"
+
+msgid "Request a New Link"
+msgstr "请求新链接"
+
+msgid "Request hold"
+msgstr "请求暂停。"
+
+msgid "Required by COPPA - mark if this video is directed at children under 13"
+msgstr "COPPA要求：若视频面向13岁以下儿童，请勾选。"
+
+msgid "Required for video pins. PNG or JPG, same dimensions as video."
+msgstr "视频帖子必需，格式为PNG或JPG，尺寸与视频相同。"
+
+msgid "Requires a connected product catalog"
+msgstr "需要已连接的产品目录"
+
+msgid "Research content gaps"
+msgstr "内容缺口分析"
+
+msgid "Reset Password - Brightbean"
+msgstr "重置密码 - Brightbean"
+
+msgid "Reset to default cover"
+msgstr "恢复为默认封面图"
+
+msgid "Reset your password"
+msgstr "重置您的密码"
+
+msgid "Resolve"
+msgstr "处理"
+
+msgid "Resubscribe to start using Intelligence again."
+msgstr "重新订阅即可再次使用 Intelligence 功能。"
+
+msgid "Resubscribe →"
+msgstr "重新订阅 →"
+
+msgid "Resume your checkout"
+msgstr "继续完成结账流程"
+
+msgid "Reusable templates to speed up content creation."
+msgstr "可重复使用的模板，助力快速创建内容"
+
+msgid "Review Now"
+msgstr "立即审核"
+
+msgid "Review and approve content before it's published"
+msgstr "请在发布前审核并批准内容"
+
+msgid "Revoke API key"
+msgstr "撤销 API 密钥"
+
+msgid "Revoke key"
+msgstr "撤销密钥"
+
+msgid "Revoked"
+msgstr "已撤销"
+
+msgid "SLA Settings"
+msgstr "SLA设置"
+
+msgid "SLA Settings -"
+msgstr "SLA设置 -"
+
+msgid "Save Settings"
+msgstr "保存设置"
+
+msgid "Save Template"
+msgstr "保存模板"
+
+msgid "Save a post as a template from the composer to get started."
+msgstr "从内容编辑器中将帖子保存为模板，快速开始创作。"
+
+msgid "Save as Template"
+msgstr "保存为模板"
+
+msgid "Save changes"
+msgstr "保存更改"
+
+msgid "Save this token now."
+msgstr "立即保存此令牌。"
+
+msgid "Saved Replies"
+msgstr "已保存的回复"
+
+msgid "Saved Replies -"
+msgstr "已保存的回复 -"
+
+msgid "Saved ·"
+msgstr "已保存 ·"
+
+msgid "Saving as a draft keeps this as a"
+msgstr "保存为草稿会将此内容保留为"
+
+msgid "Score packaging"
+msgstr "内容包装评分"
+
+msgid "Score the first 6 s of any video"
+msgstr "为任意视频的前6秒进行评分"
+
+msgid "Score video hook"
+msgstr "视频开头吸引力评分"
+
+msgid "Scrub to the frame you want, then grab it"
+msgstr "滑动到所需帧，然后截取"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Search Unsplash"
+msgstr "搜索 Unsplash"
+
+msgid "Search free high-resolution photos…"
+msgstr "搜索免费高分辨率照片…"
+
+msgid "Search tags..."
+msgstr "搜索标签..."
+
+msgid "Select Board"
+msgstr "选择板块"
+
+msgid "Select Thumbnail"
+msgstr "选择缩略图"
+
+msgid "Select a board…"
+msgstr "选择某个板块…"
+
+msgid "Select a message to view details"
+msgstr "选择消息查看详情"
+
+msgid "Select at least one. The key can only act on these accounts."
+msgstr "请至少选择一项。该密钥仅能作用于这些账户。"
+
+msgid "Select channel..."
+msgstr "选择频道..."
+
+msgid "Send Reset Link"
+msgstr "发送重置链接"
+
+msgid "Set New Password"
+msgstr "设置新密码"
+
+msgid "Set New Password - Brightbean"
+msgstr "设置新密码 - Brightbean"
+
+msgid "Set new password"
+msgstr "设置新密码"
+
+msgid "Set response time targets for your inbox."
+msgstr "设置收件箱的回复时间目标"
+
+msgid "Set visibility to public, friends, or followers to enable branded content."
+msgstr "将可见范围设置为公开、好友或关注者，即可使用品牌内容。"
+
+msgid "Setting up your Intelligence access…"
+msgstr "正在设置您的 Intelligence 访问权限……"
+
+msgid "Setting up your checkout…"
+msgstr "正在设置您的结账信息…"
+
+msgid "Setup couldn't complete"
+msgstr "设置无法完成。"
+
+msgid "Setup couldn't complete after several attempts. Please contact"
+msgstr "多次尝试后仍无法完成设置。请联系"
+
+msgid "Show"
+msgstr "显示"
+
+msgid "Show countdown timers and overdue badges on unresolved messages."
+msgstr "在未处理的消息上显示倒计时及逾期标识"
+
+msgid "Show similar products"
+msgstr "显示相似产品"
+
+msgid "Sign In"
+msgstr "登录"
+
+msgid "Sign Out"
+msgstr "登出"
+
+msgid "Sign Out - Brightbean"
+msgstr "登出 - Brightbean"
+
+msgid "Sign Up Closed - Brightbean"
+msgstr "注册已关闭 - Brightbean"
+
+msgid "Sign in"
+msgstr "登录"
+
+msgid "Sign in to"
+msgstr "登录以"
+
+msgid "Sign out"
+msgstr "登出"
+
+msgid "Sign up"
+msgstr "注册"
+
+msgid "Sign up for BrightBean Studio | Schedule posts and run approvals across 10+ platforms."
+msgstr "注册 BrightBean Studio | 在10多个平台上安排发布并处理审核。"
+
+msgid "Sign up · BrightBean Studio"
+msgstr "注册 · BrightBean Studio"
+
+msgid "Someone in your org already started a checkout for this organization."
+msgstr "您所在团队已有成员为该组织启动了结账流程。"
+
+msgid "Start a new checkout"
+msgstr "开始新结账流程"
+
+msgid "Start composing to create your first draft"
+msgstr "开始编辑以创建第一条草稿"
+
+msgid "Starts at"
+msgstr "起价"
+
+msgid "Status:"
+msgstr "状态："
+
+msgid "Stitch"
+msgstr "拼接"
+
+msgid "Stripe confirmed your payment but the billing service didn't finalize access. Please contact support, we have your payment record."
+msgstr "Stripe已确认您的支付，但计费服务尚未最终授予访问权限。请联系客服，我们已保留您的支付记录。"
+
+msgid "Stripe confirmed your payment for"
+msgstr "Stripe已确认您为该服务支付的款项。"
+
+msgid "Stripe confirmed your payment. We're finalizing access."
+msgstr "Stripe 已确认您的付款，我们正在处理权限开通。"
+
+msgid "Stripe confirmed your payment. We're finishing the handshake with the billing service, this usually takes a few seconds."
+msgstr "Stripe 已确认您的付款。我们正在与开票服务完成连接，通常需要几秒钟。"
+
+msgid "Stripe invoices and failed-payment notices route to this email. Changing it also updates the Stripe Customer's contact email."
+msgstr "Stripe 发票及付款失败通知将发送至此邮箱。更改该邮箱也会同步更新 Stripe 客户的联系人邮箱。"
+
+msgid "Submit feedback"
+msgstr "提交反馈。"
+
+msgid "Subscription"
+msgstr "订阅"
+
+msgid "Subscription canceled"
+msgstr "订阅已取消"
+
+msgid "Supports .csv and .tsv files"
+msgstr "支持.csv和.tsv格式文件"
+
+msgid "Switch tabs and explore. To actually score packaging, analyse hooks, or pull content gaps for"
+msgstr "切换标签页进行探索。如需实际评估包装、分析亮点或查找内容缺口，请"
+
+msgid "Switch tabs, browse the inputs and try out the niche picker. When you're ready to actually score packaging, analyse hooks, or pull content gaps, activate Intelligence for"
+msgstr "切换标签页，查看各项输入项并试用细分领域选择器。当您准备对包装进行评分、分析吸引力或查找内容缺口时，即可激活 Intelligence 功能。"
+
+msgid "Tag Products"
+msgstr "标注产品"
+
+msgid "Target Response Time (minutes)"
+msgstr "目标回复时间（分钟）"
+
+msgid "Template name…"
+msgstr "模板名称…"
+
+msgid "Templates"
+msgstr "模板"
+
+msgid "Terms of Service"
+msgstr "服务条款"
+
+msgid "The Stripe payment was made for a different organization, OR your role no longer permits managing billing for"
+msgstr "Stripe付款对象为其他组织，或您的角色不再具备账单管理权限"
+
+msgid "The plaintext token is shown"
+msgstr "显示明文令牌"
+
+msgid "The platform rejected our analytics call as insufficient-scope. Reconnect to grant the new permissions."
+msgstr "该平台因范围不足拒绝了我们的数据分析请求，需重新连接以授予新权限"
+
+msgid "The post itself published successfully — only the comment failed."
+msgstr "帖子本身已成功发布——仅评论失败。"
+
+msgid "This Studio deployment is not registered for the hosted Intelligence integration. If you're a fork operator running your own Stripe and Intelligence stack, you need to register your deployment first."
+msgstr "该 Studio 部署未注册托管型 Intelligence 集成。若您是自行搭建 Stripe 与 Intelligence 系统的分支运营商，需先完成部署注册。"
+
+msgid "This TikTok app hasn't passed TikTok's content audit yet — only private posting (\"Only you\") is available until the audit is approved."
+msgstr "该TikTok应用尚未通过TikTok的内容审核——在审核通过前仅支持私密发布（“仅您可见”）。"
+
+msgid "This action cannot be undone. The idea and all associated data will be permanently removed."
+msgstr "此操作不可撤销。该创意及所有关联数据将被永久删除。"
+
+msgid "This action cannot be undone. The post and all associated data will be permanently removed."
+msgstr "此操作无法撤销。帖子及所有关联数据将被永久删除。"
+
+msgid "This activation isn't for your org"
+msgstr "此激活码并非为您的组织准备"
+
+msgid "This can't be undone."
+msgstr "此操作无法撤销。"
+
+msgid "This confirmation link has expired or is invalid."
+msgstr "该确认链接已过期或无效。"
+
+msgid "This deployment isn't authorized"
+msgstr "此次部署未被授权"
+
+msgid "This email address has already been confirmed by a different account."
+msgstr "该邮箱已被其他账户确认。"
+
+msgid "This link has expired"
+msgstr "该链接已失效"
+
+msgid "This password reset link is invalid or has expired."
+msgstr "此密码重置链接无效或已过期。"
+
+msgid "This post is"
+msgstr "此帖子已"
+
+msgid "This video"
+msgstr "该视频"
+
+msgid "This video:"
+msgstr "该视频："
+
+msgid "This workspace has no connected accounts. Connect one to start tracking per-post performance — and if you have connected an account before, check the Channels page: one that needs reconnecting doesn't show up here."
+msgstr "该工作空间暂无关联账户。请连接一个账户以开始追踪每篇帖子的表现；若此前已连接过账户，请查看“渠道”页面：需重新连接的账户不会显示在此处。"
+
+msgid "TikTok only publishes videos."
+msgstr "TikTok仅支持发布视频。"
+
+msgid "Timezone:"
+msgstr "时区："
+
+msgid "Title length"
+msgstr "标题长度"
+
+msgid "Title patterns"
+msgstr "标题格式规范"
+
+msgid "Unassigned"
+msgstr "未分配"
+
+msgid "Unlisted"
+msgstr "不公开列出"
+
+msgid "Update payment →"
+msgstr "更新支付方式 →"
+
+msgid "Update your card, view past invoices, or cancel through Stripe's secure customer portal."
+msgstr "请在Stripe安全客户门户更新卡片信息、查看历史发票或取消订阅。"
+
+msgid "Update your payment method to continue using Intelligence."
+msgstr "请更新支付方式以继续使用智能功能。"
+
+msgid "Upload &amp; Map Columns"
+msgstr "上传并映射列"
+
+msgid "Upload CSV File"
+msgstr "上传CSV文件"
+
+msgid "Used by AI agents and external scripts to act in your workspaces. Each key can be scoped to one workspace and an explicit list of social accounts."
+msgstr "被 AI 智能体及外部脚本用于操作您的 workspace，每个密钥仅限一个 workspace及指定的社交账号列表使用。"
+
+msgid "Verify Your Email - Brightbean"
+msgstr "验证您的邮箱 - Brightbean"
+
+msgid "Verify your email"
+msgstr "验证您的电子邮箱"
+
+msgid "Version History"
+msgstr "版本历史"
+
+msgid "Version History -"
+msgstr "版本历史 -"
+
+msgid "Versions"
+msgstr "版本"
+
+msgid "Video Cover Image"
+msgstr "视频封面图片"
+
+msgid "View"
+msgstr "查看"
+
+msgid "View on"
+msgstr "在该平台查看"
+
+msgid "Views / sub"
+msgstr "观看量/订阅数"
+
+msgid "We couldn't activate Intelligence"
+msgstr "无法激活智能功能"
+
+msgid "We couldn't authorize you for this org. Your role may have changed since you started checkout. Please contact your org admin or"
+msgstr "我们无法为您授权该组织。结账开始后您的角色可能已变更。请联系您的组织管理员或"
+
+msgid "We started collecting analytics when you connected this account. Metrics for this account usually appear within"
+msgstr "您连接该账户后，我们便开始收集分析数据。该账户的指标通常会在"
+
+msgid "We're talking to the billing service. This usually finishes in a few seconds."
+msgstr "正在与支付服务对接，通常几秒即可完成。"
+
+msgid "We've sent a verification email to your address. Please follow the link in the email to activate your account."
+msgstr "我们已向您的邮箱发送验证邮件，请点击邮件中的链接激活账户。"
+
+msgid "We've sent you a password reset link. If you don't see the email, check your spam folder."
+msgstr "我们已向您发送密码重置链接。若未看到邮件，请检查垃圾邮件文件夹。"
+
+msgid "Welcome back"
+msgstr "欢迎回来"
+
+msgid "Where people go when they click the pin"
+msgstr "用户点击图钉后跳转的地址"
+
+msgid "Who can see this post"
+msgstr "谁可以查看此帖子"
+
+msgid "Workspace"
+msgstr "工作空间"
+
+msgid "Workspace:"
+msgstr "工作空间："
+
+msgid "Yes"
+msgstr "是"
+
+msgid "Yes, follows niche conventions"
+msgstr "是，遵循细分领域惯例"
+
+msgid "You"
+msgstr "您"
+
+msgid "You approved this. Scheduled to publish"
+msgstr "您已批准，即将发布。"
+
+msgid "You are promoting another brand or a third party."
+msgstr "您正在推广其他品牌或第三方。"
+
+msgid "You are promoting yourself or your own business."
+msgstr "您正在推广自己或自己的业务。"
+
+msgid "You don't hold any grantable permissions in this workspace."
+msgstr "您在此工作空间中没有任何可授予的权限。"
+
+msgid "You have"
+msgstr "您有"
+
+msgid "You need to indicate if your content promotes yourself, a third party, or both."
+msgstr "请说明您的内容是推广本人、第三方，还是两者皆有。"
+
+msgid "You'll be redirected to Stripe to complete payment securely. We never see your card details."
+msgstr "您将跳转至Stripe完成安全支付，我们不会查看您的卡号信息。"
+
+msgid "You'll keep full Intelligence access until then, after which the subscription will be canceled and tool calls will stop."
+msgstr "在此之前您可继续使用全部智能分析功能，之后订阅将被取消且工具调用将停止。"
+
+msgid "You're previewing Intelligence"
+msgstr "您当前正在预览 Intelligence 功能。"
+
+msgid "You:"
+msgstr "您："
+
+msgid "YouTube has not returned analytics for this reporting period. Reports refresh daily and may arrive after a delay."
+msgstr "YouTube尚未返回该统计周期的分析数据。报告每日更新，可能会出现延迟。"
+
+msgid "YouTube only publishes videos."
+msgstr "YouTube仅支持发布视频。"
+
+msgid "YouTube packaging scoring, channel benchmarks, and content-gap research for"
+msgstr "针对该对象的YouTube包装评分、频道基准及内容缺口分析"
+
+msgid "YouTube packaging scoring, channel benchmarks, content-gap research."
+msgstr "YouTube 内容包装评分、频道基准数据、内容缺口分析。"
+
+msgid "Your Activity"
+msgstr "您的活动记录"
+
+msgid "Your brand"
+msgstr "您的品牌"
+
+msgid "Your password has been updated successfully"
+msgstr "您的密码已成功修改"
+
+msgid "Your review actions will be logged here"
+msgstr "您的审核操作将记录于此"
+
+msgid "Your review history and actions"
+msgstr "您的审核历史与操作记录"
+
+msgid "Your subscription is past due"
+msgstr "您的订阅已过期。"
+
+msgid "Your team will be able to share performance reports with you here. Check back soon!"
+msgstr "您的团队可在此处与您共享绩效报告，敬请期待！"
+
+msgid "ago"
+msgstr "之前"
+
+msgid "all time"
+msgstr "历史总计"
+
+msgid "and"
+msgstr "以及"
+
+msgid "and read-only. Use"
+msgstr "且为只读状态。请使用"
+
+msgid "are the equivalent per-video ratios."
+msgstr "为各视频对应的相同比率。"
+
+msgid "are the per-video engagement rates."
+msgstr "为每条视频的互动率。"
+
+msgid "browse"
+msgstr "浏览选择"
+
+msgid "by"
+msgstr "由"
+
+msgid "by BrightBean from per-"
+msgstr "由 BrightBean 根据每—数据计算得出"
+
+msgid "characters"
+msgstr "字符数"
+
+msgid "characters avg"
+msgstr "平均字符数"
+
+msgid "code:"
+msgstr "代码："
+
+msgid "column is the share of niche videos that follow each convention, so \"Has a number · Niche 16%\" means 16% of niche titles include a digit. The"
+msgstr "该列显示遵循各规范的小众视频占比，例如“含数字 · 小众16%”意为16%的小众标题包含数字。"
+
+msgid "comments"
+msgstr "评论数"
+
+msgid "counts"
+msgstr "数量统计"
+
+msgid "credits / month"
+msgstr "积分 / 月"
+
+msgid "d ago"
+msgstr "d 天前"
+
+msgid "days"
+msgstr "天数"
+
+msgid "draft"
+msgstr "草稿"
+
+msgid "e.g. Zapier bot, content pipeline"
+msgstr "例如：Zapier 机器人、内容处理流程"
+
+msgid "e.g., Educational"
+msgstr "例如：教育类"
+
+msgid "e.g., Educational - MWF 9am"
+msgstr "例如：教育类 - 周一至周五上午9点"
+
+msgid "fits niche patterns"
+msgstr "符合小众视频的常见模式。"
+
+msgid "flag at the bottom is the model's holistic verdict."
+msgstr "底部的标记为模型的综合评估结果。"
+
+msgid "for details."
+msgstr "详情请见。"
+
+msgid "gaps"
+msgstr "空缺"
+
+msgid "immediately after creation."
+msgstr "创建后立即"
+
+msgid "in the Django admin. If this account connected while it was off, it may also need reconnecting before insights can be read."
+msgstr "若该账号在功能关闭时已连接，也可能需要重新连接才能查看数据"
+
+msgid "is connected"
+msgstr "已连接"
+
+msgid "is exactly median,"
+msgstr "表示恰好处于中位数位置。"
+
+msgid "is recent views divided by subscriber count;"
+msgstr "即最新观看量除以订阅者数量；"
+
+msgid "is the median niche channel on that ratio, half of the niche scores below it, half above. The"
+msgstr "为该比率下方的垂类频道中位数，一半分数低于它，一半高于它。"
+
+msgid "is the median niche video on that ratio. The"
+msgstr "为该互动率下的小众视频中位数。"
+
+msgid "is the median;"
+msgstr "为中间值；"
+
+msgid "is top-tier engagement; below 30 means most niche peers outperform this channel on the engagement metrics below."
+msgstr "为顶级互动表现；低于30表示同领域多数渠道在以下互动指标上优于该渠道。"
+
+msgid "is top-tier; below 30 means most niche videos outperform this one on the per-row metrics below."
+msgstr "为顶级水平；数值低于30表示在下方每行指标中，更多小众视频的表现优于该视频。"
+
+msgid "is views divided by the channel's subscriber count;"
+msgstr "为观看量除以频道订阅者数量。"
+
+msgid "is your email address."
+msgstr "是否为你的邮箱地址。"
+
+msgid "last"
+msgstr "最新"
+
+msgid "likes"
+msgstr "点赞数"
+
+msgid "means 80% of niche videos outperform it."
+msgstr "表示80%的小众视频表现优于它。"
+
+msgid "means 80% of peers outperform you."
+msgstr "表示80%的同行表现优于您。"
+
+msgid "means it outperforms 80% of niche videos,"
+msgstr "表示其表现优于80%的小众视频。"
+
+msgid "means you outperform 80% of niche peers,"
+msgstr "表示您的表现优于80%的垂类同行，"
+
+msgid "means you sit exactly at the niche median,"
+msgstr "表示您恰好处于垂类中位数位置，"
+
+msgid "of your first published post."
+msgstr "您的首篇已发布帖子。"
+
+msgid "once"
+msgstr "一次"
+
+msgid "or click"
+msgstr "或点击"
+
+msgid "post"
+msgstr "帖子"
+
+msgid "proposed"
+msgstr "暂定"
+
+msgid "readout on the right is this video's percentile rank:"
+msgstr "右侧的数值为该视频的百分位排名。"
+
+msgid "readout on the right is your channel's percentile rank:"
+msgstr "右侧的数值为您频道的百分位排名："
+
+msgid "rejected"
+msgstr "被拒绝"
+
+msgid "requested changes"
+msgstr "需要修改"
+
+msgid "revoked"
+msgstr "已撤销的"
+
+msgid "scheduled"
+msgstr "安排发布"
+
+msgid "subscribers ·"
+msgstr "订阅用户 ·"
+
+msgid "time. Use"
+msgstr "状态，可用于"
+
+msgid "to mint a new one."
+msgstr "生成新密钥。"
+
+msgid "to mint one for an agent."
+msgstr "为智能体生成密钥。"
+
+msgid "to publish at this time."
+msgstr "在该时间点发布。"
+
+msgid "to repost an editable copy."
+msgstr "来重新发布可编辑版本。"
+
+msgid "videos"
+msgstr "视频"
+
+msgid "views"
+msgstr "观看量"
+
+msgid "vlog, travel, daily"
+msgstr "vlog、旅行、日常"
+
+msgid "waiting for review"
+msgstr "待审核的帖子"
+
+msgid "· changes apply on the next API request."
+msgstr "· 变更将在下一次 API 请求时生效。"
+
+msgid "· last"
+msgstr "· 最后"
+
+msgid "· per-org subscription · cancel anytime."
+msgstr "· 每个机构独立订阅 · 可随时取消。"
+
+msgid "— all"
+msgstr "— 全部"

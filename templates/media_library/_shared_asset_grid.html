@@ -24,7 +24,7 @@
   </a>
   {% endif %}
   <span class="text-xs px-3" style="color: var(--text-tertiary, #78716C);">
-    Page {{ page.number }} {% translate "of" %} {{ page.paginator.num_pages }}
+    {% translate "Page" %} {{ page.number }} {% translate "of" %} {{ page.paginator.num_pages }}
   </span>
   {% if page.has_next %}
   <a href="?page={{ page.next_page_number }}&q={{ query|urlencode }}"

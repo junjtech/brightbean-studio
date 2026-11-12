@@ -271,7 +271,7 @@
                   </div>
                 </div>
                 <span x-show="file.status === 'complete'" class="text-xs font-semibold" style="color: var(--success-500, #22C55E);">Done</span>
-                <span x-show="file.status === 'error'" class="text-xs font-semibold" style="color: var(--error-500, #EF4444);" x-text="file.error || 'Failed'"></span>
+                <span x-show="file.status === 'error'" class="text-xs font-semibold" style="color: var(--error-500, #EF4444);" x-text="file.error || '{% translate "Failed" as ui_value %}{{ ui_value|escapejs }}'"></span>
               </div>
             </template>
           </div>

@@ -42,7 +42,7 @@
             {{ total_event_count }} recent events
         </div>
         <div class="text-xs text-stone-400">
-            {% if last_refreshed_at %}Last refreshed {{ last_refreshed_at|timesince }} ago{% endif %}
+            {% if last_refreshed_at %}Last refreshed {{ last_refreshed_at|timesince }} {% translate "ago" %}{% endif %}
         </div>
     </div>
 

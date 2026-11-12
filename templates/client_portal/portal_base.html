@@ -43,7 +43,7 @@
                         <a href="{% url 'client_portal:dashboard' %}"
                            class="px-3 py-1.5 text-[0.8125rem] font-medium rounded-full transition-colors {% if request.resolver_match.url_name == 'dashboard' %}text-white{% else %}hover:bg-black/[0.04]{% endif %}"
                            {% if request.resolver_match.url_name == 'dashboard' %}style="background: var(--primary); color: white;"{% else %}style="color: var(--text-secondary);"{% endif %}>
-                            Home
+                            {% translate "Home" %}
                         </a>
                         <a href="{% url 'client_portal:approval_queue' %}"
                            class="px-3 py-1.5 text-[0.8125rem] font-medium rounded-full transition-colors {% if request.resolver_match.url_name == 'approval_queue' %}text-white{% else %}hover:bg-black/[0.04]{% endif %}"
@@ -58,7 +58,7 @@
                         <a href="{% url 'client_portal:activity' %}"
                            class="px-3 py-1.5 text-[0.8125rem] font-medium rounded-full transition-colors {% if request.resolver_match.url_name == 'activity' %}text-white{% else %}hover:bg-black/[0.04]{% endif %}"
                            {% if request.resolver_match.url_name == 'activity' %}style="background: var(--primary); color: white;"{% else %}style="color: var(--text-secondary);"{% endif %}>
-                            Activity
+                            {% translate "Activity" %}
                         </a>
                     </nav>
                     <a href="{% url 'accounts:logout' %}"
@@ -74,7 +74,7 @@
                 <a href="{% url 'client_portal:dashboard' %}"
                    class="px-3 py-1.5 text-[0.8125rem] font-medium rounded-full flex-shrink-0 transition-colors {% if request.resolver_match.url_name == 'dashboard' %}text-white{% else %}hover:bg-black/[0.04]{% endif %}"
                    {% if request.resolver_match.url_name == 'dashboard' %}style="background: var(--primary);"{% else %}style="color: var(--text-secondary);"{% endif %}>
-                    Home
+                    {% translate "Home" %}
                 </a>
                 <a href="{% url 'client_portal:approval_queue' %}"
                    class="px-3 py-1.5 text-[0.8125rem] font-medium rounded-full flex-shrink-0 transition-colors {% if request.resolver_match.url_name == 'approval_queue' %}text-white{% else %}hover:bg-black/[0.04]{% endif %}"
@@ -89,7 +89,7 @@
                 <a href="{% url 'client_portal:activity' %}"
                    class="px-3 py-1.5 text-[0.8125rem] font-medium rounded-full flex-shrink-0 transition-colors {% if request.resolver_match.url_name == 'activity' %}text-white{% else %}hover:bg-black/[0.04]{% endif %}"
                    {% if request.resolver_match.url_name == 'activity' %}style="background: var(--primary);"{% else %}style="color: var(--text-secondary);"{% endif %}>
-                    Activity
+                    {% translate "Activity" %}
                 </a>
             </nav>
         </div>

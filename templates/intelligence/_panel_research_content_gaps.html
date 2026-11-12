@@ -1,8 +1,8 @@
-<div id="intel-panel-content-gaps" class="intel-panel mt-6 grid-cols-1 gap-6 lg:grid-cols-2">
+{% load i18n %}<div id="intel-panel-content-gaps" class="intel-panel mt-6 grid-cols-1 gap-6 lg:grid-cols-2">
     <div class="rounded-xl border border-stone-200 bg-white shadow-sm">
         <div class="flex items-center justify-between border-b border-stone-100 px-5 py-3.5">
-            <h2 class="text-sm font-semibold text-stone-900">Research content gaps</h2>
-            <span class="inline-flex items-center rounded-md bg-stone-100 px-2 py-0.5 text-[11px] font-mono text-stone-600">5 credits</span>
+            <h2 class="text-sm font-semibold text-stone-900">{% translate "Research content gaps" %}</h2>
+            <span class="inline-flex items-center rounded-md bg-stone-100 px-2 py-0.5 text-[11px] font-mono text-stone-600">{% translate "5 credits" %}</span>
         </div>
         <div class="p-5">
             <p class="text-xs text-stone-500 mb-5 leading-relaxed">
@@ -16,7 +16,7 @@
                 {% csrf_token %}
 
                 <div>
-                    <label for="cg-niche-trigger" class="intel-label">Niche</label>
+                    <label for="cg-niche-trigger" class="intel-label">{% translate "Niche" %}</label>
                     {% if content_gap_niches %}
                     {{ content_gap_niches|json_script:"cg-niche-data" }}
                     <div id="cg-niche-combobox" class="relative">
@@ -78,7 +78,7 @@
                            placeholder="ai_dev_tools"
                            class="intel-input">
                     <p class="intel-helper">
-                        Couldn't load the niche catalog right now. Type a slug directly, or use the <strong>List niches</strong> tab to browse.
+                        Couldn't load the niche catalog right now. Type a slug directly, or use the <strong>{% translate "List niches" %}</strong> tab to browse.
                     </p>
                     {% endif %}
                 </div>
@@ -135,7 +135,7 @@
                     </button>
                     {% if is_preview %}
                     <p class="intel-activate-note">
-                        {% if can_manage_billing %}<a href="{% url 'intelligence:subscribe' org_id=organization.id %}">Activate Intelligence</a> to research gaps in any niche you choose.{% else %}Ask an admin to activate Intelligence to research gaps in any niche you choose.{% endif %}
+                        {% if can_manage_billing %}<a href="{% url 'intelligence:subscribe' org_id=organization.id %}">{% translate "Activate Intelligence" %}</a> to research gaps in any niche you choose.{% else %}Ask an admin to activate Intelligence to research gaps in any niche you choose.{% endif %}
                     </p>
                     {% endif %}
                 </div>

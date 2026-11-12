@@ -1,4 +1,4 @@
-{% load intelligence_extras %}
+{% load i18n %}{% load intelligence_extras %}
 <div>
     {% comment %}
       Header, niche identity + total gap count.
@@ -185,7 +185,7 @@
                         <div class="mt-0.5 flex flex-wrap gap-x-3 gap-y-0.5 text-stone-500 tabular-nums">
                             <span class="truncate">{{ c.channel_title }}</span>
                             {% if c.subscriber_count %}<span>· {{ c.subscriber_count|humanize_count }} subs</span>{% endif %}
-                            {% if c.view_count is not None %}<span>· {{ c.view_count|humanize_count }} views</span>{% endif %}
+                            {% if c.view_count is not None %}<span>· {{ c.view_count|humanize_count }} {% translate "views" %}</span>{% endif %}
                             {% if c.age_days is not None %}<span>· {{ c.age_days }}d old</span>{% endif %}
                         </div>
                     </li>

@@ -214,7 +214,8 @@ def _handle_cancel_deletion(request, org):
     org.deletion_scheduled_for = None
     org.save(update_fields=["deletion_requested_at", "deletion_scheduled_for"])
     messages.success(
-        request, "Organization deletion cancelled. Reconnect any YouTube channels removed when deletion was requested."
+        request,
+        gettext("Organization deletion cancelled. Reconnect any YouTube channels removed when deletion was requested."),
     )
 
 

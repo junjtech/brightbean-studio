@@ -367,7 +367,7 @@ ticked (see the `sel` Alpine store).{% endcomment %}
         <button @click="ask('draft')" :disabled="busy" class="px-3 py-1.5 text-xs font-semibold rounded-full hover:bg-white/10 transition-colors disabled:opacity-50">{% translate "Draft" %}</button>
         <button @click="ask('publish')" :disabled="busy" class="px-3 py-1.5 text-xs font-semibold rounded-full bg-emerald-500 hover:bg-emerald-600 transition-colors disabled:opacity-50">{% translate "Publish" %}</button>
         <button @click="ask('delete')" :disabled="busy" class="px-3 py-1.5 text-xs font-semibold rounded-full text-red-300 hover:bg-red-500/20 transition-colors disabled:opacity-50">{% translate "Delete" %}</button>
-        <button @click="$store.sel.clear()" class="w-7 h-7 rounded-full hover:bg-white/10 flex items-center justify-center transition-colors" title="Clear selection">
+        <button @click="$store.sel.clear()" class="w-7 h-7 rounded-full hover:bg-white/10 flex items-center justify-center transition-colors" title="{% translate "Clear selection" %}">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
     </div>

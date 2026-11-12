@@ -6,7 +6,7 @@
         </div>
         <div class="p-5">
             <p class="text-xs text-stone-500 mb-5 leading-relaxed">
-                Find ranked content opportunities in a niche. Returns gaps that are <em>underserved</em> (no quality coverage) or <em>stale</em> (existing top videos are over a year old).
+                {% translate "Find ranked content opportunities in a niche. Returns gaps that are" %} <em>{% translate "underserved" %}</em> {% translate "(no quality coverage) or" %} <em>{% translate "stale" %}</em> {% translate "(existing top videos are over a year old)." %}
             </p>
 
             <form class="intel-form space-y-5"
@@ -41,7 +41,7 @@
                             {% if is_preview %}
                             <span class="cg-niche-label truncate text-stone-900">{{ preview_inputs.research_content_gaps.niche_name }} ({{ preview_inputs.research_content_gaps.niche_slug }})</span>
                             {% else %}
-                            <span class="cg-niche-label truncate text-stone-400">Choose a niche…</span>
+                            <span class="cg-niche-label truncate text-stone-400">{% translate "Choose a niche…" %}</span>
                             {% endif %}
                             <svg class="cg-niche-chevron h-4 w-4 flex-shrink-0 text-stone-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/>
@@ -54,18 +54,18 @@
                                     <svg class="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
                                     </svg>
-                                    <input type="text" id="cg-niche-search" placeholder="Search niches…" autocomplete="off"
+                                    <input type="text" id="cg-niche-search" placeholder="{% translate "Search niches…" %}" autocomplete="off"
                                            class="block w-full rounded-md border-0 bg-stone-50 py-1.5 pl-8 pr-2.5 text-sm text-stone-900 placeholder:text-stone-400 focus:bg-white focus:outline-none focus:ring-2"
                                            style="--tw-ring-color: var(--primary-ring, rgba(249,115,22,0.30));">
                                 </div>
                             </div>
-                            <ul id="cg-niche-listbox" role="listbox" aria-label="Niches" class="max-h-72 overflow-y-auto py-1"></ul>
-                            <div id="cg-niche-empty" class="hidden px-4 py-6 text-center text-sm text-stone-400">No niches match.</div>
+                            <ul id="cg-niche-listbox" role="listbox" aria-label="{% translate "Niches" %}" class="max-h-72 overflow-y-auto py-1"></ul>
+                            <div id="cg-niche-empty" class="hidden px-4 py-6 text-center text-sm text-stone-400">{% translate "No niches match." %}</div>
                             <div id="cg-niche-status" class="border-t border-stone-100 bg-stone-50 px-3 py-1.5 text-[11px] text-stone-500"></div>
                         </div>
                     </div>
                     <p class="intel-helper">
-                        {{ content_gap_niches|length }} niche{{ content_gap_niches|length|pluralize }} available · click to browse, type to filter.
+                        {{ content_gap_niches|length }} {% translate "niche" %}{{ content_gap_niches|length|pluralize }} {% translate "available · click to browse, type to filter." %}
                     </p>
                     {% else %}
                     {% comment %}
@@ -78,51 +78,51 @@
                            placeholder="ai_dev_tools"
                            class="intel-input">
                     <p class="intel-helper">
-                        Couldn't load the niche catalog right now. Type a slug directly, or use the <strong>{% translate "List niches" %}</strong> tab to browse.
+                        {% translate "Couldn't load the niche catalog right now. Type a slug directly, or use the" %} <strong>{% translate "List niches" %}</strong> {% translate "tab to browse." %}
                     </p>
                     {% endif %}
                 </div>
 
                 <div>
-                    <span class="intel-label">Gap types</span>
+                    <span class="intel-label">{% translate "Gap types" %}</span>
                     <div class="mt-1 flex flex-wrap gap-2">
                         <label class="cursor-pointer">
                             <input type="checkbox" name="gap_type" value="underserved" checked class="peer sr-only">
                             <span class="cg-gap-pill inline-flex items-center gap-1.5 rounded-full border bg-white px-3 py-1.5 text-xs font-medium shadow-sm transition">
                                 <svg class="cg-gap-pill-check h-3 w-3 opacity-0 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                                underserved
+                                {% translate "underserved" %}
                             </span>
                         </label>
                         <label class="cursor-pointer">
                             <input type="checkbox" name="gap_type" value="stale" checked class="peer sr-only">
                             <span class="cg-gap-pill inline-flex items-center gap-1.5 rounded-full border bg-white px-3 py-1.5 text-xs font-medium shadow-sm transition">
                                 <svg class="cg-gap-pill-check h-3 w-3 opacity-0 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                                stale
+                                {% translate "stale" %}
                             </span>
                         </label>
                         <label class="cursor-pointer">
                             <input type="checkbox" name="gap_type" value="competitive" class="peer sr-only">
                             <span class="cg-gap-pill inline-flex items-center gap-1.5 rounded-full border bg-white px-3 py-1.5 text-xs font-medium shadow-sm transition">
                                 <svg class="cg-gap-pill-check h-3 w-3 opacity-0 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                                competitive
+                                {% translate "competitive" %}
                             </span>
                         </label>
                     </div>
-                    <p class="intel-helper">Competitive is opt-in, usually means the topic already has plenty of strong recent videos.</p>
+                    <p class="intel-helper">{% translate "Competitive is opt-in, usually means the topic already has plenty of strong recent videos." %}</p>
                 </div>
 
                 <div class="grid grid-cols-2 gap-4">
                     <div>
-                        <label for="cg-limit" class="intel-label">Max gaps</label>
+                        <label for="cg-limit" class="intel-label">{% translate "Max gaps" %}</label>
                         <input type="number" name="limit" id="cg-limit" min="1" max="50" value="20"
                                class="intel-input">
-                        <p class="intel-helper">1–50 results.</p>
+                        <p class="intel-helper">{% translate "1–50 results." %}</p>
                     </div>
                     <div>
-                        <label for="cg-min-score" class="intel-label">Min score</label>
+                        <label for="cg-min-score" class="intel-label">{% translate "Min score" %}</label>
                         <input type="number" name="min_score" id="cg-min-score" min="0" max="100" value="0"
                                class="intel-input">
-                        <p class="intel-helper">Drops gaps below this opportunity score.</p>
+                        <p class="intel-helper">{% translate "Drops gaps below this opportunity score." %}</p>
                     </div>
                 </div>
 
@@ -130,12 +130,12 @@
                     <button type="submit" class="intel-submit"{% if is_preview %} disabled aria-disabled="true"{% endif %}>
                         <svg class="intel-submit-icon h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z"/></svg>
                         <svg class="intel-submit-spinner hidden h-4 w-4 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3"/><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"/></svg>
-                        <span class="intel-submit-label">Find gaps</span>
-                        <span class="intel-submit-loading hidden">Querying…</span>
+                        <span class="intel-submit-label">{% translate "Find gaps" %}</span>
+                        <span class="intel-submit-loading hidden">{% translate "Querying…" %}</span>
                     </button>
                     {% if is_preview %}
                     <p class="intel-activate-note">
-                        {% if can_manage_billing %}<a href="{% url 'intelligence:subscribe' org_id=organization.id %}">{% translate "Activate Intelligence" %}</a> to research gaps in any niche you choose.{% else %}Ask an admin to activate Intelligence to research gaps in any niche you choose.{% endif %}
+                        {% if can_manage_billing %}<a href="{% url 'intelligence:subscribe' org_id=organization.id %}">{% translate "Activate Intelligence" %}</a> {% translate "to research gaps in any niche you choose." %}{% else %}{% translate "Ask an admin to activate Intelligence to research gaps in any niche you choose." %}{% endif %}
                     </p>
                     {% endif %}
                 </div>
@@ -145,7 +145,7 @@
 
     <div class="rounded-xl border border-stone-200 bg-white shadow-sm">
         <div class="border-b border-stone-100 px-5 py-3.5">
-            <h2 class="text-sm font-semibold text-stone-900">Result</h2>
+            <h2 class="text-sm font-semibold text-stone-900">{% translate "Result" %}</h2>
         </div>
         <div id="content-gaps-result" class="p-5 min-h-[220px]">
             {% if is_preview %}

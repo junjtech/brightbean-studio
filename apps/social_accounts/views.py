@@ -387,7 +387,7 @@ def oauth_callback(request, platform):
                 return redirect("social_accounts:select_account")
             else:
                 if platform == PlatformCredential.Platform.LINKEDIN_COMPANY:
-                    warning = (
+                    warning = gettext(
                         "No LinkedIn Company Pages were found for your account. "
                         "Only Company Pages you administer can be connected — "
                         "personal profiles connect via the LinkedIn (Personal) option. "
@@ -397,14 +397,14 @@ def oauth_callback(request, platform):
                     )
                 else:
                     if platform == PlatformCredential.Platform.INSTAGRAM:
-                        warning = (
+                        warning = gettext(
                             "No Instagram Business accounts were found for your account. "
                             "Only Instagram Business or Creator accounts linked to a Facebook Page "
                             "can be connected through this Instagram option. If you expected to "
                             "see an account, make sure it is linked to a Page you manage, then reconnect."
                         )
                     else:
-                        warning = (
+                        warning = gettext(
                             "No Facebook Pages were found for your account. "
                             "Only Pages can be connected — personal profiles are not "
                             "supported by the Facebook API. "
@@ -838,7 +838,9 @@ def retry_webhooks(request, workspace_id, account_id):
             request, gettext("Real-time updates are back on for %(value)s.") % {"value": account.display_label}
         )
     else:
-        messages.error(request, account.webhook_error or "Couldn't set up real-time updates. Please try again.")
+        messages.error(
+            request, account.webhook_error or gettext("Couldn't set up real-time updates. Please try again.")
+        )
     return redirect("social_accounts:list", workspace_id=workspace_id)
 
 

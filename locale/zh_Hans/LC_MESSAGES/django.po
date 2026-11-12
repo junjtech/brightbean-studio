@@ -3429,3 +3429,1470 @@ msgstr "· 每个机构独立订阅 · 可随时取消。"
 
 msgid "— all"
 msgstr "— 全部"
+
+msgid "Instagram (Direct)"
+msgstr "Instagram（直接连接）"
+
+msgid "LinkedIn (Personal Profile)"
+msgstr "LinkedIn（个人主页）"
+
+msgid "LinkedIn (Company Page)"
+msgstr "LinkedIn（公司主页）"
+
+msgid "Google Business Profile"
+msgstr "Google 商家资料"
+
+msgid "Write a comment... Use @name to mention someone"
+msgstr "填写评论，可使用 @姓名 提及成员"
+
+msgid "No LinkedIn Company Pages were found for your account. Only Company Pages you administer can be connected — personal profiles connect via the LinkedIn (Personal) option. If you expected to see a Page, ask the page owner to grant you Admin access in LinkedIn → Admin tools → Manage admins, then reconnect."
+msgstr "未找到你管理的 LinkedIn 公司主页。个人主页请使用“LinkedIn（个人主页）”连接。如需连接公司主页，请让主页所有者在 LinkedIn 的管理员工具中授予你管理员权限，然后重新连接。"
+
+msgid "No Instagram Business accounts were found for your account. Only Instagram Business or Creator accounts linked to a Facebook Page can be connected through this Instagram option. If you expected to see an account, make sure it is linked to a Page you manage, then reconnect."
+msgstr "未找到 Instagram 商业账号。此连接方式仅支持与 Facebook 公共主页关联的商业账号或创作者账号。请确认账号已关联到你管理的公共主页，然后重新连接。"
+
+msgid "No Facebook Pages were found for your account. Only Pages can be connected — personal profiles are not supported by the Facebook API. If you expected to see a Page, make sure you have admin access and try removing the app in Facebook Settings → Business Integrations, then reconnect."
+msgstr "未找到 Facebook 公共主页。Facebook API 仅支持公共主页。请确认你有主页管理权限，尝试在 Facebook 设置的“业务集成”中移除应用，然后重新连接。"
+
+msgid "Couldn't set up real-time updates. Please try again."
+msgstr "无法启用实时更新，请重试。"
+
+msgid "Timezone"
+msgstr "时区"
+
+msgid "Select"
+msgstr "选择"
+
+msgid "% confidence"
+msgstr "置信度百分比"
+
+msgid "(existing top videos are over a year old)."
+msgstr "（现有热门视频已超过一年）。"
+
+msgid "(no quality coverage) or"
+msgstr "（无高质量内容覆盖）或"
+
+msgid ", or"
+msgstr "或"
+
+msgid "- Media Library"
+msgstr "- 媒体库"
+
+msgid ". Remove it from those posts first."
+msgstr "请先从这些帖子中移除它。"
+
+msgid "1 credit"
+msgstr "1个积分"
+
+msgid "1-3 credit"
+msgstr "1-3点积分"
+
+msgid "10 credits"
+msgstr "10点积分"
+
+msgid "1–50 results."
+msgstr "返回1–50条结果。"
+
+msgid "3 credits"
+msgstr "3个积分"
+
+msgid ": how fresh the top-ranking videos are."
+msgstr "：排名靠前视频的更新时间，越新越好。"
+
+msgid ": how saturated the niche is with existing content."
+msgstr "：该领域现有内容的饱和程度。"
+
+msgid ": search volume + trends interest. Higher is better."
+msgstr "：搜索量与趋势热度，数值越高越好。"
+
+msgid "? Assets will be moved to the parent folder."
+msgstr "? 资源将被移至上级文件夹。"
+
+msgid "Accepts JPEG/PNG/WebP under 5&nbsp;MB."
+msgstr "支持大小低于5MB的JPEG/PNG/WebP文件。"
+
+msgid "Accounts Connected -"
+msgstr "已连接的账户数：-"
+
+msgid "Activate Intelligence to use this"
+msgstr "启用智能功能以使用此功能"
+
+msgid "Add Custom Event"
+msgstr "添加自定义活动"
+
+msgid "Add Event"
+msgstr "添加活动"
+
+msgid "Add tag..."
+msgstr "添加标签..."
+
+msgid "Added"
+msgstr "已添加"
+
+msgid "All Media"
+msgstr "所有媒体"
+
+msgid "All done!"
+msgstr "全部完成！"
+
+msgid "All types"
+msgstr "所有类型"
+
+msgid "Already showing today"
+msgstr "今日已展示。"
+
+msgid "Analyze hook"
+msgstr "分析吸睛点"
+
+msgid "Analyze the first ~6 seconds of a YouTube video for hook quality, archetype, and improvement suggestions."
+msgstr "分析YouTube视频前约6秒的内容吸引力、类型特征及优化建议。"
+
+msgid "Analyzing…"
+msgstr "正在分析中…"
+
+msgid "Approve all"
+msgstr "全部通过。"
+
+msgid "Archetype"
+msgstr "象征类型"
+
+msgid "Ask an admin to activate Intelligence to analyze your own video hooks."
+msgstr "请管理员启用智能分析功能以分析您的视频吸睛点。"
+
+msgid "Ask an admin to activate Intelligence to benchmark your own channel."
+msgstr "请管理员开启智能功能，以便对比您自己的频道。"
+
+msgid "Ask an admin to activate Intelligence to benchmark your own videos."
+msgstr "请管理员启用智能功能，以便对您的视频进行基准对比。"
+
+msgid "Ask an admin to activate Intelligence to fetch the live niche catalog."
+msgstr "请管理员启用智能功能，以获取实时细分领域目录。"
+
+msgid "Ask an admin to activate Intelligence to research gaps in any niche you choose."
+msgstr "请管理员启用智能功能，为您选择的任意领域分析内容缺口。"
+
+msgid "Ask an admin to activate Intelligence to score your own packaging."
+msgstr "请管理员启用智能功能，帮您自行评估视频封面效果。"
+
+msgid "Asset actions"
+msgstr "资源操作"
+
+msgid "Attachment"
+msgstr "附件"
+
+msgid "Autocomplete rank #"
+msgstr "自动补全排名序号"
+
+msgid "Back to library"
+msgstr "返回图库"
+
+msgid "Batch email notifications into a single daily summary instead of individual emails."
+msgstr "将批量邮件通知整合为每日汇总，而非单独发送。"
+
+msgid "Benchmark"
+msgstr "基准对比"
+
+msgid "Benchmarking…"
+msgstr "进行基准对比…"
+
+msgid "Browse the niche catalog. Returns every niche slug with its current gap count, useful for picking a niche to feed into"
+msgstr "浏览细分领域目录，可查看每个细分领域的当前缺口数量，有助于选择内容方向。"
+
+msgid "Business &amp; Creator"
+msgstr "商家与创作者"
+
+msgid "Cannot delete this asset"
+msgstr "无法删除此资源"
+
+msgid "Caption Changes"
+msgstr "标题已修改"
+
+msgid "Choose a niche…"
+msgstr "选择一个细分领域…"
+
+msgid "Choose which notifications you receive and how."
+msgstr "自定义接收的通知类型及方式"
+
+msgid "Clear filters"
+msgstr "清除筛选条件"
+
+msgid "Clear search"
+msgstr "清除搜索"
+
+msgid "Click to upload"
+msgstr "点击上传"
+
+msgid "Client Portal -"
+msgstr "客户门户——"
+
+msgid "Competitive is opt-in, usually means the topic already has plenty of strong recent videos."
+msgstr "开启“竞争激烈”功能后，表示该主题已有大量近期优质视频。"
+
+msgid "Composite 0–100 score for the first ~6 seconds. Weighted from clarity, specificity, tension, visual energy, and pace."
+msgstr "前约6秒的综合0–100分值，由清晰度、具体性、紧张感、视觉冲击力及节奏综合加权得出。"
+
+msgid "Connect your accounts -"
+msgstr "连接您的账户——"
+
+msgid "Connect your social accounts"
+msgstr "连接您的社交账户"
+
+msgid "Connection links are time-limited for security. Your agency can generate a new one at any time."
+msgstr "出于安全考虑，连接链接有时效限制，您的代理机构可随时生成新链接。"
+
+msgid "Couldn't complete the request"
+msgstr "无法完成该请求"
+
+msgid "Couldn't load the niche catalog right now. Type a slug directly, or use the"
+msgstr "目前无法加载细分领域目录。可直接输入标签，或使用"
+
+msgid "Create Folder"
+msgstr "创建文件夹"
+
+msgid "Create your first post to see it on the calendar"
+msgstr "创建第一条帖子，它将显示在日历上。"
+
+msgid "Crop"
+msgstr "裁剪"
+
+msgid "Current"
+msgstr "当前版本"
+
+msgid "Current ("
+msgstr "当前条（"
+
+msgid "Current top title"
+msgstr "当前热门标题"
+
+msgid "Custom"
+msgstr "自定义设置。"
+
+msgid "Daily digest"
+msgstr "每日摘要"
+
+msgid "Delete Event"
+msgstr "删除活动"
+
+msgid "Delete asset?"
+msgstr "要删除该资产吗？"
+
+msgid "Delete folder?"
+msgstr "要删除文件夹吗？"
+
+msgid "Demand"
+msgstr "需求度"
+
+msgid "Description (optional)"
+msgstr "描述（可选）"
+
+msgid "Dimensions"
+msgstr "尺寸。"
+
+msgid "Done"
+msgstr "完成。"
+
+msgid "Done &mdash; Notify"
+msgstr "完成——已发送通知"
+
+msgid "Download"
+msgstr "下载。"
+
+msgid "Draft posts will appear here as you create them"
+msgstr "编写中的草稿帖子会显示在这里。"
+
+msgid "Drop files here to upload"
+msgstr "将文件拖放到此处上传"
+
+msgid "Drops gaps below this opportunity score."
+msgstr "低于此评分的差距将被排除。"
+
+msgid "Duration"
+msgstr "时长"
+
+msgid "Edit -"
+msgstr "编辑 -"
+
+msgid "Edit Event"
+msgstr "编辑活动"
+
+msgid "Editing is not available for this file type."
+msgstr "此文件类型不支持编辑。"
+
+msgid "Enable quiet hours"
+msgstr "启用安静时段"
+
+msgid "End"
+msgstr "结束"
+
+msgid "End Date"
+msgstr "结束日期"
+
+msgid "End time"
+msgstr "结束时间"
+
+msgid "Enjoying BrightBean?"
+msgstr "您喜欢 BrightBean 吗？"
+
+msgid "Event"
+msgstr "活动"
+
+msgid "Event Channels"
+msgstr "活动频道"
+
+msgid "Example"
+msgstr "示例"
+
+msgid "Fetch niches"
+msgstr "获取细分领域"
+
+msgid "Fetching…"
+msgstr "正在获取中…"
+
+msgid "File size"
+msgstr "文件大小。"
+
+msgid "Find gaps"
+msgstr "查找差距"
+
+msgid "Find ranked content opportunities in a niche. Returns gaps that are"
+msgstr "查找某个细分领域中排名靠前的内容机会，显示存在缺口的内容，包括"
+
+msgid "First call on a video can take 25–29 s. Cache hits return instantly."
+msgstr "视频的首次调用耗时25–29秒，缓存命中则可立即返回结果。"
+
+msgid "Flip H"
+msgstr "水平翻转"
+
+msgid "Flip V"
+msgstr "垂直翻转"
+
+msgid "Folder name..."
+msgstr "文件夹名称..."
+
+msgid "Folders"
+msgstr "文件夹"
+
+msgid "Format"
+msgstr "格式。"
+
+msgid "Gap types"
+msgstr "差距类型"
+
+msgid "Generate at Settings &rarr; App Passwords on Bluesky"
+msgstr "请在Bluesky的“设置”→“应用密码”中生成。"
+
+msgid "How I Built a $1M SaaS in 6 Months"
+msgstr "我如何在6个月内打造出价值100万美元的SaaS产品"
+
+msgid "How confident the classifier is that your packaging belongs to this niche. Below ~50% the percentile above is less reliable, you may be in a niche the model doesn't have strong distribution data for yet."
+msgstr "分类器对您的内容属于该类别的置信程度。若低于约50%，则上述百分位数可靠性较低，您可能处于模型缺乏足够数据分布的类别中。"
+
+msgid "IANA timezone identifier. Leave as UTC if unsure."
+msgstr "IANA时区标识符；不确定时保留为UTC。"
+
+msgid "Images up to 20MB, videos up to 1GB"
+msgstr "图片大小上限为20MB，视频大小上限为1GB。"
+
+msgid "Instance URL"
+msgstr "实例URL"
+
+msgid "Internal"
+msgstr "内部专用"
+
+msgid "Internal Only"
+msgstr "仅内部人员可见"
+
+msgid "It's free for everyone. A short review on Trustpilot helps other teams find us."
+msgstr "所有人均可免费使用。在 Trustpilot 上留下简短评价，有助于其他团队找到我们。"
+
+msgid "JPEG, PNG or WebP · up to 5&nbsp;MB"
+msgstr "JPEG、PNG或WebP格式 · 最大5MB"
+
+msgid "Key differences vs niche-top hooks"
+msgstr "与行业顶尖内容的核心差异"
+
+msgid "Largest first"
+msgstr "按大小从大到小"
+
+msgid "Last Updated"
+msgstr "最后更新时间。"
+
+msgid "Leave a review"
+msgstr "留下评价"
+
+msgid "Loading…"
+msgstr "正在加载……"
+
+msgid "Lower"
+msgstr "越低"
+
+msgid "Manage billing →"
+msgstr "管理账单 →"
+
+msgid "Mark all read"
+msgstr "标记全部为已读"
+
+msgid "Max gaps"
+msgstr "最大差距数"
+
+msgid "Media"
+msgstr "媒体文件。"
+
+msgid "Media Changes"
+msgstr "媒体已修改"
+
+msgid "Media Library -"
+msgstr "媒体库 -"
+
+msgid "Min score"
+msgstr "最低评分"
+
+msgid "Name A-Z"
+msgstr "按名称A-Z排序"
+
+msgid "Name Z-A"
+msgstr "按名称Z-A排序"
+
+msgid "Need help? Contact"
+msgstr "需要帮助？请联系我们。"
+
+msgid "New Folder"
+msgstr "新建文件夹"
+
+msgid "New folder"
+msgstr "新建文件夹"
+
+msgid "Newest first"
+msgstr "最新优先"
+
+msgid "Newest top video:"
+msgstr "最新的热门视频："
+
+msgid "Next"
+msgstr "下一个"
+
+msgid "Niche match"
+msgstr "类别匹配度"
+
+msgid "Niches"
+msgstr "细分领域"
+
+msgid "No caption changes"
+msgstr "标题未修改"
+
+msgid "No comments yet"
+msgstr "尚无评论"
+
+msgid "No content scheduled yet"
+msgstr "尚未安排任何内容"
+
+msgid "No folders yet"
+msgstr "目前暂无文件夹"
+
+msgid "No gaps found for this niche."
+msgstr "该领域未发现间隙。"
+
+msgid "No media matches your search"
+msgstr "未找到匹配的媒体"
+
+msgid "No media uploaded yet"
+msgstr "尚未上传任何媒体"
+
+msgid "No niches match."
+msgstr "未找到匹配的细分领域。"
+
+msgid "No parameters required."
+msgstr "无需任何参数。"
+
+msgid "No shared media yet"
+msgstr "目前暂无共享媒体"
+
+msgid "No version history yet. Edits will appear here."
+msgstr "目前暂无版本历史，所有编辑内容将显示于此。"
+
+msgid "Non-critical notifications are held until quiet hours end."
+msgstr "非紧急通知将暂存，直至静默时段结束。"
+
+msgid "Not scheduled"
+msgstr "未安排"
+
+msgid "Notes about this event..."
+msgstr "关于此活动的备注..."
+
+msgid "Notification Preferences"
+msgstr "通知偏好设置"
+
+msgid "Oldest first"
+msgstr "最旧优先"
+
+msgid "Open"
+msgstr "打开"
+
+msgid "Open YouTube"
+msgstr "打开 YouTube"
+
+msgid "Open on YouTube"
+msgstr "在 YouTube 中打开"
+
+msgid "Opportunity"
+msgstr "机会"
+
+msgid "Organization admins can upload assets here for use across all workspaces."
+msgstr "组织管理员可在此上传资源，供所有工作空间使用。"
+
+msgid "Organization-wide assets available to all workspaces."
+msgstr "全组织资产可供所有工作空间使用。"
+
+msgid "Out of credits"
+msgstr "信用额度已用尽"
+
+msgid "Overall hook score"
+msgstr "整体吸引力得分"
+
+msgid "Pages &amp; Groups"
+msgstr "页面与群组"
+
+msgid "Percentile"
+msgstr "百分位数"
+
+msgid "Platform Changes"
+msgstr "平台已修改"
+
+msgid "Platforms"
+msgstr "平台"
+
+msgid "Please contact"
+msgstr "请联系我们以申请新的连接链接。"
+
+msgid "Please contact your agency to request a new connection link."
+msgstr "请联系您的代理机构以申请新的连接链接。"
+
+msgid "Posts submitted for review will appear here"
+msgstr "正在审核的帖子会显示在这里。"
+
+msgid "Preview trim"
+msgstr "预览裁剪"
+
+msgid "Previous"
+msgstr "上一个"
+
+msgid "Previous ("
+msgstr "上一条（"
+
+msgid "Querying…"
+msgstr "正在查询中…"
+
+msgid "Queued posts will appear here when you queue them"
+msgstr "已加入队列的帖子会显示在这里。"
+
+msgid "Quiet Hours & Digest"
+msgstr "安静时段与摘要"
+
+msgid "Read"
+msgstr "已读"
+
+msgid "Reason for rejection…"
+msgstr "拒绝原因……"
+
+msgid "Recency"
+msgstr "新鲜度"
+
+msgid "Reject all"
+msgstr "全部拒绝。"
+
+msgid "Related searches"
+msgstr "相关搜索"
+
+msgid "Removed"
+msgstr "已删除"
+
+msgid "Restore"
+msgstr "恢复"
+
+msgid "Result"
+msgstr "结果"
+
+msgid "Retry in"
+msgstr "请重新尝试"
+
+msgid "Rotate Left"
+msgstr "向左旋转"
+
+msgid "Rotate Right"
+msgstr "向右旋转"
+
+msgid "SHARED"
+msgstr "已共享。"
+
+msgid "Sample output. Activate to run with your own inputs."
+msgstr "样本输出。启用后可使用您自己的数据运行。"
+
+msgid "Save Preferences"
+msgstr "保存偏好设置"
+
+msgid "Save as new version"
+msgstr "保存为新版本"
+
+msgid "Scheduled in a channel slot"
+msgstr "已安排在频道时段"
+
+msgid "Score"
+msgstr "评分结果"
+
+msgid "Score a YouTube packaging (title + thumbnail) for click-through potential. Provide one or both, combined is most accurate. Title-only is 1 credit, thumbnail-only is 2, combined is 3"
+msgstr "为YouTube视频封面（标题+缩略图）评估点击潜力。可提供其一或两者，两者结合评估最准确。仅标题计1点，仅缩略图计2点，两者结合计3点"
+
+msgid "Score a single video against its niche. Returns engagement percentiles, title pattern fit, and a CTR-prediction residual (actual vs predicted velocity)."
+msgstr "对单段视频在其所属领域内进行评分，返回互动率百分位数、标题匹配度以及CTR预测偏差（实际值与预测值的差异）。"
+
+msgid "Scoring…"
+msgstr "正在评分中…"
+
+msgid "Search media..."
+msgstr "搜索媒体..."
+
+msgid "Search niches…"
+msgstr "搜索细分领域…"
+
+msgid "Search shared assets..."
+msgstr "搜索共享资产..."
+
+msgid "Service unavailable"
+msgstr "服务暂时不可用。"
+
+msgid "Settings management coming soon."
+msgstr "设置管理功能即将推出。"
+
+msgid "Setup is still finalizing, refresh the page in a moment."
+msgstr "设置仍在完善中，稍后请刷新页面。"
+
+msgid "Shared"
+msgstr "已分享"
+
+msgid "Shared Library"
+msgstr "共享库。"
+
+msgid "Signals"
+msgstr "指标信号"
+
+msgid "Size"
+msgstr "大小"
+
+msgid "Slow down a sec"
+msgstr "慢一点"
+
+msgid "Smallest first"
+msgstr "按大小从小到大"
+
+msgid "Starred"
+msgstr "已星标"
+
+msgid "Start"
+msgstr "开始"
+
+msgid "Start Date"
+msgstr "开始日期"
+
+msgid "Start time"
+msgstr "开始时间"
+
+msgid "Stop these emails?"
+msgstr "停止接收这些邮件吗？"
+
+msgid "Strengths"
+msgstr "优势"
+
+msgid "Sub-scores"
+msgstr "子评分"
+
+msgid "Suggestions"
+msgstr "建议"
+
+msgid "Supply"
+msgstr "供给量"
+
+msgid "Suppress non-critical notifications during specific hours."
+msgstr "在指定时段屏蔽非紧急通知"
+
+msgid "Target platforms have been modified."
+msgstr "目标平台已更改。"
+
+msgid "Tell the creator why. This comment is shared with them."
+msgstr "告诉发布者原因，此评论会同步给对方。"
+
+msgid "This cannot be undone. The file will be permanently removed."
+msgstr "无法撤销，该文件将被永久删除。"
+
+msgid "This link expires"
+msgstr "该链接已过期。"
+
+msgid "This link has been revoked"
+msgstr "该链接已被撤销"
+
+msgid "This media is referenced by"
+msgstr "此媒体被以下内容引用"
+
+msgid "This shared asset will be removed for all workspaces. This cannot be undone."
+msgstr "此共享资产将从所有工作空间中移除，且无法撤销。"
+
+msgid "Thumbnail"
+msgstr "缩略图"
+
+msgid "Toggle delivery channels for each event type."
+msgstr "为每种活动类型切换通知渠道"
+
+msgid "Top"
+msgstr "顶级"
+
+msgid "Transcript"
+msgstr "文本记录"
+
+msgid "Trim &amp; save"
+msgstr "裁剪并保存"
+
+msgid "Try adjusting your search terms or filters."
+msgstr "请尝试调整搜索词或筛选条件。"
+
+msgid "Try adjusting your search terms."
+msgstr "试试调整搜索词。"
+
+msgid "Try these angles"
+msgstr "尝试这些角度"
+
+msgid "Type"
+msgstr "类型"
+
+msgid "Unread"
+msgstr "未读"
+
+msgid "Unsubscribe"
+msgstr "取消订阅"
+
+msgid "Unsubscribed"
+msgstr "已取消订阅"
+
+msgid "Upgrade your plan or top up to keep using Intelligence."
+msgstr "升级套餐或充值以继续使用智能功能"
+
+msgid "Upload"
+msgstr "上传"
+
+msgid "Upload images and videos to organize and reuse across your posts."
+msgstr "上传图片和视频，以便在多篇帖子中整理并重复使用。"
+
+msgid "Upload media"
+msgstr "上传媒体文件"
+
+msgid "Upload to Shared"
+msgstr "上传至共享库。"
+
+msgid "Uploaded"
+msgstr "已上传"
+
+msgid "Uploaded by"
+msgstr "上传者"
+
+msgid "Version"
+msgstr "版本"
+
+msgid "Version changes"
+msgstr "版本变更。"
+
+msgid "Video URL"
+msgstr "视频URL"
+
+msgid "Video title"
+msgstr "视频标题"
+
+msgid "View changes"
+msgstr "查看更改"
+
+msgid "Visible to Client"
+msgstr "客户可见"
+
+msgid "Visual"
+msgstr "视觉分析"
+
+msgid "We couldn't reach the Intelligence service. Try again in a moment."
+msgstr "无法连接智能服务，请稍后再试。"
+
+msgid "Weaknesses"
+msgstr "劣势"
+
+msgid "Where your packaging ranks against other recent videos in the same niche."
+msgstr "您的内容在同类最新视频中的排名情况。"
+
+msgid "Why it's a gap"
+msgstr "为何存在间隙"
+
+msgid "You can close this page. Your agency team will be in touch soon."
+msgstr "您可关闭此页面，我们的客服团队将很快与您联系。"
+
+msgid "You'll no longer receive"
+msgstr "您将不再收到"
+
+msgid "You're calling Intelligence faster than your plan allows."
+msgstr "您当前调用智能功能的频率超出了套餐允许范围"
+
+msgid "You're previewing the playground. Subscribe to score, benchmark, and pull content gaps for real."
+msgstr "您当前查看的是预览版。订阅后可获取真实评分、基准数据及内容缺口分析。"
+
+msgid "YouTube URL"
+msgstr "YouTube网址"
+
+msgid "Your accounts have been connected to"
+msgstr "您的账户已成功连接。"
+
+msgid "available · click to browse, type to filter."
+msgstr "可用 · 点击浏览，输入内容筛选。"
+
+msgid "competitive"
+msgstr "竞争激烈"
+
+msgid "competitor"
+msgstr "竞争对手"
+
+msgid "connected"
+msgstr "已连接"
+
+msgid "connected to"
+msgstr "已连接到"
+
+msgid "d old"
+msgstr "时长"
+
+msgid "e.g. America/New_York"
+msgstr "例如：America/New_York"
+
+msgid "e.g., Product Launch, Campaign Start"
+msgstr "例如：产品发布、活动启动"
+
+msgid "emails. They'll still appear in the app, and you can turn them back on under Notification preferences."
+msgstr "邮件。它们仍会显示在应用中，您可于通知偏好设置中重新开启。"
+
+msgid "emails. You'll still see them in the app, and you can turn them back on any time under Notification preferences."
+msgstr "邮件。您仍可在应用中查看它们，且随时可在通知偏好设置中重新开启。"
+
+msgid "gap"
+msgstr "间隙"
+
+msgid "has been notified and will take it from here."
+msgstr "对方已收到通知，将负责后续处理。"
+
+msgid "is average; below 30 is a sign to iterate."
+msgstr "为平均水平；低于30时需优化调整。"
+
+msgid "is better (existing content is older, ripe for refresh)."
+msgstr "越好（现有内容较旧，适合更新）。"
+
+msgid "is better (less competition)."
+msgstr "越好（竞争越少）。"
+
+msgid "is fixable; below 40 needs a structural rewrite."
+msgstr "可优化；低于40分需重新调整结构。"
+
+msgid "items)"
+msgstr "内容）"
+
+msgid "means your title + thumbnail combo is predicted to outperform 80% of niche peers;"
+msgstr "表示您的标题与缩略图组合预计表现优于80%的同类内容；"
+
+msgid "niche"
+msgstr "细分领域"
+
+msgid "notification"
+msgstr "通知"
+
+msgid "on"
+msgstr "在"
+
+msgid "or drag and drop"
+msgstr "或拖放上传"
+
+msgid "overperformer"
+msgstr "表现优异的视频"
+
+msgid "ranking now"
+msgstr "当前排名"
+
+msgid "scheduled post"
+msgstr "计划发布的帖子"
+
+msgid "sec"
+msgstr "秒"
+
+msgid "shared with client"
+msgstr "已与客户共享"
+
+msgid "ships;"
+msgstr "发货状态"
+
+msgid "stale"
+msgstr "过时的"
+
+msgid "subs"
+msgstr "订阅量"
+
+msgid "tab to browse."
+msgstr "切换标签页进行浏览。"
+
+msgid "to"
+msgstr "至"
+
+msgid "to analyze your own video hooks."
+msgstr "分析您自己的视频吸睛点。"
+
+msgid "to benchmark your own channel."
+msgstr "用于对比您自己的频道。"
+
+msgid "to benchmark your own videos."
+msgstr "用于对比您自己的视频。"
+
+msgid "to fetch the live niche catalog."
+msgstr "用于获取实时细分领域目录。"
+
+msgid "to request a new connection link."
+msgstr "请联系我们以获取新的连接链接。"
+
+msgid "to research gaps in any niche you choose."
+msgstr "用于查询您选择的任意细分领域的差距。"
+
+msgid "to score your own packaging."
+msgstr "用于自行评估视频封面效果。"
+
+msgid "total"
+msgstr "总数"
+
+msgid "trend signal"
+msgstr "趋势信号"
+
+msgid "underserved"
+msgstr "服务不足的"
+
+msgid "vs niche top performers"
+msgstr "与同类顶尖内容对比"
+
+msgid "Account connection expired. Please reconnect."
+msgstr "账号连接已过期，请重新连接。"
+
+msgid "This YouTube channel is no longer available to the connected Google account. Please reconnect."
+msgstr "已连接的 Google 账号无法访问此 YouTube 频道，请重新连接。"
+
+msgid "Rate limit reached. We'll retry this check shortly."
+msgstr "已达到请求频率限制，稍后会自动重新检查。"
+
+msgid "The platform's daily API limit is used up."
+msgstr "平台今日 API 配额已用尽。"
+
+msgid "The platform is temporarily unavailable. We'll retry shortly."
+msgstr "平台暂时不可用，稍后会自动重试。"
+
+msgid "Connection check failed. Please try reconnecting."
+msgstr "连接检查失败，请尝试重新连接。"
+
+msgid "The account connection expired, so the first comment wasn't added. Reconnect the account and add the comment manually."
+msgstr "账号连接已过期，首条评论未发出。请重新连接账号并手动添加评论。"
+
+msgid "The platform was temporarily unavailable, so the first comment wasn't added."
+msgstr "平台暂时不可用，首条评论未发出。"
+
+msgid "The platform's daily API limit is used up, so the first comment wasn't added."
+msgstr "平台今日 API 配额已用尽，首条评论未发出。"
+
+msgid "The platform rejected the first comment. Add it manually on the post."
+msgstr "平台拒绝了首条评论，请在帖子中手动添加。"
+
+msgid "The first comment couldn't be added. Add it manually on the post."
+msgstr "未能添加首条评论，请在帖子中手动添加。"
+
+msgid "The platform refused our access to this account, so the post couldn't be published. Please reconnect it."
+msgstr "平台拒绝访问此账号，帖子未能发布。请重新连接账号。"
+
+msgid "The platform was temporarily unavailable. We'll retry shortly."
+msgstr "平台暂时不可用，稍后将自动重试。"
+
+msgid "The platform's rate limit was reached. We'll retry shortly."
+msgstr "已达到平台请求频率限制，稍后将自动重试。"
+
+msgid "The platform's daily API limit is used up, so the post couldn't be published."
+msgstr "平台今日 API 配额已用尽，帖子未能发布。"
+
+msgid "The platform rejected this post."
+msgstr "平台拒绝发布此帖。"
+
+msgid "Publishing failed. Please try again."
+msgstr "发布失败，请重试。"
+
+msgid "Publishing kept failing, so we stopped retrying. Try again, or reconnect the account if it keeps happening."
+msgstr "多次发布失败，已停止自动重试。请重试，如问题持续，请重新连接账号。"
+
+msgid "Publishing was interrupted before we could confirm it. Check the account to see whether the post went out, then publish again if it didn't."
+msgstr "发布中断，未能确认结果。请先到平台账号查看，仅在帖子尚未发布时再次发布。"
+
+msgid "The platform accepted this post but never finished processing it. Try publishing it again."
+msgstr "平台已接收帖子，但一直未完成处理。请尝试重新发布。"
+
+msgid "This post was uploaded, but we couldn't confirm whether the platform published it. Check the account before publishing again — it may already be live."
+msgstr "帖子已上传，但发布结果尚未确认。请先到平台账号查看，避免重复发布。"
+
+msgid "The account's permissions no longer cover comment delivery."
+msgstr "此账号的授权已无法接收评论更新。"
+
+msgid "The platform was temporarily unavailable when we asked it to push updates."
+msgstr "申请推送更新时，平台暂时不可用。"
+
+msgid "The platform declined to push updates for this account."
+msgstr "平台拒绝为此账号推送更新。"
+
+msgid "We couldn't set up real-time updates for this account."
+msgstr "无法为此账号启用实时更新。"
+
+msgid "This platform isn't fully configured, so real-time updates couldn't be set up."
+msgstr "此平台配置不完整，无法启用实时更新。"
+
+msgid ", because a CSV can't add the media or Pinterest board"
+msgstr "，因为 CSV 无法添加媒体或 Pinterest 盘"
+
+msgid "- Skip -"
+msgstr "- 跳过 -"
+
+msgid ". Add"
+msgstr ". 添加"
+
+msgid ". Share this link with your client so they can connect their social accounts."
+msgstr "将此链接分享给您的客户，以便他们关联自己的社交账号。"
+
+msgid "Add Feed"
+msgstr "添加动态源"
+
+msgid "Add Note"
+msgstr "添加备注"
+
+msgid "Add RSS Feed"
+msgstr "添加RSS动态源"
+
+msgid "Add an internal note (only visible to your team)..."
+msgstr "添加内部备注（仅团队可见）..."
+
+msgid "Add idea"
+msgstr "添加灵感"
+
+msgid "Add your First Feed"
+msgstr "添加您的第一个动态源"
+
+msgid "All feeds"
+msgstr "所有动态源"
+
+msgid "All platforms"
+msgstr "所有平台"
+
+msgid "All sentiment"
+msgstr "所有情感倾向"
+
+msgid "All statuses"
+msgstr "所有状态"
+
+msgid "Assign"
+msgstr "分配"
+
+msgid "Audio attachment unavailable."
+msgstr "音频附件无法获取。"
+
+msgid "Caption exceeds"
+msgstr "标题已超过"
+
+msgid "Choose from video"
+msgstr "从视频中选择"
+
+msgid "Clear all filters"
+msgstr "清除所有筛选条件"
+
+msgid "Client"
+msgstr "客户"
+
+msgid "Clients ("
+msgstr "客户（"
+
+msgid "Column name..."
+msgstr "列名..."
+
+msgid "Comments, mentions, and DMs from your connected accounts will appear here. Messages are synced every 5 minutes."
+msgstr "来自关联账号的评论、提及和私信将显示在此处，消息每5分钟同步一次。"
+
+msgid "Confirm Import"
+msgstr "确认导入"
+
+msgid "Connect Accounts"
+msgstr "连接账号"
+
+msgid "Connect your social accounts to start receiving messages in your inbox."
+msgstr "连接您的社交账号即可开始在收件箱中接收消息。"
+
+msgid "Connection link created"
+msgstr "已生成连接链接。"
+
+msgid "Copied!"
+msgstr "已复制！"
+
+msgid "DMs"
+msgstr "私信"
+
+msgid "Delete Feed"
+msgstr "删除动态源"
+
+msgid "Delete column"
+msgstr "删除列"
+
+msgid "Discard"
+msgstr "弃用"
+
+msgid "Expires"
+msgstr "链接即将失效。"
+
+msgid "Explore Curated Feeds"
+msgstr "浏览精选动态源"
+
+msgid "Explore Feeds"
+msgstr "浏览动态源"
+
+msgid "Featured templates"
+msgstr "精选模板"
+
+msgid "Fix the errors in your CSV and re-upload."
+msgstr "请修正CSV文件中的错误后重新上传"
+
+msgid "Helpful starting points to plan your next post."
+msgstr "规划下一篇帖子的实用建议。"
+
+msgid "Human support reply: review the message before sending. This reply uses your app's approved seven-day Human Agent access."
+msgstr "人工客服回复：发送前请仔细检查消息。此回复使用了您应用已批准的七天人工客服权限。"
+
+msgid "If the attachment is unavailable, open the conversation in Instagram."
+msgstr "若附件无法获取，请在Instagram中打开对应对话。"
+
+msgid "Import Complete"
+msgstr "导入完成"
+
+msgid "Import More"
+msgstr "导入更多"
+
+msgid "Incoming image attachment"
+msgstr "正在上传图片附件"
+
+msgid "Internal Note"
+msgstr "内部备注"
+
+msgid "Invite Client"
+msgstr "邀请客户"
+
+msgid "Invite a client to give them portal access for reviewing and approving posts."
+msgstr "邀请客户以获得通过客户门户审核和批准帖子的权限。"
+
+msgid "Invite external clients to review and approve posts."
+msgstr "邀请外部客户审核并批准帖子。"
+
+msgid "Just now"
+msgstr "刚才"
+
+msgid "Just now ·"
+msgstr "刚才 ·"
+
+msgid "Last attempt failed:"
+msgstr "最后一次尝试失败："
+
+msgid "Last refreshed"
+msgstr "最后刷新时间"
+
+msgid "Like"
+msgstr "点赞"
+
+msgid "Link active"
+msgstr "链接已激活"
+
+msgid "Map Columns"
+msgstr "映射列"
+
+msgid "Mark read"
+msgstr "标记为已读"
+
+msgid "Match each CSV column to the corresponding post field. Leave unmapped columns as \"Skip\"."
+msgstr "将每个CSV列对应到相应的帖子字段，未映射的列留作“跳过”。"
+
+msgid "Mentions"
+msgstr "提及"
+
+msgid "Negative"
+msgstr "已拒绝"
+
+msgid "Neutral"
+msgstr "中立"
+
+msgid "New Group"
+msgstr "新群组"
+
+msgid "No caption yet…"
+msgstr "尚无标题……"
+
+msgid "No clients yet"
+msgstr "尚无客户"
+
+msgid "No events found for this feed filter."
+msgstr "该动态源筛选条件下未找到相关内容。"
+
+msgid "No images available"
+msgstr "无可用图片"
+
+msgid "No link sent"
+msgstr "未发送链接"
+
+msgid "No media yet"
+msgstr "目前暂无媒体内容"
+
+msgid "No messages match your current filters."
+msgstr "没有符合当前筛选条件的消息。"
+
+msgid "No notifications"
+msgstr "无通知"
+
+msgid "No notifications match your filters. Try adjusting them."
+msgstr "无符合筛选条件的通知，建议调整筛选条件。"
+
+msgid "No notifications yet"
+msgstr "尚无通知"
+
+msgid "No posts were imported. Check your CSV and try again."
+msgstr "未导入任何帖子。请检查您的 CSV 文件后重试。"
+
+msgid "No templates yet."
+msgstr "尚无模板。"
+
+msgid "No valid rows to import."
+msgstr "没有有效行可供导入"
+
+msgid "Nothing was sent to"
+msgstr "未向任何人发送内容"
+
+msgid "Original sound -"
+msgstr "原声 -"
+
+msgid "Our top picks"
+msgstr "我们的热门推荐"
+
+msgid "Pending replies"
+msgstr "待回复消息"
+
+msgid "Positive"
+msgstr "正面"
+
+msgid "Prev"
+msgstr "上一页"
+
+msgid "Publishing preview"
+msgstr "发布预览"
+
+msgid "RSS URL"
+msgstr "RSS网址"
+
+msgid "RSS URLs are links to automatically get updates from a blog or news site. The link is usually made up of the website's domain name, followed by \"/feed\" or \"/rss\"."
+msgstr "RSS网址是用于自动获取博客或新闻网站更新的链接，通常由网站域名加上“/feed”或“/rss”构成。"
+
+msgid "Ready to import"
+msgstr "已准备好导入"
+
+msgid "Recently"
+msgstr "最近内容"
+
+msgid "Remove all ideas first"
+msgstr "先移除所有灵感"
+
+msgid "Reply"
+msgstr "回复"
+
+msgid "Reply Body"
+msgstr "回复内容"
+
+msgid "Reply not sent"
+msgstr "回复未发送"
+
+msgid "Reply will be posted on"
+msgstr "回复将发布在"
+
+msgid "Repost"
+msgstr "转发"
+
+msgid "Resend Link"
+msgstr "重新发送链接"
+
+msgid "Resolved"
+msgstr "已解决"
+
+msgid "Retry send"
+msgstr "重新发送"
+
+msgid "Reviews"
+msgstr "评价"
+
+msgid "Row"
+msgstr "行"
+
+msgid "Save a post as a template to see it here."
+msgstr "将帖子保存为模板可在此查看。"
+
+msgid "Save as draft"
+msgstr "保存为草稿"
+
+msgid "Search messages..."
+msgstr "搜索消息..."
+
+msgid "Send"
+msgstr "发送"
+
+msgid "Send Portal Link"
+msgstr "发送门户链接"
+
+msgid "Send Reply"
+msgstr "发送回复"
+
+msgid "Share"
+msgstr "分享"
+
+msgid "Showing first 50 errors. Fix and re-upload for the full list."
+msgstr "正显示前50条错误记录。请修正后重新上传以查看全部。"
+
+msgid "Start a thread…"
+msgstr "开启话题…"
+
+msgid "Subscribe to your favorite blogs, websites, or creators to get the latest content ideas."
+msgstr "订阅您喜爱的博客、网站或创作者，获取最新内容灵感。"
+
+msgid "The client will receive an invitation email to create an account. Once accepted, they will have"
+msgstr "客户将收到创建账户的邀请邮件，接受后即可"
+
+msgid "This message contains media Instagram cannot provide."
+msgstr "此消息包含Instagram无法提供的媒体文件。"
+
+msgid "This message was deleted by its sender."
+msgstr "此消息已被发送者删除。"
+
+msgid "Unassign"
+msgstr "取消分配"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "Upload a video"
+msgstr "上传视频"
+
+msgid "Upload files to your media library to use them here"
+msgstr "将文件上传到媒体库以便在此使用"
+
+msgid "Upload images to your media library to use them as thumbnails"
+msgstr "上传图片到媒体库以用作缩略图"
+
+msgid "Validate &amp; Preview"
+msgstr "验证并预览"
+
+msgid "Validation Results"
+msgstr "验证结果"
+
+msgid "Variables:"
+msgstr "变量："
+
+msgid "Video attachment unavailable."
+msgstr "视频附件无法获取。"
+
+msgid "Video thumbnail"
+msgstr "视频缩略图"
+
+msgid "Video title…"
+msgstr "视频标题…"
+
+msgid "View Calendar"
+msgstr "查看日历"
+
+msgid "View Entire Post"
+msgstr "查看完整文章"
+
+msgid "View all comments"
+msgstr "查看所有评论"
+
+msgid "View all notifications"
+msgstr "查看所有通知"
+
+msgid "What's up?"
+msgstr "最近怎么样？"
+
+msgid "When things happen in your workspaces, you'll see them here."
+msgstr "您工作空间中的动态会显示在这里。"
+
+msgid "Write a caption…"
+msgstr "编写文案…"
+
+msgid "Write a reply..."
+msgstr "输入回复内容..."
+
+msgid "You can still save a draft."
+msgstr "您仍可保存草稿。"
+
+msgid "Your imported posts are now on the calendar."
+msgstr "您导入的帖子现已出现在日历中。"
+
+msgid "Your inbox is empty"
+msgstr "您的收件箱为空。"
+
+msgid "Your text is still in the box."
+msgstr "您的文字仍在输入框中。"
+
+msgid "access to this workspace, allowing them to review and approve posts via the Client Portal."
+msgstr "通过客户门户访问此工作空间，从而审核和批准帖子。"
+
+msgid "attachment"
+msgstr "附件"
+
+msgid "attachment unavailable."
+msgstr "附件无法获取。"
+
+msgid "character limit"
+msgstr "字符限制"
+
+msgid "created"
+msgstr "已创建"
+
+msgid "error"
+msgstr "错误"
+
+msgid "from your feeds?"
+msgstr "来自您的动态吗？"
+
+msgid "in the composer, then schedule."
+msgstr "在内容编辑器中操作，然后安排发布时间。"
+
+msgid "invalid row"
+msgstr "无效行"
+
+msgid "just now"
+msgstr "刚才"
+
+msgid "kept as draft"
+msgstr "保留为草稿"
+
+msgid "now"
+msgstr "现在"
+
+msgid "recent events"
+msgstr "最新活动"
+
+msgid "row"
+msgstr "行"
+
+msgid "skipped"
+msgstr "已跳过"
+
+msgid "total rows"
+msgstr "总行数"
+
+msgid "valid"
+msgstr "合法"
+
+msgid "will be skipped."
+msgstr "将被跳过"

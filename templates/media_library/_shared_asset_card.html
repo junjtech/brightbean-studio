@@ -29,7 +29,7 @@
     </span>
 
     <span class="absolute top-2 right-2" style="font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 2px 6px; border-radius: var(--radius-sm, 0.25rem); background: rgba(20,184,166,0.9); color: white;">
-      SHARED
+      {% translate "SHARED" %}
     </span>
   </div>
 
@@ -50,7 +50,7 @@
             @click.outside="menuOpen = false"
             class="w-7 h-7 rounded-full flex items-center justify-center cursor-pointer shadow-sm"
             style="background: rgba(255,255,255,0.95); color: var(--text-secondary, #57534E);"
-            aria-label="Asset actions">
+            aria-label="{% translate "Asset actions" %}">
       <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
         <path d="M10 6a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm0 5.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm0 5.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/>
       </svg>

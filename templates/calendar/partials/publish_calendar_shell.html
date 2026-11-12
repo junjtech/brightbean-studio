@@ -32,7 +32,7 @@ Toolbar: nav arrows + period + Today + view dropdown | right: filter dropdowns.
 
         {% if is_today_in_view %}
         <span class="px-3 py-1 text-xs font-semibold text-stone-300 border border-stone-100 rounded-md cursor-default select-none"
-              aria-disabled="true" title="Already showing today">
+              aria-disabled="true" title="{% translate "Already showing today" %}">
             {% translate "Today" %}
         </span>
         {% else %}

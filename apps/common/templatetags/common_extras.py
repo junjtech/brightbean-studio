@@ -3,8 +3,10 @@ import json
 from django import template
 from django.utils.html import escape
 from django.utils.safestring import mark_safe
+from django.utils.translation import gettext
 
 register = template.Library()
+register.filter("ui_message", gettext)
 
 
 @register.simple_tag
@@ -90,6 +92,8 @@ def ui_select(
             value = getattr(o, value_field, None)
             label = getattr(o, label_field) if label_field else str(o)
             opt_icon = getattr(o, icon_field, None) if icon_field else None
+        if icon == "status" and label:
+            label = gettext(str(label))
         norm.append({"value": str(value) if value is not None else "", "label": label, "icon": opt_icon})
 
     return {
@@ -99,6 +103,6 @@ def ui_select(
         "options_js": [{"value": o["value"], "label": str(o["label"])} for o in norm],
         "multiple": bool(multiple),
         "onchange": onchange,
-        "placeholder": placeholder,
+        "placeholder": gettext(placeholder),
         "icon": icon,
     }

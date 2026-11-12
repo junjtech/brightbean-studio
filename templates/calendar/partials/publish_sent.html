@@ -1,4 +1,4 @@
-{% load i18n %}{% if render_tab_counts_oob %}{% include "calendar/partials/_tab_counts_oob.html" %}{% endif %}
+{% load i18n common_extras %}{% if render_tab_counts_oob %}{% include "calendar/partials/_tab_counts_oob.html" %}{% endif %}
 {% comment %}
 Sent tab partial for the Publish page.
 Shows all published/partially_published platform posts. Loaded via HTMX into #tab-content.
@@ -10,7 +10,7 @@ Shows all published/partially_published platform posts. Loaded via HTMX into #ta
         <thead>
             <tr class="border-b border-stone-200 text-left">
                 <th class="pl-4 w-8"></th>
-                <th class="px-4 py-3 text-xs font-semibold text-stone-400 uppercase tracking-wider">Media</th>
+                <th class="px-4 py-3 text-xs font-semibold text-stone-400 uppercase tracking-wider">{% translate "Media" %}</th>
                 <th class="px-4 py-3 text-xs font-semibold text-stone-400 uppercase tracking-wider">{% translate "Status" %}</th>
                 <th class="px-4 py-3 text-xs font-semibold text-stone-400 uppercase tracking-wider">{% translate "Published" %}</th>
                 <th class="px-4 py-3 text-xs font-semibold text-stone-400 uppercase tracking-wider">{% translate "Caption" %}</th>
@@ -63,14 +63,14 @@ Shows all published/partially_published platform posts. Loaded via HTMX into #ta
                         {% translate pp.get_status_display %}
                     </span>
                     {% if pp.status == "failed" and pp.publish_error %}
-                    <p class="text-[11px] text-red-500 mt-1 max-w-[220px] truncate" title="{{ pp.publish_error }}">{{ pp.publish_error }}</p>
+                    <p class="text-[11px] text-red-500 mt-1 max-w-[220px] truncate" title="{{ pp.publish_error|ui_message }}">{{ pp.publish_error|ui_message }}</p>
                     {% endif %}
                     {% comment %}
                     Published, but its first comment never landed — amber, not red:
                     the post itself went out fine.
                     {% endcomment %}
                     {% if pp.first_comment_status == "failed" %}
-                    <p class="text-[11px] text-amber-600 mt-1 max-w-[220px] truncate" title="{{ pp.first_comment_error }}">{% translate "First comment failed" %}</p>
+                    <p class="text-[11px] text-amber-600 mt-1 max-w-[220px] truncate" title="{{ pp.first_comment_error|ui_message }}">{% translate "First comment failed" %}</p>
                     {% endif %}
                 </td>
                 <td class="px-4 py-3 text-xs text-stone-500 tabular-nums whitespace-nowrap">

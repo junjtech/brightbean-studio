@@ -18,11 +18,11 @@
     <div class="flex-shrink-0">
         {% if client.token %}
         <span class="text-xs font-medium px-2.5 py-1 rounded-full" style="background: #DCFCE7; color: #166534;">
-            Link active
+            {% translate "Link active" %}
         </span>
         {% else %}
         <span class="text-xs font-medium px-2.5 py-1 rounded-full" style="background: var(--neutral-100); color: var(--text-tertiary);">
-            No link sent
+            {% translate "No link sent" %}
         </span>
         {% endif %}
     </div>
@@ -37,7 +37,7 @@
             <button type="submit"
                     class="btn-neutral-surface text-xs px-3 py-1.5 rounded-full font-medium cursor-pointer transition-colors"
                     style="border: 1px solid var(--border); color: var(--text-primary); background: var(--surface-0);">
-                {% if client.token %}Resend Link{% else %}Send Portal Link{% endif %}
+                {% if client.token %}{% translate "Resend Link" %}{% else %}{% translate "Send Portal Link" %}{% endif %}
             </button>
         </form>
 

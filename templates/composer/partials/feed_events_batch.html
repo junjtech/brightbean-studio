@@ -30,7 +30,7 @@
             {{ event.summary|truncatechars:220 }}
             {% if event_url != '#' %}
             <a href="{{ event_url }}" target="_blank" rel="noopener noreferrer" class="text-stone-700 hover:text-stone-900">
-                View Entire Post
+                {% translate "View Entire Post" %}
             </a>
             {% endif %}
         </p>
@@ -39,7 +39,7 @@
             {% if event.published_at %}
             {{ event.published_at|timesince }} {% translate "ago" %}
             {% else %}
-            Recently
+            {% translate "Recently" %}
             {% endif %}
         </div>
     </div>
@@ -48,7 +48,7 @@
 {% endfor %}
 {% elif show_empty %}
 <div class="py-10 text-center text-stone-500">
-    No events found for this feed filter.
+    {% translate "No events found for this feed filter." %}
 </div>
 {% endif %}
 

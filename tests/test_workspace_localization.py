@@ -24,6 +24,15 @@ class WorkspaceLocalizationTests(TestCase):
             approvals = self.client.get(reverse("workspaces:approvals_settings", args=[workspace.pk]))
             self.assertContains(approvals, "必须内部审核")
             self.assertNotContains(approvals, "Internal review required")
+            for route, label in (
+                ("social_accounts:connect", "连接社媒平台"),
+                ("calendar:publish_tab_drafts", "暂无草稿"),
+                ("calendar:publish_tab_approvals", "暂无待审核帖子"),
+                ("calendar:publish_tab_sent", "暂无发送记录"),
+            ):
+                with self.subTest(route=route):
+                    response = self.client.get(reverse(route, args=[workspace.pk]))
+                    self.assertContains(response, label)
         with translation.override("en"):
             settings = self.client.get(reverse("workspaces:settings", args=[workspace.pk]))
             self.assertContains(settings, "Workspace Name")

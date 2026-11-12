@@ -6,6 +6,7 @@ import re
 from django.contrib.auth.decorators import login_required
 from django.http import FileResponse, Http404, HttpResponse
 from django.shortcuts import get_object_or_404, render
+from django.utils.translation import gettext as _
 from django.views.decorators.http import require_GET, require_POST
 
 from apps.common.htmx import toast_response
@@ -58,16 +59,16 @@ def approve(request, workspace_id, post_id):
     try:
         moved = services.approve_post(post, request.user, workspace, comment_text)
     except ValueError as e:
-        return _toast_response(tone="error", title="Couldn't approve", body=str(e))
+        return _toast_response(tone="error", title=_("Couldn't approve"), body=str(e))
 
     if not moved:
-        return _toast_response(tone="warn", title="Nothing to update", body="This post was already actioned.")
+        return _toast_response(tone="warn", title=_("Nothing to update"), body=_("This post was already actioned."))
 
     if post.platform_posts.filter(status="pending_client").exists():
         return _toast_response(
-            tone="success", title="Approved internally", body="Sent for client sign-off", refresh="approvalAction"
+            tone="success", title=_("Approved internally"), body=_("Sent for client sign-off"), refresh="approvalAction"
         )
-    return _toast_response(tone="success", title="Approved", body="Ready to publish", refresh="approvalAction")
+    return _toast_response(tone="success", title=_("Approved"), body=_("Ready to publish"), refresh="approvalAction")
 
 
 @login_required
@@ -82,13 +83,13 @@ def request_changes_view(request, workspace_id, post_id):
     try:
         moved = services.request_changes(post, request.user, workspace, comment_text)
     except ValueError as e:
-        return _toast_response(tone="error", title="Couldn't send back", body=str(e))
+        return _toast_response(tone="error", title=_("Couldn't send back"), body=str(e))
 
     if not moved:
-        return _toast_response(tone="warn", title="Nothing to update", body="This post was already actioned.")
+        return _toast_response(tone="warn", title=_("Nothing to update"), body=_("This post was already actioned."))
 
     return _toast_response(
-        tone="info", title="Sent back for changes", body="The author was notified", refresh="approvalAction"
+        tone="info", title=_("Sent back for changes"), body=_("The author was notified"), refresh="approvalAction"
     )
 
 
@@ -104,13 +105,13 @@ def reject(request, workspace_id, post_id):
     try:
         moved = services.reject_post(post, request.user, workspace, comment_text)
     except ValueError as e:
-        return _toast_response(tone="error", title="Couldn't reject", body=str(e))
+        return _toast_response(tone="error", title=_("Couldn't reject"), body=str(e))
 
     if not moved:
-        return _toast_response(tone="warn", title="Nothing to update", body="This post was already actioned.")
+        return _toast_response(tone="warn", title=_("Nothing to update"), body=_("This post was already actioned."))
 
     return _toast_response(
-        tone="error", title="Post rejected", body="The author was notified", refresh="approvalAction"
+        tone="error", title=_("Post rejected"), body=_("The author was notified"), refresh="approvalAction"
     )
 
 
@@ -124,9 +125,9 @@ def resume(request, workspace_id, post_id):
 
     moved = services.resume_hold(post, request.user, workspace)
     if not moved:
-        return _toast_response(tone="warn", title="Nothing to update", body="This post is not on hold.")
+        return _toast_response(tone="warn", title=_("Nothing to update"), body=_("This post is not on hold."))
 
-    return _toast_response(tone="success", title="Hold lifted", body="Back to approved", refresh="approvalAction")
+    return _toast_response(tone="success", title=_("Hold lifted"), body=_("Back to approved"), refresh="approvalAction")
 
 
 @login_required
@@ -148,7 +149,7 @@ def bulk_action(request, workspace_id):
         try:
             results = services.bulk_reject(post_ids, request.user, workspace, comment_text)
         except ValueError as e:
-            return _toast_response(tone="error", title="Couldn't reject", body=str(e))
+            return _toast_response(tone="error", title=_("Couldn't reject"), body=str(e))
     else:
         return _toast_response(tone="error", title="Invalid action")
 
@@ -157,7 +158,7 @@ def bulk_action(request, workspace_id):
 
     if n == 0:
         return _toast_response(
-            tone="warn", title="Nothing to update", body="None were still pending.", refresh="bulkActionComplete"
+            tone="warn", title=_("Nothing to update"), body="None were still pending.", refresh="bulkActionComplete"
         )
     if action == "approve":
         return _toast_response(

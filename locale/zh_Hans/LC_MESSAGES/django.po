@@ -468,3 +468,54 @@ msgstr "已暂停"
 
 msgid "Back to calendar"
 msgstr "返回日历"
+
+msgid "Publishing failed"
+msgstr "发布失败"
+
+msgid "Clone to retry →"
+msgstr "复制为草稿并重试 →"
+
+msgid "Open an editable draft copy to fix and re-queue"
+msgstr "复制为可编辑草稿，修正后重新加入队列"
+
+msgid "Couldn't approve"
+msgstr "无法批准"
+
+msgid "Nothing to update"
+msgstr "无需更新"
+
+msgid "This post was already actioned."
+msgstr "此帖已处理。"
+
+msgid "Approved internally"
+msgstr "内部审核通过"
+
+msgid "Sent for client sign-off"
+msgstr "已提交客户确认"
+
+msgid "Ready to publish"
+msgstr "可以发布"
+
+msgid "Couldn't send back"
+msgstr "无法退回"
+
+msgid "Sent back for changes"
+msgstr "已退回修改"
+
+msgid "The author was notified"
+msgstr "已通知作者"
+
+msgid "Couldn't reject"
+msgstr "无法拒绝"
+
+msgid "Post rejected"
+msgstr "帖子已拒绝"
+
+msgid "This post is not on hold."
+msgstr "此帖未暂停。"
+
+msgid "Hold lifted"
+msgstr "已解除暂停"
+
+msgid "Back to approved"
+msgstr "已恢复为已批准"

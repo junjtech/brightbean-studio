@@ -4,6 +4,7 @@ from django.utils import timezone, translation
 
 from apps.accounts.models import User
 from apps.members.models import WorkspaceMembership
+from apps.social_accounts.models import SocialAccount
 from apps.workspaces.models import Workspace
 
 
@@ -24,6 +25,15 @@ class WorkspaceLocalizationTests(TestCase):
             approvals = self.client.get(reverse("workspaces:approvals_settings", args=[workspace.pk]))
             self.assertContains(approvals, "必须内部审核")
             self.assertNotContains(approvals, "Internal review required")
+            empty = self.client.get(reverse("calendar:publish_tab_drafts", args=[workspace.pk]))
+            self.assertContains(empty, "连接渠道")
+            SocialAccount.objects.create(
+                workspace=workspace,
+                platform="linkedin_personal",
+                account_platform_id="locale-test-account",
+                account_name="Locale Test",
+                connection_status="connected",
+            )
             for route, label in (
                 ("social_accounts:connect", "连接社媒平台"),
                 ("calendar:publish_tab_drafts", "暂无草稿"),

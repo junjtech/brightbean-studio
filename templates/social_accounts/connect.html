@@ -16,7 +16,7 @@
     <div class="overflow-y-auto pr-1">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {% for value, label in platform_choices %}
-        <div class="relative bg-white rounded-xl border border-stone-200 p-5 transition-all duration-200 {% if value in configured_platforms or value == 'youtube' %}{% else %}opacity-60{% endif %}">
+        <div class="relative bg-white rounded-xl border border-stone-200 p-5 transition-all duration-200 {% if value in configured_platforms or value == 'youtube' or request.user.is_superuser and value in credential_platforms %}{% else %}opacity-60{% endif %}">
             <div class="flex items-start gap-4">
                 {% if value == "youtube" %}
                 {# Generic video glyph in neutral colours: no YouTube logo, red, or play-button shape. #}
@@ -74,6 +74,11 @@
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                 </button>
             </form>
+            {% if request.user.is_superuser and value in credential_platforms %}
+            <a class="block mt-2 text-center text-xs underline" href="{% url 'social_accounts:platform_setup' workspace_id value %}">查看平台配置</a>
+            {% endif %}
+            {% elif request.user.is_superuser and value in credential_platforms %}
+            <a href="{% url 'social_accounts:platform_setup' workspace_id value %}" class="mt-4 block rounded-full border border-orange-200 bg-orange-50 px-4 py-2 text-center text-xs font-semibold text-orange-700">配置平台</a>
             {% else %}
             <div class="mt-4">
                 <span class="w-full inline-flex items-center justify-center px-4 py-2 text-xs font-semibold text-stone-400 bg-stone-100 rounded-full cursor-not-allowed">
@@ -82,7 +87,7 @@
             </div>
             {% endif %}
 
-            {% if value not in configured_platforms and value != 'youtube' %}
+            {% if not request.user.is_superuser and value not in configured_platforms and value != 'youtube' %}
             <div class="absolute inset-0 rounded-xl bg-white/40 cursor-not-allowed" title="{% translate 'Platform credentials not configured. Contact your administrator.' %}"></div>
             {% endif %}
         </div>

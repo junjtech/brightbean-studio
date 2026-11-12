@@ -1,4 +1,7 @@
 from django.contrib import admin
+from django.shortcuts import redirect
+
+from apps.members.models import WorkspaceMembership
 
 from .forms import PlatformCredentialAdminForm
 from .models import PlatformCredential
@@ -17,6 +20,15 @@ class PlatformCredentialAdmin(admin.ModelAdmin):
     # Editing credentials necessarily reveals decrypted secrets on the change
     # page, so restrict the whole model to superusers (admin already requires
     # is_staff).
+    def changelist_view(self, request, extra_context=None):
+        if request.method == "GET" and request.user.is_superuser and request.user.last_workspace_id:
+            membership = WorkspaceMembership.objects.filter(
+                user=request.user, workspace_id=request.user.last_workspace_id
+            ).first()
+            if membership and membership.effective_permissions.get("manage_social_accounts"):
+                return redirect("social_accounts:connect", workspace_id=membership.workspace_id)
+        return super().changelist_view(request, extra_context)
+
     def has_module_permission(self, request):
         return request.user.is_superuser
 

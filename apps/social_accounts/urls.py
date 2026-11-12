@@ -5,6 +5,7 @@ from . import views
 app_name = "social_accounts"
 
 urlpatterns = [
+    path("<uuid:workspace_id>/setup/<str:platform>/", views.platform_setup, name="platform_setup"),
     # Workspace-scoped views
     path(
         "<uuid:workspace_id>/",

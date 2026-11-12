@@ -1,4 +1,4 @@
-{% extends "layouts/workspace_settings.html" %}
+{% extends "layouts/workspace_settings.html" %}{% load i18n %}
 {% load static %}
 
 {% block title %}Media Library - {{ workspace.name }}{% endblock %}
@@ -96,7 +96,7 @@
 </style>
 {% endblock %}
 
-{% block page_title %}Media Library{% endblock %}
+{% block page_title %}{% translate "Media Library" %}{% endblock %}
 
 {% block content %}
 <div x-data="{ ...mediaLibrary(), folderSidebarOpen: false }" class="flex flex-1 min-h-0 -m-3 sm:-m-4 lg:-m-6 -mb-3 sm:-mb-4 lg:-mb-6">
@@ -187,7 +187,7 @@
       <!-- Type filters -->
       <div class="flex items-center gap-1.5 overflow-x-auto flex-nowrap">
         <a href="{% url 'media_library:index' workspace_id=workspace.id %}{% if current_folder %}?folder={{ current_folder }}{% endif %}"
-           class="ml-filter-pill {% if not current_type %}active{% endif %}">All</a>
+           class="ml-filter-pill {% if not current_type %}active{% endif %}">{% translate "All" %}</a>
         {% for type_val, type_label in file_types %}
         <a href="{% url 'media_library:index' workspace_id=workspace.id %}?type={{ type_val }}{% if current_folder %}&folder={{ current_folder }}{% endif %}"
            class="ml-filter-pill {% if current_type == type_val %}active{% endif %}">{{ type_label }}</a>

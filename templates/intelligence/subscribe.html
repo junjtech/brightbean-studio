@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html" %}{% load i18n %}
 {% load intelligence_extras humanize %}
 
 {% block title %}Activate Intelligence - {{ organization.name }} - Brightbean{% endblock %}
@@ -16,7 +16,7 @@
     <a href="{% url 'intelligence:playground' org_id=organization.id %}"
        class="intel-cta-text-link flex-shrink-0">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-        Cancel
+        {% translate "Cancel" %}
     </a>
 </div>
 {% endblock %}
@@ -178,7 +178,7 @@
             </p>
             <div>
                 <label for="billing_email" class="block text-sm font-medium text-stone-700 mb-1.5">
-                    Email
+                    {% translate "Email" %}
                 </label>
                 <input type="email" name="billing_email" id="billing_email"
                        value="{{ billing_email }}"

@@ -1,4 +1,4 @@
-{% comment %}
+{% load i18n %}{% comment %}
 Issuance modal — Alpine for open/close, HTMX for the cascading workspace
 → accounts + permissions partial. The actual POST is a normal Django
 form submit (no HTMX) so the response can render the one-time token
@@ -29,7 +29,7 @@ reveal modal on top of the freshly-rendered list page.
 
                 <div class="space-y-4 px-6 overflow-y-auto flex-1 min-h-0">
                     <div>
-                        <label for="name" class="block text-sm font-semibold mb-1" style="color: var(--text-primary);">Name</label>
+                        <label for="name" class="block text-sm font-semibold mb-1" style="color: var(--text-primary);">{% translate "Name" %}</label>
                         <input type="text" id="name" name="name" required maxlength="100" autocomplete="off"
                                placeholder="e.g. Zapier bot, content pipeline"
                                class="input-focus w-full px-3 py-2 text-sm rounded-lg outline-none transition-colors"
@@ -69,7 +69,7 @@ reveal modal on top of the freshly-rendered list page.
                     <button type="button" @click="showIssueModal = false"
                             class="btn-neutral px-4 py-2 text-sm font-medium rounded-full cursor-pointer"
                             style="background: var(--neutral-100); color: var(--text-primary);">
-                        Cancel
+                        {% translate "Cancel" %}
                     </button>
                     <button type="submit"
                             class="btn-primary-hover px-5 py-2 text-sm font-medium rounded-full cursor-pointer"

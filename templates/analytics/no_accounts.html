@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html" %}{% load i18n %}
 
 {% block title %}Analytics — {{ workspace.name }} — Brightbean{% endblock %}
 
@@ -6,7 +6,7 @@
 <div style="padding: 22px 24px 40px; display: flex; flex-direction: column; flex: 1;">
     <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 22px; padding-bottom: 16px; border-bottom: 1px solid var(--neutral-100);">
         <div>
-            <h1 style="font-size: 1.5rem; font-weight: 600; color: var(--neutral-900); letter-spacing: -0.01em;">Analytics</h1>
+            <h1 style="font-size: 1.5rem; font-weight: 600; color: var(--neutral-900); letter-spacing: -0.01em;">{% translate "Analytics" %}</h1>
             <p style="font-size: 0.8125rem; color: var(--text-tertiary); margin-top: 2px;">Performance across your connected channels.</p>
         </div>
     </div>
@@ -22,7 +22,7 @@
                 performance — and if you have connected an account before, check the Channels page:
                 one that needs reconnecting doesn't show up here.
             </p>
-            <a href="{% url 'social_accounts:connect' workspace_id=workspace.id %}" class="btn-brand" style="width: auto; padding: 9px 20px;">Connect a channel</a>
+            <a href="{% url 'social_accounts:connect' workspace_id=workspace.id %}" class="btn-brand" style="width: auto; padding: 9px 20px;">{% translate "Connect a channel" %}</a>
         </div>
     </div>
 </div>

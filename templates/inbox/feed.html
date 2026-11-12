@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html" %}{% load i18n %}
 {% load humanize %}
 
 {% block title %}Inbox - {{ workspace.name }} - Brightbean{% endblock %}
@@ -135,7 +135,7 @@
                    hx-get="{% url 'inbox:feed' workspace_id=workspace.id %}?view=all"
                    hx-target="#inbox-message-list"
                    hx-swap="innerHTML"
-                   hx-push-url="true">All</a>
+                   hx-push-url="true">{% translate "All" %}</a>
                 <a href="{% url 'inbox:feed' workspace_id=workspace.id %}?view=mine"
                    class="inbox-tab {% if current_view == 'mine' %}active{% endif %}"
                    hx-get="{% url 'inbox:feed' workspace_id=workspace.id %}?view=mine"
@@ -202,7 +202,7 @@
                 <button @click="activePanel = 'list'"
                         class="flex items-center gap-1.5 text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors cursor-pointer">
                     <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-                    Back
+                    {% translate "Back" %}
                 </button>
             </div>
             <!-- Empty state shown when no message is selected -->

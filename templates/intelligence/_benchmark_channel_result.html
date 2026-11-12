@@ -1,4 +1,4 @@
-{% load intelligence_extras %}
+{% load i18n %}{% load intelligence_extras %}
 {% with channel=result.channel niche=result.niche %}
 <div>
     {% comment %} Hero, channel identity only. The niche match strength
@@ -208,7 +208,7 @@
         </div>
         {% if niche.title_patterns.common_niche_phrases|length > 12 %}
         <div class="mt-2 text-[11px] text-stone-400">
-            + {{ niche.title_patterns.common_niche_phrases|length|add:"-12" }} more
+            + {{ niche.title_patterns.common_niche_phrases|length|add:"-12" }} {% translate "more" %}
         </div>
         {% endif %}
     </div>

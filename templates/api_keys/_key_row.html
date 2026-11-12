@@ -1,4 +1,4 @@
-{# Single row in the API keys list. Receives ``row`` (see ``_row_context``). #}
+{% load i18n %}{# Single row in the API keys list. Receives ``row`` (see ``_row_context``). #}
 <div class="flex items-center justify-between gap-6">
     <div class="flex-1 min-w-0">
         <div class="flex items-center gap-3 mb-1">
@@ -61,7 +61,7 @@
                 @click="showEditModal = true"
                 class="btn-neutral px-4 py-1.5 text-xs font-medium rounded-full cursor-pointer whitespace-nowrap"
                 style="background: var(--surface-1, #F3F4F6); color: var(--text-secondary); border: 1px solid var(--border);">
-            Edit
+            {% translate "Edit" %}
         </button>
 
         <template x-teleport="body">
@@ -173,7 +173,7 @@
                             <button type="button" @click="showEditModal = false"
                                     class="btn-neutral px-4 py-2 text-sm font-medium rounded-full cursor-pointer"
                                     style="background: var(--neutral-100); color: var(--text-primary);">
-                                Cancel
+                                {% translate "Cancel" %}
                             </button>
                             <button type="submit"
                                     class="btn-primary-hover px-5 py-2 text-sm font-medium rounded-full cursor-pointer"
@@ -203,7 +203,7 @@
                 @click="showRevokeModal = true"
                 class="btn-neutral px-4 py-1.5 text-xs font-medium rounded-full cursor-pointer whitespace-nowrap"
                 style="background: var(--error-soft, #FEE2E2); color: var(--error-700, #B91C1C);">
-            Revoke
+            {% translate "Revoke" %}
         </button>
 
         <template x-teleport="body">
@@ -226,7 +226,7 @@
                     </div>
 
                     <p class="px-6 pb-2 text-sm" style="color: var(--text-secondary);">
-                        Revoke <strong style="color: var(--text-primary);">{{ row.name }}</strong>?
+                        {% translate "Revoke" %} <strong style="color: var(--text-primary);">{{ row.name }}</strong>?
                         Agents using it will immediately start receiving <code>401 Unauthorized</code>.
                     </p>
 
@@ -236,7 +236,7 @@
                         <button type="button" @click="showRevokeModal = false"
                                 class="btn-neutral px-4 py-2 text-sm font-medium rounded-full cursor-pointer"
                                 style="background: var(--neutral-100); color: var(--text-primary);">
-                            Cancel
+                            {% translate "Cancel" %}
                         </button>
                         <button type="submit"
                                 class="px-5 py-2 text-sm font-medium rounded-full cursor-pointer"

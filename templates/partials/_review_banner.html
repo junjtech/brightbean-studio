@@ -1,4 +1,4 @@
-<!-- Trustpilot review ask. Rendered only when sidebar_context sets
+{% load i18n %}<!-- Trustpilot review ask. Rendered only when sidebar_context sets
      show_review_banner; closing it or clicking through hides it until the
      next login (User.review_banner_dismissed_at vs last_login). -->
 <div class="sidebar-review-banner px-3 pb-3"
@@ -18,7 +18,7 @@
     <div class="relative rounded-xl border border-stone-200 bg-white p-3.5 shadow-sm">
         <button type="button" @click="dismiss()"
                 class="absolute top-2.5 right-2.5 w-6 h-6 flex items-center justify-center rounded-md text-stone-400 hover:text-stone-600 hover:bg-stone-100 transition-colors cursor-pointer"
-                aria-label="Dismiss" title="Dismiss">
+                aria-label="{% translate "Dismiss" %}" title="{% translate "Dismiss" %}">
             <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
         <div class="flex items-center gap-0.5 text-orange-500" aria-hidden="true">

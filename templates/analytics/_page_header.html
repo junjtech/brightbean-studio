@@ -1,9 +1,9 @@
-{% load analytics_extras humanize %}
+{% load i18n %}{% load analytics_extras humanize %}
 <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 22px;">
     {# Title #}
     <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
         <div>
-            <h1 style="font-size: 1.5rem; font-weight: 600; color: var(--neutral-900); letter-spacing: -0.01em;">Analytics</h1>
+            <h1 style="font-size: 1.5rem; font-weight: 600; color: var(--neutral-900); letter-spacing: -0.01em;">{% translate "Analytics" %}</h1>
             <p style="font-size: 0.8125rem; color: var(--text-tertiary); margin-top: 2px;">Performance across your connected channels.</p>
         </div>
     </div>
@@ -48,7 +48,7 @@
                             </div>
                             <span style="flex: 1; min-width: 0;">
                                 <span style="display: block; font-size: 0.8125rem; font-weight: 600; color: var(--neutral-900); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{ acc.account_name }}{% if acc.platform == "youtube" %} <small>YouTube</small>{% endif %}</span>
-                                <span style="display: block; font-size: 0.6875rem; color: var(--text-tertiary);">{{ acc.follower_count|intcomma }} {% if acc.platform == "youtube" %}subscribers{% else %}followers{% endif %}</span>
+                                <span style="display: block; font-size: 0.6875rem; color: var(--text-tertiary);">{{ acc.follower_count|intcomma }} {% if acc.platform == "youtube" %}{% translate "subscribers" %}{% else %}{% translate "followers" %}{% endif %}</span>
                             </span>
                             {% if acc.analytics_unavailable_reason %}
                                 {% comment %}

@@ -1,4 +1,4 @@
-{% load analytics_extras %}
+{% load i18n %}{% load analytics_extras %}
 {# Full-page swap target. The drawer + AlpineJS scope is in index.html. #}
 
 {% include "analytics/_page_header.html" %}
@@ -13,7 +13,7 @@
     </div>
     <form method="post" action="{% url 'social_accounts:reconnect' workspace_id=workspace.id account_id=active_account.id %}">
         {% csrf_token %}
-        <button type="submit" class="btn-brand" style="width: auto; padding: 8px 18px;">Reconnect</button>
+        <button type="submit" class="btn-brand" style="width: auto; padding: 8px 18px;">{% translate "Reconnect" %}</button>
     </form>
 </div>
 {% endif %}

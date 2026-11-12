@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html" %}{% load i18n %}
 {% load static i18n allauth account socialaccount %}
 
 {% block title %}Sign up · BrightBean Studio{% endblock %}
@@ -62,7 +62,7 @@
                         </form>
                     {% endfor %}
                 </div>
-                <div class="divider-text my-6">or</div>
+                <div class="divider-text my-6">{% translate "or" %}</div>
             {% endif %}
         {% endif %}
 

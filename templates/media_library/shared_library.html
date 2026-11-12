@@ -1,4 +1,4 @@
-{% extends "layouts/settings.html" %}
+{% extends "layouts/settings.html" %}{% load i18n %}
 {% load static %}
 
 {% block title %}Shared Library{% endblock %}
@@ -69,7 +69,7 @@
              hx-include="[name='q']">
     </div>
     <div class="flex items-center gap-1.5">
-      <a href="{% url 'media_library_org:shared_index' %}" class="ml-filter-pill {% if not current_type %}active{% endif %}">All</a>
+      <a href="{% url 'media_library_org:shared_index' %}" class="ml-filter-pill {% if not current_type %}active{% endif %}">{% translate "All" %}</a>
       {% for type_val, type_label in file_types %}
       <a href="{% url 'media_library_org:shared_index' %}?type={{ type_val }}" class="ml-filter-pill {% if current_type == type_val %}active{% endif %}">{{ type_label }}</a>
       {% endfor %}

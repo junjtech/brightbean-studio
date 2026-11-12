@@ -89,7 +89,7 @@
             <div class="relative bg-white rounded-2xl shadow-xl w-full max-w-[420px] mx-4 p-6" @click.stop>
                 <h3 class="text-lg font-semibold text-stone-800 mb-2">Delete Feed</h3>
                 <p class="text-sm text-stone-600 mb-5">
-                    Remove <span class="font-semibold text-stone-800">{{ selected_feed.name }}</span> from your feeds?
+                    {% translate "Remove" %} <span class="font-semibold text-stone-800">{{ selected_feed.name }}</span> from your feeds?
                 </p>
                 <form hx-post="{% url 'composer:feed_delete' workspace_id=workspace.id feed_id=selected_feed.id %}"
                       hx-target="#feeds-tab-content"

@@ -1,11 +1,11 @@
-{% extends "base.html" %}
+{% extends "base.html" %}{% load i18n %}
 
 {% block title %}Intelligence - {{ organization.name }} - Brightbean{% endblock %}
 
 {% block page_header %}
 <div class="flex flex-wrap items-center justify-between gap-3 mb-4 lg:mb-[25px]">
     <div>
-        <h1 class="text-xl sm:text-2xl font-semibold text-stone-900" style="letter-spacing: -0.01em;">Intelligence</h1>
+        <h1 class="text-xl sm:text-2xl font-semibold text-stone-900" style="letter-spacing: -0.01em;">{% translate "Intelligence" %}</h1>
         <p class="text-sm text-stone-500 mt-1">
             YouTube packaging scoring, channel benchmarks, content-gap research.
         </p>

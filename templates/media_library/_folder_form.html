@@ -1,4 +1,4 @@
-{% comment %}Modal for creating a new folder. Expects: workspace{% endcomment %}
+{% load i18n %}{% comment %}Modal for creating a new folder. Expects: workspace{% endcomment %}
 
 <div class="fixed inset-0 z-50 flex items-center justify-center" @keydown.escape.window="showNewFolder = false">
   <!-- Backdrop -->
@@ -22,7 +22,7 @@
         <button type="button" @click="showNewFolder = false"
                 class="btn-surface-2 px-4 py-2 text-sm font-medium rounded-lg transition-colors cursor-pointer"
                 style="color: var(--text-secondary, #57534E);">
-          Cancel
+          {% translate "Cancel" %}
         </button>
         <button type="submit"
                 class="btn-primary-hover px-4 py-2 text-sm font-semibold text-white rounded-lg transition-colors cursor-pointer"

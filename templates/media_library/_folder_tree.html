@@ -1,4 +1,4 @@
-{% comment %}Nested folder tree for sidebar. Expects: folders, workspace, current_folder{% endcomment %}
+{% load i18n %}{% comment %}Nested folder tree for sidebar. Expects: folders, workspace, current_folder{% endcomment %}
 
 <div x-data="{ folderToDelete: null, folderDeleteName: '', folderDeleteUrl: '' }">
 
@@ -82,19 +82,19 @@
     </div>
     <h3 class="text-base font-semibold text-center mb-1" style="color: var(--text-primary, #1C1917);">Delete folder?</h3>
     <p class="text-sm text-center mb-5" style="color: var(--text-secondary, #57534E);">
-      Delete <span class="font-medium" x-text="folderDeleteName"></span>? Assets will be moved to the parent folder.
+      {% translate "Delete" %} <span class="font-medium" x-text="folderDeleteName"></span>? Assets will be moved to the parent folder.
     </p>
     <div class="flex gap-2">
       <button type="button" @click="folderToDelete = null"
               class="btn-surface-2 flex-1 px-4 py-2 text-sm font-medium rounded-lg transition-colors cursor-pointer"
               style="color: var(--text-secondary, #57534E); border: 1px solid var(--border, #E7E5E4);">
-        Cancel
+        {% translate "Cancel" %}
       </button>
       <button type="button"
               class="btn-error-darker flex-1 px-4 py-2 text-sm font-semibold text-white rounded-lg transition-colors cursor-pointer"
               style="background: var(--error-500, #EF4444);"
               @click="htmx.ajax('POST', folderDeleteUrl, {target: '#folder-tree', swap: 'innerHTML'}); folderToDelete = null">
-        Delete
+        {% translate "Delete" %}
       </button>
     </div>
   </div>

@@ -107,7 +107,7 @@
                     {% elif value == 'youtube' %}{% translate "Videos &amp; Shorts" %}
                     {% elif value == 'pinterest' %}{% translate "Pins &amp; Boards" %}
                     {% elif value == 'threads' %}{% translate "Text &amp; Media" %}
-                    {% elif value == 'bluesky' %}AT Protocol
+                    {% elif value == 'bluesky' %}{% translate "AT Protocol" %}
                     {% elif value == 'google_business' %}{% translate "Local posts" %}
                     {% elif value == 'mastodon' %}{% translate "Federated social" %}
                     {% endif %}
@@ -118,7 +118,7 @@
             {% if value in connected_accounts %}
             <div style="display: flex; align-items: center; gap: 8px;">
                 <span style="font-size: 0.8125rem; font-weight: 500; color: var(--success-700);">
-                    Connected
+                    {% translate "Connected" %}
                 </span>
                 <div style="
                     width: 28px; height: 28px;
@@ -163,9 +163,9 @@
                         box-shadow: var(--shadow-xl);
                     ">
                         {% csrf_token %}
-                        <h3 style="font-size: 0.9375rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px;">Connect Bluesky</h3>
+                        <h3 style="font-size: 0.9375rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px;">{% translate "Connect Bluesky" %}</h3>
                         <div style="margin-bottom: 12px;">
-                            <label style="font-size: 0.8125rem; font-weight: 600; color: var(--text-primary); display: block; margin-bottom: 4px;">Handle</label>
+                            <label style="font-size: 0.8125rem; font-weight: 600; color: var(--text-primary); display: block; margin-bottom: 4px;">{% translate "Handle" %}</label>
                             <input type="text" name="handle" placeholder="you.bsky.social" required style="
                                 width: 100%; padding: 9px 12px;
                                 font-size: 0.875rem; font-family: var(--font-body);
@@ -177,7 +177,7 @@
                             ">
                         </div>
                         <div style="margin-bottom: 16px;">
-                            <label style="font-size: 0.8125rem; font-weight: 600; color: var(--text-primary); display: block; margin-bottom: 4px;">App Password</label>
+                            <label style="font-size: 0.8125rem; font-weight: 600; color: var(--text-primary); display: block; margin-bottom: 4px;">{% translate "App Password" %}</label>
                             <input type="password" name="app_password" required style="
                                 width: 100%; padding: 9px 12px;
                                 font-size: 0.875rem; font-family: var(--font-body);
@@ -237,7 +237,7 @@
                         box-shadow: var(--shadow-xl);
                     ">
                         {% csrf_token %}
-                        <h3 style="font-size: 0.9375rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px;">Connect Mastodon</h3>
+                        <h3 style="font-size: 0.9375rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px;">{% translate "Connect Mastodon" %}</h3>
                         <div style="margin-bottom: 16px;">
                             <label style="font-size: 0.8125rem; font-weight: 600; color: var(--text-primary); display: block; margin-bottom: 4px;">Instance URL</label>
                             <input type="text" name="instance_url" placeholder="mastodon.social" required style="
@@ -307,7 +307,7 @@
         font-size: 0.8125rem; color: var(--success-700); font-weight: 500;
     ">
         <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        {{ connected_accounts|length }} account{{ connected_accounts|length|pluralize }} connected
+        {{ connected_accounts|length }} {% translate "account" %}{{ connected_accounts|length|pluralize }} connected
     </div>
     {% endif %}
 

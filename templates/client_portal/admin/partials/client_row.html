@@ -1,4 +1,4 @@
-<div class="px-6 py-4 flex items-center gap-4" id="client-{{ client.membership.id }}"
+{% load i18n %}<div class="px-6 py-4 flex items-center gap-4" id="client-{{ client.membership.id }}"
      style="border-bottom: 1px solid var(--border);">
     <!-- Avatar -->
     <div class="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-semibold"
@@ -50,7 +50,7 @@
             <button type="submit"
                     class="btn-danger-soft-bg text-xs px-3 py-1.5 rounded-full font-medium cursor-pointer transition-colors"
                     style="color: #DC2626; background: transparent;">
-                Remove
+                {% translate "Remove" %}
             </button>
         </form>
     </div>

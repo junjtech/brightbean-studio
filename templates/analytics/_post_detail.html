@@ -1,4 +1,4 @@
-{% load analytics_extras %}
+{% load i18n %}{% load analytics_extras %}
 {# Loaded into the slide-over drawer by openPost(url) in index.html. #}
 <div style="display: flex; align-items: center; gap: 12px; padding: 16px 20px; border-bottom: 1px solid var(--neutral-100); flex-shrink: 0;">
     {% if account.avatar_url %}
@@ -32,7 +32,7 @@
     <div style="font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-ghost); margin-bottom: 6px;">Post copy</div>
     <p style="font-size: 0.9375rem; color: var(--text-primary); line-height: 1.65; margin-bottom: 14px; white-space: pre-wrap;">{{ caption|default:"(no caption)" }}</p>
     <div class="a-mono" style="display: flex; align-items: center; gap: 8px; font-size: 0.75rem; color: var(--text-tertiary); padding-bottom: 18px; border-bottom: 1px solid var(--neutral-100);">
-        Published {{ date }}{% if days_ago is not None %} · {{ days_ago }}d ago{% endif %}
+        {% translate "Published" %} {{ date }}{% if days_ago is not None %} · {{ days_ago }}d ago{% endif %}
     </div>
 
     <div style="font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-ghost); margin: 18px 0 10px;">Performance</div>

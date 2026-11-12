@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Client Portal{% endblock %}</title>
+    <title>{% block title %}{% translate "Client Portal" %}{% endblock %}</title>
     <link rel="icon" href="{% static 'favicon/favicon.ico' %}" sizes="any">
     <link rel="icon" type="image/svg+xml" href="{% static 'favicon/favicon.svg' %}">
     <link rel="icon" type="image/png" sizes="96x96" href="{% static 'favicon/favicon-96x96.png' %}">
@@ -64,7 +64,7 @@
                     <a href="{% url 'accounts:logout' %}"
                        class="px-3 py-1.5 text-[0.8125rem] font-medium rounded-full transition-colors hover:bg-black/[0.04]"
                        style="color: var(--text-tertiary);">
-                        Log out
+                        {% translate "Log out" %}
                     </a>
                 </div>
             </div>

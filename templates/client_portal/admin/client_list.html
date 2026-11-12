@@ -1,11 +1,11 @@
-{% extends "layouts/workspace_settings.html" %}
+{% extends "layouts/workspace_settings.html" %}{% load i18n %}
 {% block title %}Client Portal - {{ request.workspace.name }} - Brightbean{% endblock %}
 {% block content %}
 <div x-data="{ showInviteModal: false }">
     <!-- Header -->
     <div class="flex items-center justify-between mb-6">
         <div>
-            <h2 class="text-xl font-semibold" style="color: var(--text-primary);">Client Portal</h2>
+            <h2 class="text-xl font-semibold" style="color: var(--text-primary);">{% translate "Client Portal" %}</h2>
             <p class="text-sm mt-1" style="color: var(--text-tertiary);">
                 Invite external clients to review and approve posts.
             </p>

@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html" %}{% load i18n %}
 
 {% block title %}Intelligence billing - {{ organization.name }} - Brightbean{% endblock %}
 
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div>
-            <div class="text-xs font-semibold uppercase tracking-wide mb-1.5" style="color: var(--text-tertiary);">Status</div>
+            <div class="text-xs font-semibold uppercase tracking-wide mb-1.5" style="color: var(--text-tertiary);">{% translate "Status" %}</div>
             <div class="flex items-center gap-2 flex-wrap">
                 {% comment %}
                   Stripe keeps status='active' until the period actually
@@ -113,7 +113,7 @@
         {% csrf_token %}
         <div class="flex items-end gap-4">
             <div class="flex-1">
-                <label for="billing_email" class="block text-sm font-semibold mb-2" style="color: var(--text-primary);">Email</label>
+                <label for="billing_email" class="block text-sm font-semibold mb-2" style="color: var(--text-primary);">{% translate "Email" %}</label>
                 <input type="email" name="billing_email" id="billing_email"
                        value="{{ billing_email }}" required
                        class="input-focus w-full px-3 py-2 text-sm rounded-lg outline-none transition-colors"

@@ -442,7 +442,7 @@
                            class="w-full text-[15px] font-medium text-stone-900 px-4 py-3 rounded-xl border border-stone-200 bg-white outline-none transition-all duration-150 focus:border-orange-500 focus:ring-2 focus:ring-orange-100"
                            style="letter-spacing: -0.01em;"
                            x-model="title"
-                           :placeholder="autoSuggestedTitle || 'Enter a title…'"
+                           :placeholder="autoSuggestedTitle || '{% translate "Enter a title…" as ui_enter_a_title %}{{ ui_enter_a_title|escapejs }}'"
                            maxlength="255"
                            @input="debouncedPreviewUpdate()">
                     <div class="flex items-center justify-end mt-1">
@@ -579,7 +579,7 @@
                             <span class="platform-icon w-5 h-5 rounded-[5px] flex items-center justify-center"
                                   :class="'pi-' + (charLimits[accId]?.platform || '')"
                                   x-html="platformIconSvg(charLimits[accId]?.platform || '')"></span>
-                            <span class="text-xs font-semibold text-stone-600" x-text="charLimits[accId]?.name + ' - Video Settings'"></span>
+                            <span class="text-xs font-semibold text-stone-600" x-text="charLimits[accId]?.name + '{% translate " - Video Settings" as ui_video_settings %}{{ ui_video_settings|escapejs }}'"></span>
                         </div>
                         <div>
                             <label class="block text-[11px] font-semibold text-stone-400 uppercase tracking-wider mb-1">Publish as</label>
@@ -612,7 +612,7 @@
                             <span class="platform-icon w-5 h-5 rounded-[5px] flex items-center justify-center"
                                   :class="'pi-' + (charLimits[accId]?.platform || '')"
                                   x-html="platformIconSvg(charLimits[accId]?.platform || '')"></span>
-                            <span class="text-xs font-semibold text-stone-600" x-text="charLimits[accId]?.name + ' - Pin Settings'"></span>
+                            <span class="text-xs font-semibold text-stone-600" x-text="charLimits[accId]?.name + '{% translate " - Pin Settings" as ui_pin_settings %}{{ ui_pin_settings|escapejs }}'"></span>
                         </div>
                         <p x-show="!hasMediaAttached" class="px-3 py-2 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-800">
                             <span class="font-semibold">Pinterest needs an image or a video.</span>
@@ -713,13 +713,13 @@
                                             <button type="button"
                                                     @click="openThumbnailPicker(accId)"
                                                     class="text-xs font-medium px-3 py-1.5 rounded-lg border border-stone-200 text-stone-700 hover:border-orange-400 hover:text-orange-600 transition-all cursor-pointer">
-                                                <span x-text="platformExtras[accId]?.cover_image_asset_id ? 'Change' : 'Pick from Library'"></span>
+                                                <span x-text="platformExtras[accId]?.cover_image_asset_id ? '{% translate "Change" as ui_change %}{{ ui_change|escapejs }}' : '{% translate "Pick from Library" as ui_pick_from_library %}{{ ui_pick_from_library|escapejs }}'"></span>
                                             </button>
                                             <button type="button"
                                                     @click="triggerThumbnailUpload(accId)"
                                                     :disabled="thumbnailUploading[accId]"
                                                     class="text-xs font-medium px-3 py-1.5 rounded-lg border border-stone-200 text-stone-700 hover:border-orange-400 hover:text-orange-600 transition-all disabled:opacity-50 cursor-pointer">
-                                                <span x-text="thumbnailUploading[accId] ? 'Uploading…' : 'Upload'"></span>
+                                                <span x-text="thumbnailUploading[accId] ? '{% translate "Uploading…" as ui_uploading %}{{ ui_uploading|escapejs }}' : 'Upload'"></span>
                                             </button>
                                             <input type="file"
                                                    :data-thumb-upload-for="accId"
@@ -729,7 +729,7 @@
                                             <button type="button"
                                                     x-show="platformExtras[accId]?.cover_image_asset_id"
                                                     @click="clearThumbnail(accId)"
-                                                    class="text-xs text-stone-400 hover:text-red-500 cursor-pointer">Remove</button>
+                                                    class="text-xs text-stone-400 hover:text-red-500 cursor-pointer">{% translate "Remove" %}</button>
                                         </div>
                                         <p class="text-[11px] text-stone-400 mt-1">Required for video pins. PNG or JPG, same dimensions as video.</p>
                                     </div>
@@ -745,7 +745,7 @@
                          class="border border-stone-200 rounded-xl bg-white p-4 space-y-3">
                         <div class="flex items-center gap-2">
                             <a :href="charLimits[accId]?.youtube_url || 'https://www.youtube.com/'" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-stone-600 underline underline-offset-2">YouTube</a>
-                            <span class="text-xs font-semibold text-stone-600" x-text="charLimits[accId]?.name + ' - Video Settings'"></span>
+                            <span class="text-xs font-semibold text-stone-600" x-text="charLimits[accId]?.name + '{% translate " - Video Settings" as ui_video_settings %}{{ ui_video_settings|escapejs }}'"></span>
                         </div>
                         <p x-show="!hasVideoAttached" class="px-3 py-2 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-800">
                             <span class="font-semibold">YouTube only publishes videos.</span>
@@ -766,7 +766,7 @@
                                          @drop.prevent="handleThumbnailDrop(accId, $event); $el.classList.remove('border-orange-400', 'bg-orange-50')"
                                          @click="triggerThumbnailUpload(accId)">
                                         <svg class="w-6 h-6 text-stone-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                                        <span class="text-[11px] text-stone-400" x-text="thumbnailUploading[accId] ? 'Uploading…' : 'Drag & drop a thumbnail'"></span>
+                                        <span class="text-[11px] text-stone-400" x-text="thumbnailUploading[accId] ? '{% translate "Uploading…" as ui_uploading %}{{ ui_uploading|escapejs }}' : '{% translate "Drag & drop a thumbnail" as ui_drag_drop_a_thumbnail %}{{ ui_drag_drop_a_thumbnail|escapejs }}'"></span>
                                     </div>
                                 </template>
                                 <template x-if="platformExtras[accId]?.thumbnail_url">
@@ -914,8 +914,8 @@
                             <span class="platform-icon w-5 h-5 rounded-[5px] flex items-center justify-center"
                                   :class="'pi-' + (charLimits[accId]?.platform || '')"
                                   x-html="platformIconSvg(charLimits[accId]?.platform || '')"></span>
-                            <span class="text-xs font-semibold text-stone-600" x-text="charLimits[accId]?.name + ' - Post Settings'"></span>
-                            <span class="ml-auto text-[11px] text-stone-400" x-show="tt?.creator_nickname" x-text="'Posting to @' + (tt?.creator_nickname || '')"></span>
+                            <span class="text-xs font-semibold text-stone-600" x-text="charLimits[accId]?.name + '{% translate " - Post Settings" as ui_post_settings %}{{ ui_post_settings|escapejs }}'"></span>
+                            <span class="ml-auto text-[11px] text-stone-400" x-show="tt?.creator_nickname" x-text="'{% translate "Posting to @" as ui_posting_to %}{{ ui_posting_to|escapejs }}' + (tt?.creator_nickname || '')"></span>
                         </div>
                         <p x-show="!hasVideoAttached" class="px-3 py-2 bg-amber-50 border border-amber-200 rounded-lg text-xs text-amber-800">
                             <span class="font-semibold">TikTok only publishes videos.</span>
@@ -958,7 +958,7 @@
                                         aria-haspopup="listbox"
                                         class="w-full text-sm px-3 py-2 rounded-lg border border-stone-200 bg-white outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-100 transition-all flex items-center justify-between gap-2 text-left cursor-pointer">
                                     <span :class="ttPrivacy ? 'text-stone-800' : 'text-stone-400'"
-                                          x-text="ttPrivacy ? ttLabel(ttPrivacy) : 'Select who can view this post'"></span>
+                                          x-text="ttPrivacy ? ttLabel(ttPrivacy) : '{% translate "Select who can view this post" as ui_select_who_can_view_this_post %}{{ ui_select_who_can_view_this_post|escapejs }}'"></span>
                                     <svg class="w-4 h-4 text-stone-400 flex-shrink-0 transition-transform" :class="open && 'rotate-180'" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                                 </button>
                                 <ul x-show="open" x-cloak x-transition
@@ -1029,7 +1029,7 @@
                                 <template x-if="!tiktokCoverPreview[accId] && (platformExtras[accId]?.video_cover_timestamp_ms ?? null) !== null">
                                     <div class="relative flex-1 max-w-[480px] rounded-lg border border-stone-200 bg-stone-50 flex items-center justify-center min-h-[104px]">
                                         <span class="text-xs text-stone-500 font-medium tabular-nums"
-                                              x-text="'Cover at ' + formatTimecode((platformExtras[accId]?.video_cover_timestamp_ms || 0) / 1000)"></span>
+                                              x-text="'{% translate "Cover at " as ui_cover_at %}{{ ui_cover_at|escapejs }}' + formatTimecode((platformExtras[accId]?.video_cover_timestamp_ms || 0) / 1000)"></span>
                                         <button type="button" @click="clearTiktokCover(accId)"
                                                 title="Reset to default cover"
                                                 class="absolute top-2 right-2 w-6 h-6 rounded-full bg-black/55 hover:bg-red-500 text-white flex items-center justify-center transition-colors cursor-pointer">
@@ -1171,24 +1171,24 @@
                             <span class="platform-icon w-5 h-5 rounded-[5px] flex items-center justify-center"
                                   :class="'pi-' + (charLimits[accId]?.platform || '')"
                                   x-html="platformIconSvg(charLimits[accId]?.platform || '')"></span>
-                            <span class="text-xs font-semibold text-stone-600" x-text="charLimits[accId]?.name + ' - Custom Override'"></span>
+                            <span class="text-xs font-semibold text-stone-600" x-text="charLimits[accId]?.name + '{% translate " - Custom Override" as ui_custom_override %}{{ ui_custom_override|escapejs }}'"></span>
                             <button type="button" class="ml-auto text-xs text-red-400 hover:text-red-500 cursor-pointer" @click="overrides[accId] = false">Remove override</button>
                         </div>
                         <!-- Title override (only for platforms that need it) -->
                         <template x-if="charLimits[accId]?.needs_title">
                             <div class="mb-3">
                                 <label class="block text-[11px] font-semibold text-stone-400 uppercase tracking-wider mb-1"
-                                       x-text="(charLimits[accId]?.title_label || 'Title') + ' Override'"></label>
+                                       x-text="(charLimits[accId]?.title_label || 'Title') + '{% translate " Override" as ui_override %}{{ ui_override|escapejs }}'"></label>
                                 <input type="text" :name="'override_title_' + accId"
                                        class="w-full text-sm px-3 py-2 rounded-lg border border-stone-200 bg-white outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-100 transition-all"
-                                       :placeholder="'Custom ' + (charLimits[accId]?.title_label || 'title') + '…'"
+                                       :placeholder="'{% translate "Custom " as ui_custom %}{{ ui_custom|escapejs }}' + (charLimits[accId]?.title_label || 'title') + '…'"
                                        :maxlength="charLimits[accId]?.title_max_length || 255">
                             </div>
                         </template>
                         <textarea :name="'override_caption_' + accId"
                                   class="w-full text-sm px-3 py-2 rounded-lg border border-stone-200 bg-white outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-100 transition-all resize-none"
                                   style="font-family: system-ui, -apple-system, sans-serif;"
-                                  :placeholder="'Custom ' + (charLimits[accId]?.caption_label || 'caption') + ' for this platform...'"
+                                  :placeholder="'{% translate "Custom " as ui_custom %}{{ ui_custom|escapejs }}' + (charLimits[accId]?.caption_label || 'caption') + '{% translate " for this platform..." as ui_for_this_platform %}{{ ui_for_this_platform|escapejs }}'"
                                   rows="3"></textarea>
 
                     </div>
@@ -1298,7 +1298,7 @@
                             <input type="text" x-ref="tagSearchInput" x-model="tagSearch"
                                    @keydown.enter.prevent="if (tagSearch.trim() && !filteredTags.includes(tagSearch.trim())) { createTag(); } else if (filteredTags.length === 1) { toggleTag(filteredTags[0]); tagSearch = ''; }"
                                    class="w-full text-sm px-2 py-1.5 rounded-lg border border-stone-200 outline-none focus:border-orange-400 transition-colors"
-                                   placeholder="Search or create tag...">
+                                   placeholder="{% translate "Search or create tag..." %}">
                         </div>
                         <!-- Tag list -->
                         <template x-for="tag in filteredTags" :key="tag">
@@ -1314,7 +1314,7 @@
                             <button type="button" @click="createTag()"
                                     class="flex items-center gap-2 w-full px-3 py-1.5 text-sm text-stone-600 hover:bg-stone-50 rounded-md mx-1">
                                 <svg class="w-3.5 h-3.5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                                Create "<span x-text="tagSearch.trim()" class="font-semibold"></span>"
+                                {% translate "Create \"" %}<span x-text="tagSearch.trim()" class="font-semibold"></span>"
                             </button>
                         </template>
                         <template x-if="tagSearch.trim() && filteredTags.length && !filteredTags.includes(tagSearch.trim())">
@@ -1322,19 +1322,19 @@
                                 <button type="button" @click="createTag()"
                                         class="flex items-center gap-2 w-full px-3 py-1.5 text-sm text-stone-600 hover:bg-stone-50 rounded-md mx-1">
                                     <svg class="w-3.5 h-3.5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                                    Create "<span x-text="tagSearch.trim()" class="font-semibold"></span>"
+                                    {% translate "Create \"" %}<span x-text="tagSearch.trim()" class="font-semibold"></span>"
                                 </button>
                             </div>
                         </template>
                         <template x-if="!tagSearch.trim() && !allTags.length">
-                            <div class="px-3 py-2 text-xs text-stone-400">No tags yet. Type to create one.</div>
+                            <div class="px-3 py-2 text-xs text-stone-400">{% translate "No tags yet. Type to create one." %}</div>
                         </template>
                         <!-- Create new tag -->
                         <div class="border-t border-stone-100 px-1 py-1">
                             <button type="button" @click="tagDropdownOpen = false; showCreateTagModal = true; newTagName = tagSearch; tagSearch = ''; $nextTick(() => $refs.newTagNameInput.focus())"
                                     class="flex items-center gap-2 w-full px-2.5 py-1.5 text-sm text-stone-600 hover:bg-stone-50 rounded-md cursor-pointer transition-colors">
                                 <svg class="w-3.5 h-3.5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                                Create new tag
+                                {% translate "Create new tag" %}
                             </button>
                         </div>
                     </div>
@@ -1344,11 +1344,11 @@
                         <div x-show="showCreateTagModal" x-cloak class="fixed inset-0 z-[200] flex items-center justify-center" @keydown.escape.window="showCreateTagModal = false">
                             <div class="fixed inset-0 bg-black/30" @click="showCreateTagModal = false"></div>
                             <div class="relative bg-white rounded-2xl shadow-xl w-full max-w-sm mx-4 p-6" @click.stop>
-                                <h3 class="text-base font-semibold text-stone-800 mb-4">Create new tag</h3>
+                                <h3 class="text-base font-semibold text-stone-800 mb-4">{% translate "Create new tag" %}</h3>
                                 <input type="text" x-ref="newTagNameInput" x-model="newTagName"
                                        @keydown.enter.prevent="if(newTagName.trim()) { _persistTag(newTagName.trim()); showCreateTagModal = false; newTagName = ''; }"
                                        class="w-full text-sm px-3 py-2.5 rounded-xl border border-stone-200 outline-none focus:border-orange-400 focus:ring-2 focus:ring-orange-100 transition-all"
-                                       placeholder="Tag name...">
+                                       placeholder="{% translate "Tag name..." %}">
                                 <div class="flex justify-end gap-2 mt-4">
                                     <button type="button" @click="showCreateTagModal = false; newTagName = ''"
                                             class="px-4 py-2 text-sm font-medium text-stone-600 hover:bg-stone-100 rounded-lg cursor-pointer transition-colors">
@@ -1396,7 +1396,7 @@
                 <!-- Autosave indicator -->
                 <div id="autosave-status" class="text-xs text-stone-400 mr-auto hidden sm:flex items-center gap-1.5">
                     <span class="w-1.5 h-1.5 rounded-full bg-stone-300" :class="{ 'bg-emerald-400': lastSaved }"></span>
-                    <span x-text="lastSaved ? 'Saved ' + lastSaved : 'Not saved yet'"></span>
+                    <span x-text="lastSaved ? '{% translate "Saved " as ui_saved %}{{ ui_saved|escapejs }}' + lastSaved : '{% translate "Not saved yet" as ui_not_saved_yet %}{{ ui_not_saved_yet|escapejs }}'"></span>
                 </div>
                 <div class="mr-auto sm:hidden"></div>
 
@@ -1844,7 +1844,7 @@
             </div>
             <div class="px-4 sm:px-6 py-4 border-t border-stone-100 flex items-center gap-3 flex-shrink-0">
                 <span class="text-sm text-stone-400"
-                      x-text="unsplashSelectedCount ? unsplashSelectedCount + (unsplashSelectedCount === 1 ? ' photo selected' : ' photos selected') : 'Select photos to add'"></span>
+                      x-text="unsplashSelectedCount ? unsplashSelectedCount + (unsplashSelectedCount === 1 ? '{% translate " photo selected" as ui_photo_selected %}{{ ui_photo_selected|escapejs }}' : '{% translate " photos selected" as ui_photos_selected %}{{ ui_photos_selected|escapejs }}') : '{% translate "Select photos to add" as ui_select_photos_to_add %}{{ ui_select_photos_to_add|escapejs }}'"></span>
                 <div class="ml-auto flex items-center gap-2">
                     <button type="button" @click="closeUnsplashModal()"
                             class="px-4 py-2 rounded-lg text-sm font-semibold text-stone-600 hover:text-stone-900 transition-colors cursor-pointer">{% translate "Cancel" %}</button>
@@ -1852,7 +1852,7 @@
                             :disabled="!unsplashSelectedCount || unsplashImporting"
                             @click="importUnsplashPhotos()"
                             class="px-5 py-2 rounded-lg bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
-                            x-text="unsplashImporting ? 'Adding…' : (unsplashSelectedCount > 1 ? 'Add ' + unsplashSelectedCount + ' images' : 'Add images')"></button>
+                            x-text="unsplashImporting ? '{% translate "Adding…" as ui_adding %}{{ ui_adding|escapejs }}' : (unsplashSelectedCount > 1 ? '{% translate "Add " as ui_add %}{{ ui_add|escapejs }}' + unsplashSelectedCount + '{% translate " images" as ui_images %}{{ ui_images|escapejs }}' : '{% translate "Add images" as ui_add_images %}{{ ui_add_images|escapejs }}')"></button>
                 </div>
             </div>
         </div>
@@ -1929,7 +1929,7 @@
                             @click="captureFrame()"
                             class="px-5 py-2 rounded-lg bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-1.5">
                         <svg x-show="!frameCapturing" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
-                        <span x-text="frameCapturing ? 'Saving…' : 'Use this frame'"></span>
+                        <span x-text="frameCapturing ? '{% translate "Saving…" as ui_saving %}{{ ui_saving|escapejs }}' : '{% translate "Use this frame" as ui_use_this_frame %}{{ ui_use_this_frame|escapejs }}'"></span>
                     </button>
                 </div>
             </div>
@@ -2763,12 +2763,12 @@ function composerApp() {
             const images = files.filter(f => f.type.startsWith('image/'));
 
             if (videos.length > 1) {
-                alert('Only one video file can be uploaded at a time.');
+                alert('{% translate "Only one video file can be uploaded at a time." as ui_only_one_video_file_can_be_uploaded_at_a_time %}{{ ui_only_one_video_file_can_be_uploaded_at_a_time|escapejs }}');
                 return;
             }
 
             if (videos.length === 1 && images.length > 0) {
-                alert('You cannot mix images and video. Please upload either images or a single video.');
+                alert('{% translate "You cannot mix images and video. Please upload either images or a single video." as ui_you_cannot_mix_images_and_video_please_upload_either_images_or_a_single_video %}{{ ui_you_cannot_mix_images_and_video_please_upload_either_images_or_a_single_video|escapejs }}');
                 return;
             }
 

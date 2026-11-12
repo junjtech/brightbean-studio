@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html" %}{% load i18n %}
 {% load static i18n %}
 
 {% block title %}Sign Out - Brightbean{% endblock %}
@@ -25,7 +25,7 @@
         <form method="post" action="{% url 'account_logout' %}">
             {% csrf_token %}
             <div class="flex gap-3">
-                <a href="/" class="btn-outline flex-1">Cancel</a>
+                <a href="/" class="btn-outline flex-1">{% translate "Cancel" %}</a>
                 <button type="submit" class="btn-brand flex-1">Sign Out</button>
             </div>
         </form>

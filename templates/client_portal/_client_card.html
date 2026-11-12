@@ -97,7 +97,7 @@ already-approved posts get "Put on hold"; held posts show their state.
                         class="px-4 py-2 text-[0.8125rem] font-semibold rounded-full text-white" style="background:#EAB308;">Submit feedback</button>
                 <button x-show="panel === 'reject'" hx-post="{% url 'client_portal:reject' post_id=post.id %}" hx-include="#client-comment-{{ post.id }}" hx-swap="none"
                         :disabled="!comment.trim()" :class="!comment.trim() && 'opacity-50 cursor-not-allowed'"
-                        class="px-4 py-2 text-[0.8125rem] font-semibold rounded-full text-white" style="background:#EF4444;">Reject post</button>
+                        class="px-4 py-2 text-[0.8125rem] font-semibold rounded-full text-white" style="background:#EF4444;">{% translate "Reject post" %}</button>
                 <button x-show="panel === 'hold'" hx-post="{% url 'client_portal:request_hold' post_id=post.id %}" hx-include="#client-comment-{{ post.id }}" hx-swap="none"
                         :disabled="!comment.trim()" :class="!comment.trim() && 'opacity-50 cursor-not-allowed'"
                         class="px-4 py-2 text-[0.8125rem] font-semibold rounded-full text-white" style="background:#7C3AED;">Request hold</button>

@@ -519,3 +519,1140 @@ msgstr "已解除暂停"
 
 msgid "Back to approved"
 msgstr "已恢复为已批准"
+
+msgid "Approvals -"
+msgstr "审核 -"
+
+msgid "Control whether posts need to be reviewed before they can be scheduled or published."
+msgstr "设置帖子是否必须经过审核才可以排期或发布。"
+
+msgid "No approvals"
+msgstr "无需审核"
+
+msgid "Optional approvals"
+msgstr "可选审核"
+
+msgid "Internal review required"
+msgstr "必须内部审核"
+
+msgid "Internal review + client approval"
+msgstr "内部审核及客户确认"
+
+msgid "Anyone with publishing rights can schedule or publish directly."
+msgstr "有发布权限的成员可直接排期或发布。"
+
+msgid "Creators can choose to submit a post for review, but it's not required."
+msgstr "创作者可自行决定是否提交审核。"
+
+msgid "Every post must be approved by a team member with review rights before it can go out."
+msgstr "每篇帖子都须经具备审核权限的成员批准后才能发布。"
+
+msgid "Posts go through internal review, then are sent to the client portal for final sign-off."
+msgstr "先由内部审核，再提交客户门户，由客户最终确认。"
+
+msgid "Save Changes"
+msgstr "保存修改"
+
+msgid "Reviewers are workspace members with the \"Approve posts\" permission. Manage them on the"
+msgstr "具备“批准帖子”权限的工作区成员可以审核。管理审核人员请前往"
+
+msgid "Members"
+msgstr "成员"
+
+msgid "page."
+msgstr "页面。"
+
+msgid "Workspaces"
+msgstr "工作区"
+
+msgid "No workspaces yet. Create your first workspace to get started."
+msgstr "尚无工作区，请先创建一个。"
+
+msgid "New workspace"
+msgstr "新建工作区"
+
+msgid "Workspace name"
+msgstr "工作区名称"
+
+msgid "Settings -"
+msgstr "设置 -"
+
+msgid "General"
+msgstr "常规设置"
+
+msgid "Workspace Name"
+msgstr "工作区名称"
+
+msgid "Workspace logo"
+msgstr "工作区标志"
+
+msgid "Remove logo"
+msgstr "移除标志"
+
+msgid "Logo"
+msgstr "标志"
+
+msgid "JPEG, PNG, WebP, or GIF. Max 2 MB."
+msgstr "支持 JPEG、PNG、WebP 或 GIF，最大 2 MB。"
+
+msgid "Upload Logo"
+msgstr "上传标志"
+
+msgid "Restore this workspace"
+msgstr "恢复此工作区"
+
+msgid "Archive this workspace"
+msgstr "归档此工作区"
+
+msgid "This workspace is currently archived. Restoring it will make it visible in the sidebar and accessible to all members again."
+msgstr "此工作区已归档。恢复后，它会重新出现在侧栏中，所有成员可再次访问。"
+
+msgid "Archiving hides this workspace from the sidebar and prevents new posts. All existing data is preserved and the workspace can be restored at any time."
+msgstr "归档后工作区会从侧栏隐藏，并停止创建新帖子。已有数据会保留，随时可以恢复。"
+
+msgid "You cannot archive the last active workspace in the organization. Create another workspace first."
+msgstr "这是组织中最后一个启用的工作区。请先创建另一个工作区，再归档此工作区。"
+
+msgid "Restore Workspace"
+msgstr "恢复工作区"
+
+msgid "Archive Workspace"
+msgstr "归档工作区"
+
+msgid "Are you sure you want to archive"
+msgstr "确定要归档"
+
+msgid "? The workspace will be hidden from the sidebar and no new posts can be created. All existing data will be preserved."
+msgstr "？工作区将从侧栏隐藏，并停止创建新帖子。已有数据会保留。"
+
+msgid "Yes, archive this workspace"
+msgstr "确认归档此工作区"
+
+msgid "Delete this workspace"
+msgstr "删除此工作区"
+
+msgid "Permanently delete this workspace and all of its data. This includes all posts, connected social accounts, media assets, and workspace memberships. This action cannot be undone."
+msgstr "永久删除此工作区及全部帖子、已连接的社媒账号、素材和成员关系。此操作无法撤销。"
+
+msgid "You cannot delete the last active workspace in the organization. Create another workspace first."
+msgstr "这是组织中最后一个启用的工作区。请先创建另一个工作区，再删除此工作区。"
+
+msgid "Delete Workspace"
+msgstr "删除工作区"
+
+msgid "Are you sure you want to permanently delete"
+msgstr "确定要永久删除"
+
+msgid "? This action cannot be undone."
+msgstr "？此操作无法撤销。"
+
+msgid "All of the following will be permanently removed:"
+msgstr "以下内容将被永久删除："
+
+msgid "All scheduled and published posts"
+msgstr "所有已排期和已发布的帖子"
+
+msgid "Connected social accounts"
+msgstr "已连接的社媒账号"
+
+msgid "Media assets and files"
+msgstr "媒体素材和文件"
+
+msgid "Workspace memberships"
+msgstr "工作区成员关系"
+
+msgid "Yes, delete this workspace"
+msgstr "确认删除此工作区"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Profile"
+msgstr "个人资料"
+
+msgid "Preferences"
+msgstr "偏好设置"
+
+msgid "Organization"
+msgstr "组织"
+
+msgid "Team Members"
+msgstr "团队成员"
+
+msgid "API Keys"
+msgstr "API 密钥"
+
+msgid "All Calendars"
+msgstr "全部日历"
+
+msgid "Workspace Settings"
+msgstr "工作区设置"
+
+msgid "Client Portal"
+msgstr "客户门户"
+
+msgid "Dismiss"
+msgstr "关闭"
+
+msgid "No workspaces"
+msgstr "暂无工作区"
+
+msgid "Create workspace"
+msgstr "创建工作区"
+
+msgid "Workspace settings"
+msgstr "工作区设置"
+
+msgid "Publish content to a channel"
+msgstr "向渠道发布内容"
+
+msgid "Idea"
+msgstr "选题"
+
+msgid "Capture a content idea"
+msgstr "记录内容创意"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Search or create tag..."
+msgstr "搜索或创建标签…"
+
+msgid "No tags yet. Type to create one."
+msgstr "暂无标签，输入名称即可创建。"
+
+msgid "Create \""
+msgstr "创建“"
+
+msgid "Create new tag"
+msgstr "新建标签"
+
+msgid "Give your idea a title"
+msgstr "为选题命名"
+
+msgid "Let it flow... or"
+msgstr "写下你的想法，或"
+
+msgid "Remove"
+msgstr "移除"
+
+msgid "Drag &amp; drop"
+msgstr "拖放文件"
+
+msgid "Add another file"
+msgstr "添加其他文件"
+
+msgid "or"
+msgstr "或"
+
+msgid "select a file"
+msgstr "选择文件"
+
+msgid "Emoji"
+msgstr "表情"
+
+msgid "Search emoji..."
+msgstr "搜索表情…"
+
+msgid "Save Idea"
+msgstr "保存选题"
+
+msgid "Tag name..."
+msgstr "标签名称…"
+
+msgid "Intelligence"
+msgstr "情报分析"
+
+msgid "Connect a channel"
+msgstr "连接渠道"
+
+msgid "Reconnect"
+msgstr "重新连接"
+
+msgid "Connect channels"
+msgstr "连接渠道"
+
+msgid "Collapse sidebar"
+msgstr "收起侧栏"
+
+msgid "Expand sidebar"
+msgstr "展开侧栏"
+
+msgid "Manage Team"
+msgstr "管理团队"
+
+msgid "Log out"
+msgstr "退出登录"
+
+msgid "Toggle menu"
+msgstr "切换菜单"
+
+msgid "of"
+msgstr "/"
+
+msgid "complete"
+msgstr "已完成"
+
+msgid "Minimize"
+msgstr "收起"
+
+msgid "Dismiss checklist"
+msgstr "关闭清单"
+
+msgid "Dashboard"
+msgstr "工作台"
+
+msgid "No workspaces yet"
+msgstr "暂无工作区"
+
+msgid "Create a workspace to start scheduling posts, managing content, and collaborating with your team."
+msgstr "创建工作区后，即可排期发布、管理内容并与团队协作。"
+
+msgid "e.g. My Brand, Client Name"
+msgstr "例如：品牌或客户名称"
+
+msgid "Create Workspace"
+msgstr "创建工作区"
+
+msgid "Profile - Settings - Brightbean"
+msgstr "个人资料 - 设置 - Brightbean"
+
+msgid "Profile photo"
+msgstr "个人头像"
+
+msgid "Remove photo"
+msgstr "移除头像"
+
+msgid "Photo"
+msgstr "头像"
+
+msgid "Please choose a photo that is at least 180×180 pixels in size."
+msgstr "请选择至少 180 × 180 像素的照片。"
+
+msgid "Upload Photo"
+msgstr "上传头像"
+
+msgid "Name"
+msgstr "姓名"
+
+msgid "Email"
+msgstr "电子邮箱"
+
+msgid "Current password"
+msgstr "当前密码"
+
+msgid "New password"
+msgstr "新密码"
+
+msgid "Confirm new password"
+msgstr "确认新密码"
+
+msgid "Change Password"
+msgstr "修改密码"
+
+msgid "Role"
+msgstr "角色"
+
+msgid "in"
+msgstr "在"
+
+msgid "Delete your account"
+msgstr "删除账号"
+
+msgid "When you delete your account, you lose access to Brightbean Studio account services, and we permanently delete your personal data."
+msgstr "删除后，你将失去 Brightbean Studio 账号服务的访问权限，个人数据也将永久删除。"
+
+msgid "Delete Account"
+msgstr "删除账号"
+
+msgid "Are you sure you want to delete your account? This action is permanent and cannot be undone. You will lose access to all Brightbean Studio services, and your personal data will be permanently deleted."
+msgstr "确定要删除你的账号？此操作无法撤销，你将失去所有 Brightbean Studio 服务的访问权限，个人数据也将永久删除。"
+
+msgid "Yes, delete my account"
+msgstr "确认删除我的账号"
+
+msgid "Join"
+msgstr "加入"
+
+msgid "invited you to join their team on Brightbean."
+msgstr "邀请你加入 Brightbean 团队。"
+
+msgid "Sign Up to Join"
+msgstr "注册并加入"
+
+msgid "Log In to Join"
+msgstr "登录并加入"
+
+msgid "Invitation Expired - Brightbean"
+msgstr "邀请已失效 - Brightbean"
+
+msgid "Invitation Expired"
+msgstr "邀请已失效"
+
+msgid "This invitation link is no longer valid. It may have expired or already been used. Please contact your organization admin to request a new invitation."
+msgstr "此邀请链接已失效或已使用。请联系组织管理员获取新邀请。"
+
+msgid "Go to Brightbean"
+msgstr "前往 Brightbean"
+
+msgid "Team Members - Settings - Brightbean"
+msgstr "团队成员 - 设置 - Brightbean"
+
+msgid "Invite Team Member"
+msgstr "邀请团队成员"
+
+msgid "Members ("
+msgstr "成员（"
+
+msgid "No team members yet."
+msgstr "暂无团队成员。"
+
+msgid "Pending Invitations"
+msgstr "待接受的邀请"
+
+msgid "No pending invitations."
+msgstr "暂无待接受的邀请。"
+
+msgid "on Brightbean"
+msgstr "在 Brightbean 上"
+
+msgid "Hi there,"
+msgstr "你好，"
+
+msgid "has invited you to join"
+msgstr "邀请你加入"
+
+msgid "as a team member. Click the button below to accept the invitation and get started."
+msgstr "成为团队成员。点击下方按钮接受邀请。"
+
+msgid "Accept Invitation"
+msgstr "接受邀请"
+
+msgid "This invitation expires in 7 days. If it expires, ask your team admin for a new one."
+msgstr "邀请将在 7 天后失效。如已过期，请联系团队管理员重新邀请。"
+
+msgid "You're receiving this because someone invited you to"
+msgstr "你收到这封邮件，是因为有人邀请你加入"
+
+msgid "on Brightbean."
+msgstr "的 Brightbean 团队。"
+
+msgid "Invited by"
+msgstr "邀请人"
+
+msgid "· Expires"
+msgstr "· 距离失效还有"
+
+msgid "from now"
+msgstr "后"
+
+msgid "Admin"
+msgstr "管理员"
+
+msgid "Member"
+msgstr "成员"
+
+msgid "Resend"
+msgstr "重新发送"
+
+msgid "Revoke"
+msgstr "撤销"
+
+msgid "Email Address"
+msgstr "电子邮箱"
+
+msgid "Organization Role"
+msgstr "组织角色"
+
+msgid "Assign to Workspaces"
+msgstr "分配工作区"
+
+msgid "Select workspaces and roles for this team member."
+msgstr "为这位成员选择工作区和角色。"
+
+msgid "Tip: For external clients who only need portal access, use the Client Portal invite from workspace settings instead."
+msgstr "仅需访问客户门户的外部客户，请从工作区设置中的客户门户发出邀请。"
+
+msgid "Send Invitation"
+msgstr "发送邀请"
+
+msgid "you"
+msgstr "你"
+
+msgid "Owner"
+msgstr "所有者"
+
+msgid "Manage Workspaces"
+msgstr "管理工作区"
+
+msgid "Remove from Organization"
+msgstr "从组织移除"
+
+msgid "Workspaces -"
+msgstr "工作区 -"
+
+msgid "Loading..."
+msgstr "加载中…"
+
+msgid "No workspaces available."
+msgstr "暂无可用工作区。"
+
+msgid "Save Assignments"
+msgstr "保存分配"
+
+msgid "Organization Calendar - Brightbean"
+msgstr "组织日历 - Brightbean"
+
+msgid "Organization Calendar"
+msgstr "组织日历"
+
+msgid "Today"
+msgstr "今天"
+
+msgid "Week"
+msgstr "周"
+
+msgid "Day"
+msgstr "日"
+
+msgid "Month"
+msgstr "月"
+
+msgid "All Posts"
+msgstr "所有帖子"
+
+msgid "All Workspaces"
+msgstr "全部工作区"
+
+msgid "Workspaces:"
+msgstr "工作区："
+
+msgid "Create post"
+msgstr "创建帖子"
+
+msgid "more"
+msgstr "更多"
+
+msgid "General - Settings - Brightbean"
+msgstr "常规设置 - 设置 - Brightbean"
+
+msgid "Organization Name"
+msgstr "组织名称"
+
+msgid "Default Timezone"
+msgstr "默认时区"
+
+msgid "Used as the fallback for workspaces that don't set their own."
+msgstr "工作区未指定时区时使用。"
+
+msgid "Deletion scheduled"
+msgstr "已安排删除"
+
+msgid "This organization is scheduled for deletion on"
+msgstr "此组织计划删除日期为"
+
+msgid ". All workspaces, posts, social accounts, media, and team data will be permanently removed after this date. YouTube connections and API data have already been deleted. Cancelling will require reconnecting YouTube."
+msgstr "。届时将永久删除所有工作区、帖子、社媒账号、媒体和团队数据。YouTube 连接和 API 数据已删除。若取消删除，需要重新连接 YouTube。"
+
+msgid "Cancel Deletion"
+msgstr "取消删除"
+
+msgid "Delete Now"
+msgstr "立即删除"
+
+msgid "Delete immediately?"
+msgstr "立即删除？"
+
+msgid "This will permanently delete"
+msgstr "这将永久删除"
+
+msgid "right now, bypassing the 14-day grace period. This action cannot be undone."
+msgstr "，跳过 14 天宽限期。此操作无法撤销。"
+
+msgid "All workspaces and their settings"
+msgstr "所有工作区及其设置"
+
+msgid "Connected social accounts and credentials"
+msgstr "已连接的社媒账号和凭据"
+
+msgid "Team memberships and invitations"
+msgstr "团队成员关系和邀请"
+
+msgid "Yes, delete permanently"
+msgstr "确认永久删除"
+
+msgid "Delete this organization"
+msgstr "删除此组织"
+
+msgid "Request deletion of this organization and its workspaces, posts, media and team memberships. YouTube connections and API data are removed immediately. Other data has a 14-day grace period. Cancelling requires reconnecting YouTube."
+msgstr "申请删除组织及其工作区、帖子、素材和团队成员关系。YouTube 连接和 API 数据将立即移除，其余数据有 14 天宽限期。取消后需重新连接 YouTube。"
+
+msgid "Delete Organization"
+msgstr "删除组织"
+
+msgid "Are you sure you want to delete"
+msgstr "确定要删除"
+
+msgid "? This will schedule the organization for permanent deletion in 14 days. YouTube connections, API data and notification copies are deleted immediately. Cancelling deletion will require reconnecting YouTube."
+msgstr "？该组织将在 14 天后被永久删除。YouTube 连接、API 数据和通知副本将立即删除。取消后需要重新连接 YouTube。"
+
+msgid "Yes, delete this organization"
+msgstr "确认删除此组织"
+
+msgid "Workspaces - Settings - Brightbean"
+msgstr "工作区 - 设置 - Brightbean"
+
+msgid "Archived"
+msgstr "已归档"
+
+msgid "member"
+msgstr "成员"
+
+msgid "No members assigned"
+msgstr "尚未分配成员"
+
+msgid "Select Account"
+msgstr "选择账号"
+
+msgid "Your"
+msgstr "你的"
+
+msgid "login has access to multiple accounts. Select which one"
+msgstr "登录身份可访问多个账号，请选择需要"
+
+msgid "to connect."
+msgstr "连接的账号。"
+
+msgid "selected"
+msgstr "已选"
+
+msgid "Select all publishable"
+msgstr "选择所有可发布账号"
+
+msgid "Clear"
+msgstr "清空"
+
+msgid "Missing Facebook content publishing access"
+msgstr "缺少 Facebook 内容发布权限"
+
+msgid "Already connected &middot; select to refresh"
+msgstr "已连接，选中可刷新授权"
+
+msgid "DMs unavailable: grant messaging access on the linked Facebook Page, then reconnect."
+msgstr "私信不可用：请在关联的 Facebook 主页授予消息权限，再重新连接。"
+
+msgid "subscribers"
+msgstr "订阅者"
+
+msgid "followers"
+msgstr "关注者"
+
+msgid "Connect Selected"
+msgstr "连接所选账号"
+
+msgid "Connect Bluesky"
+msgstr "连接 Bluesky"
+
+msgid "Back"
+msgstr "返回"
+
+msgid "Bluesky uses app passwords for authentication. You can create one in your Bluesky account settings."
+msgstr "Bluesky 使用应用密码进行认证。可在 Bluesky 账号设置中创建。"
+
+msgid "Handle"
+msgstr "账号标识"
+
+msgid "Your full Bluesky handle including domain"
+msgstr "包含域名的完整 Bluesky 账号标识"
+
+msgid "App Password"
+msgstr "应用密码"
+
+msgid "Generate one in Bluesky at Settings &rarr; Privacy and Security &rarr; App Passwords"
+msgstr "在 Bluesky 的「设置 → 隐私和安全 → 应用密码」中生成。"
+
+msgid "App passwords are separate from your main password. They can be revoked at any time without affecting your Bluesky account."
+msgstr "应用密码与主密码独立，可随时撤销，不影响 Bluesky 账号。"
+
+msgid "AT Protocol"
+msgstr "AT 协议"
+
+msgid "Connect DEV.to"
+msgstr "连接 DEV.to"
+
+msgid "DEV.to authenticates with a personal API key. Generate one under Settings &rarr; Extensions &rarr; DEV Community API Keys."
+msgstr "DEV.to 使用个人 API 密钥认证。请在设置中的扩展选项下生成 DEV Community API 密钥。"
+
+msgid "API Key"
+msgstr "API 密钥"
+
+msgid "your DEV.to API key"
+msgstr "你的 DEV.to API 密钥"
+
+msgid "Create one at DEV.to &rarr; Settings &rarr; Extensions &rarr; DEV Community API Keys."
+msgstr "在 DEV.to 的「设置 → 扩展 → DEV Community API Keys」中创建。"
+
+msgid "Posts publish as DEV.to articles (title + Markdown body). The API key can be revoked at any time from your DEV.to settings."
+msgstr "帖子将发布为 DEV.to 文章（标题和 Markdown 正文）。可随时在 DEV.to 设置中撤销密钥。"
+
+msgid "Manage connected social media accounts for this workspace."
+msgstr "管理此工作区已连接的社媒账号。"
+
+msgid "Connect Account"
+msgstr "连接账号"
+
+msgid "account"
+msgstr "个账号"
+
+msgid "connected. Health checks run automatically every 6 hours."
+msgstr "已连接。每 6 小时自动检查账号状态。"
+
+msgid "No accounts connected yet"
+msgstr "尚未连接账号"
+
+msgid "Connect your social media accounts to start publishing content, tracking engagement, and managing your inbox."
+msgstr "连接社媒账号后，即可发布内容、跟踪互动并管理收件箱。"
+
+msgid "Connect Your First Account"
+msgstr "连接第一个账号"
+
+msgid "Connect Mastodon"
+msgstr "连接 Mastodon"
+
+msgid "Mastodon is federated, enter your profile URL to begin the connection process."
+msgstr "请输入 Mastodon 个人主页网址，开始连接对应实例。"
+
+msgid "Profile URL"
+msgstr "个人主页网址"
+
+msgid "The Mastodon instance where your account lives"
+msgstr "账号所在的 Mastodon 实例"
+
+msgid "After entering your instance URL, you'll be redirected to your Mastodon instance to authorize access. We request"
+msgstr "输入网址后，你将前往相应的 Mastodon 实例授权。需要的权限有"
+
+msgid "read"
+msgstr "读取"
+
+msgid "write"
+msgstr "写入"
+
+msgid ", and"
+msgstr "和"
+
+msgid "follow"
+msgstr "关注"
+
+msgid "permissions."
+msgstr "。"
+
+msgid "Continue to Mastodon"
+msgstr "继续前往 Mastodon"
+
+msgid "Disconnect"
+msgstr "断开连接"
+
+msgid "This revokes BrightBean's access to the account."
+msgstr "这将撤销 BrightBean 对此账号的访问权限。"
+
+msgid "This removes the account from BrightBean only. To revoke our access entirely, remove BrightBean in Facebook &rsaquo; Settings &rsaquo; Apps and Websites."
+msgstr "此操作仅从 BrightBean 移除账号。如需彻底撤销访问权限，请在 Facebook 的「设置 → 应用和网站」中移除 BrightBean。"
+
+msgid "This removes the account from BrightBean only. To revoke our access entirely, remove BrightBean in your"
+msgstr "此操作仅从 BrightBean 移除账号。如需彻底撤销访问权限，请在平台的"
+
+msgid "settings."
+msgstr "设置中移除 BrightBean。"
+
+msgid "YouTube data, analytics and copied comments are deleted immediately, including notification copies. Your original uploads and posts shared with other channels stay."
+msgstr "YouTube 数据、分析数据、评论和通知副本将立即删除。原始上传内容以及分享至其他渠道的帖子会保留。"
+
+msgid "Its analytics, inbox messages and posts made only for it are deleted from BrightBean. Posts shared with other channels stay."
+msgstr "该账号的分析数据、收件箱消息和仅发往该账号的帖子将从 BrightBean 中删除。分享至其他渠道的帖子会保留。"
+
+msgid "Some features are unavailable."
+msgstr "部分功能不可用。"
+
+msgid "This account was connected without"
+msgstr "此账号缺少以下授权"
+
+msgid ". Anything relying on them will fail until the permission is granted — reconnect to try again."
+msgstr "。依赖这些权限的功能将无法使用，请重新连接并授权。"
+
+msgid "Instagram DM access is unavailable for this connection. Contact your administrator to enable it."
+msgstr "当前连接无法使用 Instagram 私信，请联系管理员启用。"
+
+msgid "DMs unavailable: grant messaging access on the linked Facebook Page, then reconnect this account."
+msgstr "私信不可用，请在关联的 Facebook 主页授予消息权限后重新连接。"
+
+msgid "Some real-time inbox updates are unavailable."
+msgstr "部分收件箱实时更新不可用。"
+
+msgid "Activity with the required permissions can still arrive through polling."
+msgstr "具备所需权限的活动仍可通过定期同步获取。"
+
+msgid "Try again"
+msgstr "重试"
+
+msgid "Posting Schedule"
+msgstr "发布排期"
+
+msgid "Set recurring time slots for when queued posts are automatically published."
+msgstr "设置循环时段，让队列中的帖子在指定时间自动发布。"
+
+msgid "Click to edit"
+msgstr "点击编辑"
+
+msgid "Remove slot"
+msgstr "移除时段"
+
+msgid "Add time slot"
+msgstr "添加时段"
+
+msgid "Add"
+msgstr "添加"
+
+msgid "Connected"
+msgstr "已连接"
+
+msgid "Token Expiring"
+msgstr "授权即将过期"
+
+msgid "Disconnected"
+msgstr "已断开"
+
+msgid "Error"
+msgstr "错误"
+
+msgid "Cannot archive the last workspace in the organization."
+msgstr "无法归档组织中最后一个工作区。"
+
+msgid "Cannot delete the last workspace in the organization."
+msgstr "无法删除组织中最后一个工作区。"
+
+msgid "Logo must be a JPEG, PNG, WebP, or GIF image."
+msgstr "标志图片须为 JPEG、PNG、WebP 或 GIF 格式。"
+
+msgid "Logo must be under 2 MB."
+msgstr "标志图片大小须低于 2 MB。"
+
+msgid "Workspace settings updated."
+msgstr "工作区设置已保存。"
+
+msgid "Invalid approval workflow mode."
+msgstr "审核流程模式无效。"
+
+msgid "Approval workflow updated."
+msgstr "审核流程已更新。"
+
+msgid "Workspace \"%(name)s\" has been archived."
+msgstr "工作区“%(name)s”已归档。"
+
+msgid "Workspace \"%(name)s\" has been restored."
+msgstr "工作区“%(name)s”已恢复。"
+
+msgid "Workspace \"%(name)s\" has been permanently deleted."
+msgstr "工作区“%(name)s”已永久删除。"
+
+msgid "Link your Instagram, LinkedIn, or other platforms"
+msgstr "连接 Instagram、LinkedIn 或其他平台的账号"
+
+msgid "Draft and schedule content for your audience"
+msgstr "为受众撰写内容并安排发布时间"
+
+msgid "Capture content ideas to develop later"
+msgstr "记录内容创意，方便日后完善"
+
+msgid "Add team members to collaborate on content"
+msgstr "邀请团队成员协作制作内容"
+
+msgid "Hide"
+msgstr "收起"
+
+msgid "Details"
+msgstr "详情"
+
+msgid "Reason for rejection (required), shared with the creator…"
+msgstr "填写驳回原因（必填），作者将看到这条反馈…"
+
+msgid "What needs to change? (required)…"
+msgstr "请说明需要修改的内容（必填）…"
+
+msgid "Delete posts?"
+msgstr "删除帖子？"
+
+msgid "Publish now?"
+msgstr "立即发布？"
+
+msgid "Permanently delete the selected posts?"
+msgstr "永久删除选中的帖子？"
+
+msgid "This action cannot be undone."
+msgstr "此操作无法撤销。"
+
+msgid "Publish the selected posts now?"
+msgstr "立即发布选中的帖子？"
+
+msgid "They will appear on their platforms shortly."
+msgstr "这些帖子即将在对应平台发布。"
+
+msgid "Select date…"
+msgstr "选择日期…"
+
+msgid "Select time…"
+msgstr "选择时间…"
+
+msgid "Delete this category?"
+msgstr "删除这个分类？"
+
+msgid "Delete this template?"
+msgstr "删除这个模板？"
+
+msgid " - Video Settings"
+msgstr " · 视频设置"
+
+msgid " - Pin Settings"
+msgstr " · Pin 设置"
+
+msgid "Change"
+msgstr "更换"
+
+msgid "Pick from Library"
+msgstr "从素材库选择"
+
+msgid "Uploading…"
+msgstr "正在上传…"
+
+msgid "Drag & drop a thumbnail"
+msgstr "拖入缩略图"
+
+msgid " - Post Settings"
+msgstr " · 帖子设置"
+
+msgid "Posting to @"
+msgstr "发布到 @"
+
+msgid "Select who can view this post"
+msgstr "选择谁可以查看此帖"
+
+msgid "Cover at "
+msgstr "封面时间 "
+
+msgid " - Custom Override"
+msgstr " · 平台专属内容"
+
+msgid " Override"
+msgstr "（平台专属）"
+
+msgid "Custom "
+msgstr "自定义"
+
+msgid " for this platform..."
+msgstr "…"
+
+msgid "Saved "
+msgstr "已保存于 "
+
+msgid "Not saved yet"
+msgstr "尚未保存"
+
+msgid " photo selected"
+msgstr " 张照片已选中"
+
+msgid " photos selected"
+msgstr " 张照片已选中"
+
+msgid "Select photos to add"
+msgstr "选择要添加的照片"
+
+msgid "Adding…"
+msgstr "正在添加…"
+
+msgid "Add "
+msgstr "添加 "
+
+msgid " images"
+msgstr " 张图片"
+
+msgid "Add images"
+msgstr "添加图片"
+
+msgid "Saving…"
+msgstr "正在保存…"
+
+msgid "Use this frame"
+msgstr "使用这一帧"
+
+msgid "Enter a title…"
+msgstr "输入标题…"
+
+msgid "Only one video file can be uploaded at a time."
+msgstr "每次只能上传一个视频文件。"
+
+msgid "You cannot mix images and video. Please upload either images or a single video."
+msgstr "图片和视频无法一起上传。请选择图片或一个视频。"
+
+msgid "Disconnected %(value)s."
+msgstr "已断开 %(value)s 的连接。"
+
+msgid "Disconnected %(value)s. YouTube data was deleted immediately."
+msgstr "已断开 %(value)s 的连接，并已立即删除 YouTube 数据。"
+
+msgid "Real-time updates are back on for %(value)s."
+msgstr "已恢复 %(value)s 的实时更新。"
+
+msgid "Reconnect %(value)s first — its connection isn't healthy."
+msgstr "%(value)s 的连接异常，请先重新连接。"
+
+msgid "Failed to register with %(value)s. Check the URL."
+msgstr "向 %(value)s 注册失败，请检查网址。"
+
+msgid "Invalid instance URL. Private or reserved addresses are not allowed."
+msgstr "实例网址无效，无法使用私有或保留地址。"
+
+msgid "Instance URL is required."
+msgstr "请输入实例网址。"
+
+msgid "Failed to connect DEV.to account. Check your API key."
+msgstr "DEV.to 连接失败，请检查 API 密钥。"
+
+msgid "Connected %(value)s on DEV.to."
+msgstr "已连接 DEV.to 账号 %(value)s。"
+
+msgid "A DEV.to API key is required."
+msgstr "请输入 DEV.to API 密钥。"
+
+msgid "Failed to connect Bluesky account. Check your handle and app password."
+msgstr "Bluesky 连接失败，请检查账号标识和应用专用密码。"
+
+msgid "Connected %(value)s on Bluesky."
+msgstr "已连接 Bluesky 账号 %(value)s。"
+
+msgid "Handle and app password are required."
+msgstr "请填写账号标识和应用专用密码。"
+
+msgid "Connected: %(value)s"
+msgstr "已连接：%(value)s"
+
+msgid "Could not connect %(value)s: the platform did not provide an account token."
+msgstr "无法连接 %(value)s：平台未返回账号令牌。"
+
+msgid "Could not connect %(value)s: your Facebook access cannot create content for this Page."
+msgstr "无法连接 %(value)s：你的 Facebook 账号没有在此公共主页发布内容的权限。"
+
+msgid "Please select at least one account."
+msgstr "请至少选择一个账号。"
+
+msgid "No accounts to select. Please start over."
+msgstr "没有可选账号，请重新开始连接。"
+
+msgid "Failed to connect account. Please try again."
+msgstr "账号连接失败，请重试。"
+
+msgid "Connected %(value)s successfully."
+msgstr "已连接 %(value)s。"
+
+msgid "Platform mismatch in OAuth callback."
+msgstr "OAuth 回调的平台不匹配。"
+
+msgid "OAuth session mismatch. Please try again."
+msgstr "OAuth 授权会话不匹配，请重试。"
+
+msgid "Invalid or expired OAuth state. Please try again."
+msgstr "OAuth 授权状态无效或已过期，请重试。"
+
+msgid "Missing authorization code or state parameter."
+msgstr "缺少授权码或状态参数。"
+
+msgid "OAuth error: %(value)s"
+msgstr "OAuth 授权错误：%(value)s"
+
+msgid "Platform credentials for %(value)s are not configured. Please contact your administrator."
+msgstr "%(value)s 的平台凭据尚未配置。请联系管理员。"
+
+msgid "This platform is not available."
+msgstr "此平台当前不可用。"
+
+msgid "Organization scheduled for deletion in 14 days."
+msgstr "组织将在 14 天后删除。"
+
+msgid "Default timezone updated."
+msgstr "默认时区已更新。"
+
+msgid "Invalid timezone."
+msgstr "时区无效。"
+
+msgid "Organization name updated."
+msgstr "组织名称已更新。"
+
+msgid "Organization name cannot be empty."
+msgstr "组织名称不能为空。"
+
+msgid "Authorize %(name)s?"
+msgstr "授权给 %(name)s？"
+
+msgid "%(name)s wants to connect to your BrightBean Studio workspace with the following permissions:"
+msgstr "%(name)s 请求连接你的 BrightBean Studio 工作区，并使用以下权限："
+
+msgid "Authorize"
+msgstr "授权"
+
+msgid "You can revoke this access at any time from BrightBean Studio."
+msgstr "你随时可以在 BrightBean Studio 中撤销此授权。"
+
+msgid "Something went wrong"
+msgstr "操作失败"
+
+msgid "This application"
+msgstr "此应用"
+
+msgid "Call BrightBean Studio MCP tools on your behalf"
+msgstr "以你的身份调用 BrightBean Studio 的 MCP 工具"
+
+msgid "Enable"
+msgstr "启用"
+
+msgid "Disable"
+msgstr "停用"
+
+msgid "Monday"
+msgstr "星期一"
+
+msgid "Mon"
+msgstr "周一"
+
+msgid "Tuesday"
+msgstr "星期二"
+
+msgid "Tue"
+msgstr "周二"
+
+msgid "Wednesday"
+msgstr "星期三"
+
+msgid "Wed"
+msgstr "周三"
+
+msgid "Thursday"
+msgstr "星期四"
+
+msgid "Thu"
+msgstr "周四"
+
+msgid "Friday"
+msgstr "星期五"
+
+msgid "Fri"
+msgstr "周五"
+
+msgid "Saturday"
+msgstr "星期六"
+
+msgid "Sat"
+msgstr "周六"
+
+msgid "Sunday"
+msgstr "星期日"
+
+msgid "Sun"
+msgstr "周日"

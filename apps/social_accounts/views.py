@@ -17,6 +17,7 @@ from django.core.exceptions import PermissionDenied
 from django.db import transaction
 from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
+from django.utils.translation import gettext
 from django.views.decorators.http import require_GET, require_POST
 from django_ratelimit.decorators import ratelimit
 
@@ -224,13 +225,14 @@ def connect_platform(request, workspace_id):
     # POST: initiate OAuth
     platform = request.POST.get("platform", "").strip()
     if platform not in dict(visible_platform_choices):
-        messages.error(request, "This platform is not available.")
+        messages.error(request, gettext("This platform is not available."))
         return redirect("social_accounts:connect", workspace_id=workspace_id)
 
     if platform not in configured_platforms:
         messages.error(
             request,
-            f"Platform credentials for {platform} are not configured. Please contact your administrator.",
+            gettext("Platform credentials for %(value)s are not configured. Please contact your administrator.")
+            % {"value": platform},
         )
         return redirect("social_accounts:connect", workspace_id=workspace_id)
 
@@ -283,7 +285,7 @@ def oauth_callback(request, platform):
     error = request.GET.get("error")
     if error:
         error_desc = request.GET.get("error_description", error)
-        messages.error(request, f"OAuth error: {error_desc}")
+        messages.error(request, gettext("OAuth error: %(value)s") % {"value": error_desc})
         session_data = request.session.pop(OAUTH_SESSION_KEY, {})
         workspace_id = session_data.get("workspace_id")
         if workspace_id:
@@ -294,25 +296,25 @@ def oauth_callback(request, platform):
     state_str = request.GET.get("state")
 
     if not code or not state_str:
-        messages.error(request, "Missing authorization code or state parameter.")
+        messages.error(request, gettext("Missing authorization code or state parameter."))
         return redirect("dashboard")
 
     # Validate state
     try:
         state_data = _unsign_state(state_str)
     except signing.BadSignature:
-        messages.error(request, "Invalid or expired OAuth state. Please try again.")
+        messages.error(request, gettext("Invalid or expired OAuth state. Please try again."))
         return redirect("dashboard")
 
     # Validate nonce from session
     session_data = request.session.pop(OAUTH_SESSION_KEY, {})
     if not session_data or session_data.get("nonce") != state_data.get("nonce"):
-        messages.error(request, "OAuth session mismatch. Please try again.")
+        messages.error(request, gettext("OAuth session mismatch. Please try again."))
         return redirect("dashboard")
 
     # Validate platform matches
     if state_data.get("platform") != platform:
-        messages.error(request, "Platform mismatch in OAuth callback.")
+        messages.error(request, gettext("Platform mismatch in OAuth callback."))
         return redirect("dashboard")
 
     # Validate user
@@ -385,7 +387,7 @@ def oauth_callback(request, platform):
                 return redirect("social_accounts:select_account")
             else:
                 if platform == PlatformCredential.Platform.LINKEDIN_COMPANY:
-                    warning = (
+                    warning = gettext(
                         "No LinkedIn Company Pages were found for your account. "
                         "Only Company Pages you administer can be connected — "
                         "personal profiles connect via the LinkedIn (Personal) option. "
@@ -395,14 +397,14 @@ def oauth_callback(request, platform):
                     )
                 else:
                     if platform == PlatformCredential.Platform.INSTAGRAM:
-                        warning = (
+                        warning = gettext(
                             "No Instagram Business accounts were found for your account. "
                             "Only Instagram Business or Creator accounts linked to a Facebook Page "
                             "can be connected through this Instagram option. If you expected to "
                             "see an account, make sure it is linked to a Page you manage, then reconnect."
                         )
                     else:
-                        warning = (
+                        warning = gettext(
                             "No Facebook Pages were found for your account. "
                             "Only Pages can be connected — personal profiles are not "
                             "supported by the Facebook API. "
@@ -425,7 +427,7 @@ def oauth_callback(request, platform):
             expires_in=tokens.expires_in,
             instance_url=extra_creds.get("instance_url", ""),
         )
-        messages.success(request, f"Connected {profile.name} successfully.")
+        messages.success(request, gettext("Connected %(value)s successfully.") % {"value": profile.name})
 
     except (signing.BadSignature, PermissionDenied):
         raise
@@ -441,7 +443,7 @@ def oauth_callback(request, platform):
         logger.exception("OAuth callback failed for %s", platform)
         messages.error(
             request,
-            "Failed to connect account. Please try again.",
+            gettext("Failed to connect account. Please try again."),
         )
 
     return redirect("calendar:calendar", workspace_id=workspace_id)
@@ -457,7 +459,7 @@ def select_account(request):
     """Show page/account selection after multi-page OAuth."""
     page_data = request.session.get("oauth_page_select")
     if not page_data:
-        messages.error(request, "No accounts to select. Please start over.")
+        messages.error(request, gettext("No accounts to select. Please start over."))
         return redirect("dashboard")
 
     workspace_id = page_data["workspace_id"]
@@ -484,7 +486,7 @@ def select_account(request):
     # POST: create accounts for selected pages
     selected_ids = request.POST.getlist("selected_pages")
     if not selected_ids:
-        messages.error(request, "Please select at least one account.")
+        messages.error(request, gettext("Please select at least one account."))
         return _render_picker()
 
     from providers.types import AccountProfile
@@ -502,14 +504,16 @@ def select_account(request):
                 # fail every publish.
                 messages.error(
                     request,
-                    f"Could not connect {page['name']}: your Facebook access cannot create content for this Page.",
+                    gettext("Could not connect %(value)s: your Facebook access cannot create content for this Page.")
+                    % {"value": page["name"]},
                 )
                 continue
             access_token = resolve_page_account_token(page, platform, user_tokens.get("access_token", ""))
             if not access_token:
                 messages.error(
                     request,
-                    f"Could not connect {page['name']}: the platform did not provide an account token.",
+                    gettext("Could not connect %(value)s: the platform did not provide an account token.")
+                    % {"value": page["name"]},
                 )
                 continue
 
@@ -542,7 +546,7 @@ def select_account(request):
 
     if connected:
         names = ", ".join(connected)
-        messages.success(request, f"Connected: {names}")
+        messages.success(request, gettext("Connected: %(value)s") % {"value": names})
 
     return redirect("calendar:calendar", workspace_id=workspace_id)
 
@@ -567,7 +571,7 @@ def connect_bluesky(request, workspace_id):
     app_password = request.POST.get("app_password", "").strip()
 
     if not handle or not app_password:
-        messages.error(request, "Handle and app password are required.")
+        messages.error(request, gettext("Handle and app password are required."))
         return render(
             request,
             "social_accounts/bluesky_connect.html",
@@ -588,13 +592,13 @@ def connect_bluesky(request, workspace_id):
             expires_in=tokens.expires_in,
             instance_url=provider.pds_url,
         )
-        messages.success(request, f"Connected {profile.name} on Bluesky.")
+        messages.success(request, gettext("Connected %(value)s on Bluesky.") % {"value": profile.name})
 
     except Exception:
         logger.exception("Bluesky connection failed")
         messages.error(
             request,
-            "Failed to connect Bluesky account. Check your handle and app password.",
+            gettext("Failed to connect Bluesky account. Check your handle and app password."),
         )
         return render(
             request,
@@ -623,7 +627,7 @@ def connect_devto(request, workspace_id):
 
     api_key = request.POST.get("api_key", "").strip()
     if not api_key:
-        messages.error(request, "A DEV.to API key is required.")
+        messages.error(request, gettext("A DEV.to API key is required."))
         return render(
             request,
             "social_accounts/devto_connect.html",
@@ -639,10 +643,10 @@ def connect_devto(request, workspace_id):
             profile=profile,
             access_token=api_key,
         )
-        messages.success(request, f"Connected {profile.name} on DEV.to.")
+        messages.success(request, gettext("Connected %(value)s on DEV.to.") % {"value": profile.name})
     except Exception:
         logger.exception("DEV.to connection failed")
-        messages.error(request, "Failed to connect DEV.to account. Check your API key.")
+        messages.error(request, gettext("Failed to connect DEV.to account. Check your API key."))
         return render(request, "social_accounts/devto_connect.html", {"workspace_id": workspace_id})
 
     return redirect("calendar:calendar", workspace_id=workspace_id)
@@ -667,7 +671,7 @@ def connect_mastodon(request, workspace_id):
 
     instance_url = _normalize_mastodon_instance_url(request.POST.get("instance_url", ""))
     if not instance_url:
-        messages.error(request, "Instance URL is required.")
+        messages.error(request, gettext("Instance URL is required."))
         return render(
             request,
             "social_accounts/mastodon_connect.html",
@@ -676,7 +680,7 @@ def connect_mastodon(request, workspace_id):
 
     # Validate against SSRF - reject private/reserved IP ranges
     if not _is_safe_url(instance_url):
-        messages.error(request, "Invalid instance URL. Private or reserved addresses are not allowed.")
+        messages.error(request, gettext("Invalid instance URL. Private or reserved addresses are not allowed."))
         return render(
             request,
             "social_accounts/mastodon_connect.html",
@@ -709,7 +713,7 @@ def connect_mastodon(request, workspace_id):
             logger.exception("Mastodon app registration failed for %s", instance_url)
             messages.error(
                 request,
-                f"Failed to register with {instance_url}. Check the URL.",
+                gettext("Failed to register with %(value)s. Check the URL.") % {"value": instance_url},
             )
             return render(
                 request,
@@ -812,7 +816,10 @@ def retry_webhooks(request, workspace_id, account_id):
     if account.needs_reconnect:
         if request.headers.get("HX-Request"):
             return _render_account_card(request, account, workspace_id)
-        messages.error(request, f"Reconnect {account.display_label} first — its connection isn't healthy.")
+        messages.error(
+            request,
+            gettext("Reconnect %(value)s first — its connection isn't healthy.") % {"value": account.display_label},
+        )
         return redirect("social_accounts:list", workspace_id=workspace_id)
 
     # An explicit press is a fresh mandate: clear the automatic retry budget so
@@ -827,9 +834,13 @@ def retry_webhooks(request, workspace_id, account_id):
         return _render_account_card(request, account, workspace_id)
 
     if subscribed:
-        messages.success(request, f"Real-time updates are back on for {account.display_label}.")
+        messages.success(
+            request, gettext("Real-time updates are back on for %(value)s.") % {"value": account.display_label}
+        )
     else:
-        messages.error(request, account.webhook_error or "Couldn't set up real-time updates. Please try again.")
+        messages.error(
+            request, account.webhook_error or gettext("Couldn't set up real-time updates. Please try again.")
+        )
     return redirect("social_accounts:list", workspace_id=workspace_id)
 
 
@@ -858,7 +869,9 @@ def disconnect(request, workspace_id, account_id):
 
         name = account.account_name or account.account_handle
         purge_connection(account)
-        messages.success(request, f"Disconnected {name}. YouTube data was deleted immediately.")
+        messages.success(
+            request, gettext("Disconnected %(value)s. YouTube data was deleted immediately.") % {"value": name}
+        )
         if request.headers.get("HX-Request"):
             return render(request, "social_accounts/partials/_empty.html")
         return redirect("social_accounts:list", workspace_id=workspace_id)
@@ -903,7 +916,7 @@ def disconnect(request, workspace_id, account_id):
     account_name = account.account_name or account.account_handle
     account.delete()
 
-    messages.success(request, f"Disconnected {account_name}.")
+    messages.success(request, gettext("Disconnected %(value)s.") % {"value": account_name})
 
     # HTMX partial response
     if request.headers.get("HX-Request"):

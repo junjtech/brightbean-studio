@@ -1,10 +1,11 @@
 {% load i18n %}{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+{% load i18n %}{% get_current_language as page_language %}
+<html lang="{{ page_language }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Client Portal{% endblock %}</title>
+    <title>{% block title %}{% translate "Client Portal" %}{% endblock %}</title>
     <link rel="icon" href="{% static 'favicon/favicon.ico' %}" sizes="any">
     <link rel="icon" type="image/svg+xml" href="{% static 'favicon/favicon.svg' %}">
     <link rel="icon" type="image/png" sizes="96x96" href="{% static 'favicon/favicon-96x96.png' %}">
@@ -43,7 +44,7 @@
                         <a href="{% url 'client_portal:dashboard' %}"
                            class="px-3 py-1.5 text-[0.8125rem] font-medium rounded-full transition-colors {% if request.resolver_match.url_name == 'dashboard' %}text-white{% else %}hover:bg-black/[0.04]{% endif %}"
                            {% if request.resolver_match.url_name == 'dashboard' %}style="background: var(--primary); color: white;"{% else %}style="color: var(--text-secondary);"{% endif %}>
-                            Home
+                            {% translate "Home" %}
                         </a>
                         <a href="{% url 'client_portal:approval_queue' %}"
                            class="px-3 py-1.5 text-[0.8125rem] font-medium rounded-full transition-colors {% if request.resolver_match.url_name == 'approval_queue' %}text-white{% else %}hover:bg-black/[0.04]{% endif %}"
@@ -58,13 +59,13 @@
                         <a href="{% url 'client_portal:activity' %}"
                            class="px-3 py-1.5 text-[0.8125rem] font-medium rounded-full transition-colors {% if request.resolver_match.url_name == 'activity' %}text-white{% else %}hover:bg-black/[0.04]{% endif %}"
                            {% if request.resolver_match.url_name == 'activity' %}style="background: var(--primary); color: white;"{% else %}style="color: var(--text-secondary);"{% endif %}>
-                            Activity
+                            {% translate "Activity" %}
                         </a>
                     </nav>
                     <a href="{% url 'accounts:logout' %}"
                        class="px-3 py-1.5 text-[0.8125rem] font-medium rounded-full transition-colors hover:bg-black/[0.04]"
                        style="color: var(--text-tertiary);">
-                        Log out
+                        {% translate "Log out" %}
                     </a>
                 </div>
             </div>
@@ -74,7 +75,7 @@
                 <a href="{% url 'client_portal:dashboard' %}"
                    class="px-3 py-1.5 text-[0.8125rem] font-medium rounded-full flex-shrink-0 transition-colors {% if request.resolver_match.url_name == 'dashboard' %}text-white{% else %}hover:bg-black/[0.04]{% endif %}"
                    {% if request.resolver_match.url_name == 'dashboard' %}style="background: var(--primary);"{% else %}style="color: var(--text-secondary);"{% endif %}>
-                    Home
+                    {% translate "Home" %}
                 </a>
                 <a href="{% url 'client_portal:approval_queue' %}"
                    class="px-3 py-1.5 text-[0.8125rem] font-medium rounded-full flex-shrink-0 transition-colors {% if request.resolver_match.url_name == 'approval_queue' %}text-white{% else %}hover:bg-black/[0.04]{% endif %}"
@@ -89,7 +90,7 @@
                 <a href="{% url 'client_portal:activity' %}"
                    class="px-3 py-1.5 text-[0.8125rem] font-medium rounded-full flex-shrink-0 transition-colors {% if request.resolver_match.url_name == 'activity' %}text-white{% else %}hover:bg-black/[0.04]{% endif %}"
                    {% if request.resolver_match.url_name == 'activity' %}style="background: var(--primary);"{% else %}style="color: var(--text-secondary);"{% endif %}>
-                    Activity
+                    {% translate "Activity" %}
                 </a>
             </nav>
         </div>

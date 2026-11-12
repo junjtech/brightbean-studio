@@ -13,6 +13,7 @@ the audit trail remembers exactly which target was acted on.
 import logging
 
 from django.db import transaction
+from django.utils.translation import gettext
 
 from apps.composer.models import PlatformPost, Post
 from apps.members.models import WorkspaceMembership
@@ -194,7 +195,7 @@ def approve_post(target, user, workspace, comment=""):
 def request_changes(target, user, workspace, comment):
     """Request changes on a post or single platform post. Comment is required."""
     if not comment.strip():
-        raise ValueError("A comment is required when requesting changes.")
+        raise ValueError(gettext("A comment is required when requesting changes."))
 
     post, targets, is_bundled = _resolve_targets(target, eligible_from_states={"pending_review", "pending_client"})
 
@@ -230,7 +231,7 @@ def request_changes(target, user, workspace, comment):
 def reject_post(target, user, workspace, comment):
     """Reject a post or single platform post. Comment is required."""
     if not comment.strip():
-        raise ValueError("A comment is required when rejecting a post.")
+        raise ValueError(gettext("A comment is required when rejecting a post."))
 
     post, targets, is_bundled = _resolve_targets(target, eligible_from_states={"pending_review", "pending_client"})
 
@@ -271,7 +272,7 @@ def request_hold(target, user, workspace, comment):
     and notifies the team so they can resume, rework, or drop it.
     """
     if not comment.strip():
-        raise ValueError("A comment is required when requesting a hold.")
+        raise ValueError(gettext("A comment is required when requesting a hold."))
 
     post, targets, is_bundled = _resolve_targets(target, eligible_from_states={"approved"})
 
@@ -378,7 +379,7 @@ def bulk_approve(post_ids, user, workspace):
 def bulk_reject(post_ids, user, workspace, comment):
     """Reject all eligible PlatformPosts under each post (bundled per post)."""
     if not comment.strip():
-        raise ValueError("A comment is required for bulk rejection.")
+        raise ValueError(gettext("A comment is required for bulk rejection."))
 
     results = []
     posts = Post.objects.filter(

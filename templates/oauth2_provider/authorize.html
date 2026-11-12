@@ -1,7 +1,8 @@
 {% extends "oauth2_provider/base.html" %}
 {% load i18n static %}
 
-{% block title %}Authorize {{ application.name|default:"an app" }} · BrightBean Studio{% endblock title %}
+{% translate "This application" as fallback_app %}
+{% block title %}{% translate "Authorize" %} {{ application.name|default:fallback_app }} · BrightBean Studio{% endblock title %}
 
 {% block content %}
     <div class="bb-head">
@@ -11,8 +12,9 @@
 
     <div class="bb-card">
         {% if not error %}
-            <h1>{% blocktrans with name=application.name|default:"This application" %}Authorize {{ name }}?{% endblocktrans %}</h1>
-            <p>{% blocktrans with name=application.name|default:"This application" %}{{ name }} wants to connect to your BrightBean Studio workspace with the following permissions:{% endblocktrans %}</p>
+            {% translate "This application" as fallback_app %}
+            <h1>{% blocktrans with name=application.name|default:fallback_app %}Authorize {{ name }}?{% endblocktrans %}</h1>
+            <p>{% blocktrans with name=application.name|default:fallback_app %}{{ name }} wants to connect to your BrightBean Studio workspace with the following permissions:{% endblocktrans %}</p>
 
             <form id="authorizationForm" method="post">
                 {% csrf_token %}
@@ -27,7 +29,7 @@
 
                 <ul class="bb-scopes">
                     {% for scope in scopes_descriptions %}
-                        <li>{{ scope }}</li>
+                        <li>{% translate scope %}</li>
                     {% endfor %}
                 </ul>
 

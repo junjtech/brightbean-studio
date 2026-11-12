@@ -120,7 +120,14 @@ jobs:
       - name: makemigrations --check
         run: python manage.py makemigrations --check --dry-run
 
+      - name: Compile the Chinese UI catalog
+        run: |
+          sudo apt-get install -y gettext
+          msgfmt --check -o locale/zh_Hans/LC_MESSAGES/django.mo locale/zh_Hans/LC_MESSAGES/django.po
+
       - name: pytest
+        env:
+          LANGUAGE_CODE: en-us
         run: pytest --cov=apps --cov-report=term-missing
 
   build:

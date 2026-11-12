@@ -1,4 +1,4 @@
-{% comment %}
+{% load i18n %}{% comment %}
 Preview Panel - platform-specific post previews.
 Context: previews (list of dicts with account, title, caption, first_comment, char_count, char_limit, is_over_limit, truncated_caption, needs_title), media_items, workspace.
 {% endcomment %}
@@ -10,7 +10,7 @@ Context: previews (list of dicts with account, title, caption, first_comment, ch
         <!-- Platform label + char badge -->
         <div class="px-3.5 py-2 border-b flex items-center gap-2" style="border-color: #E7E5E4;">
             {% if p.account.platform != "youtube" %}{% include "partials/_platform_icon.html" with platform=p.account.platform size="sm" %}{% endif %}
-            <span class="text-[11px] font-semibold text-stone-500 flex-1">{% if p.account.platform == "youtube" %}YouTube{% else %}{{ p.account.platform|title }}{% endif %} Preview</span>
+            <span class="text-[11px] font-semibold text-stone-500 flex-1">{% if p.account.platform == "youtube" %}YouTube{% else %}{{ p.account.platform|title }}{% endif %} {% translate "Preview" %}</span>
             <span class="text-[10px] font-semibold tabular-nums px-2 py-0.5 rounded-full
                          {% if p.is_over_limit %}bg-red-50 text-red-600{% else %}bg-stone-100 text-stone-500{% endif %}">
                 {{ p.char_count }}/{{ p.char_limit }}
@@ -564,8 +564,8 @@ Context: previews (list of dicts with account, title, caption, first_comment, ch
             <svg class="w-7 h-7 text-stone-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
         </div>
         <p class="text-sm font-medium text-stone-500 mb-1"
-           style="animation: slideUp 400ms 80ms cubic-bezier(0.16,1,0.3,1) both">No preview yet</p>
+           style="animation: slideUp 400ms 80ms cubic-bezier(0.16,1,0.3,1) both">{% translate "No preview yet" %}</p>
         <p class="text-xs text-stone-400 max-w-[200px]"
-           style="animation: slideUp 400ms 140ms cubic-bezier(0.16,1,0.3,1) both">Select a platform and start writing to see how your post will look</p>
+           style="animation: slideUp 400ms 140ms cubic-bezier(0.16,1,0.3,1) both">{% translate "Select a platform and start writing to see how your post will look" %}</p>
     </div>
 {% endif %}

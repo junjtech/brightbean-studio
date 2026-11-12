@@ -1,4 +1,4 @@
-{% if render_tab_counts_oob %}{% include "calendar/partials/_tab_counts_oob.html" %}{% endif %}
+{% load i18n %}{% if render_tab_counts_oob %}{% include "calendar/partials/_tab_counts_oob.html" %}{% endif %}
 {% comment %}
 Approvals tab for the Publish page — one row per post, matching the approved design.
 Loaded into #tab-content. Re-fetches itself on approvalAction / bulkActionComplete
@@ -34,7 +34,7 @@ tear down the toast.
             <div class="mx-auto w-14 h-14 rounded-full border-2 border-stone-200 flex items-center justify-center text-stone-300 mb-3">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></svg>
             </div>
-            <p class="text-stone-500 font-medium">No posts pending approval</p>
+            <p class="text-stone-500 font-medium">{% translate "No posts pending approval" %}</p>
             <p class="text-sm text-stone-400 mt-1">Posts submitted for review will appear here</p>
         </div>
         {% endfor %}
@@ -73,7 +73,7 @@ tear down the toast.
                 <textarea id="bulk-reject-comment" name="comment" x-model="bulkReason" rows="3" placeholder="Reason for rejection…"
                           class="w-full px-3 py-2 text-[0.875rem] border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-200 focus:border-transparent resize-none"></textarea>
                 <div class="flex justify-end gap-2 mt-4">
-                    <button @click="rejectOpen = false" class="px-4 py-2 text-[0.8125rem] font-medium text-stone-600 hover:bg-stone-100 rounded-full">Cancel</button>
+                    <button @click="rejectOpen = false" class="px-4 py-2 text-[0.8125rem] font-medium text-stone-600 hover:bg-stone-100 rounded-full">{% translate "Cancel" %}</button>
                     <button hx-post="{% url 'approvals:bulk_action' workspace_id=workspace.id %}"
                             hx-include="[name='post_ids'], #bulk-reject-comment" hx-vals='{"action": "reject"}' hx-swap="none"
                             :disabled="!bulkReason.trim()"

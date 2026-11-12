@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.html" %}{% load i18n %}
 
 {% block title %}Post Templates - {{ workspace.name }} - Brightbean{% endblock %}
 
@@ -51,7 +51,7 @@
                 </span>
                 <a href="{% url 'composer:use_template' workspace_id=workspace.id template_id=tpl.id %}"
                    class="text-xs font-semibold py-1.5 px-3 rounded-full border border-stone-200 hover:border-stone-300 text-stone-700 hover:text-stone-900 transition-colors">
-                    Use Template
+                    {% translate "Use Template" %}
                 </a>
             </div>
         </div>

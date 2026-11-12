@@ -1,4 +1,4 @@
-{% if render_tab_counts_oob %}{% include "calendar/partials/_tab_counts_oob.html" %}{% endif %}
+{% load i18n %}{% if render_tab_counts_oob %}{% include "calendar/partials/_tab_counts_oob.html" %}{% endif %}
 {% comment %}
 Sent tab partial for the Publish page.
 Shows all published/partially_published platform posts. Loaded via HTMX into #tab-content.
@@ -11,11 +11,11 @@ Shows all published/partially_published platform posts. Loaded via HTMX into #ta
             <tr class="border-b border-stone-200 text-left">
                 <th class="pl-4 w-8"></th>
                 <th class="px-4 py-3 text-xs font-semibold text-stone-400 uppercase tracking-wider">Media</th>
-                <th class="px-4 py-3 text-xs font-semibold text-stone-400 uppercase tracking-wider">Status</th>
-                <th class="px-4 py-3 text-xs font-semibold text-stone-400 uppercase tracking-wider">Published</th>
-                <th class="px-4 py-3 text-xs font-semibold text-stone-400 uppercase tracking-wider">Caption</th>
-                <th class="px-4 py-3 text-xs font-semibold text-stone-400 uppercase tracking-wider">Platform</th>
-                <th class="px-4 py-3 text-xs font-semibold text-stone-400 uppercase tracking-wider">Author</th>
+                <th class="px-4 py-3 text-xs font-semibold text-stone-400 uppercase tracking-wider">{% translate "Status" %}</th>
+                <th class="px-4 py-3 text-xs font-semibold text-stone-400 uppercase tracking-wider">{% translate "Published" %}</th>
+                <th class="px-4 py-3 text-xs font-semibold text-stone-400 uppercase tracking-wider">{% translate "Caption" %}</th>
+                <th class="px-4 py-3 text-xs font-semibold text-stone-400 uppercase tracking-wider">{% translate "Platform" %}</th>
+                <th class="px-4 py-3 text-xs font-semibold text-stone-400 uppercase tracking-wider">{% translate "Author" %}</th>
             </tr>
         </thead>
         <tbody>
@@ -60,7 +60,7 @@ Shows all published/partially_published platform posts. Loaded via HTMX into #ta
                 <td class="px-4 py-3">
                     <span class="post-chip status-{{ pp.status }} inline-flex">
                         <span class="chip-dot"></span>
-                        {{ pp.get_status_display }}
+                        {% translate pp.get_status_display %}
                     </span>
                     {% if pp.status == "failed" and pp.publish_error %}
                     <p class="text-[11px] text-red-500 mt-1 max-w-[220px] truncate" title="{{ pp.publish_error }}">{{ pp.publish_error }}</p>
@@ -70,7 +70,7 @@ Shows all published/partially_published platform posts. Loaded via HTMX into #ta
                     the post itself went out fine.
                     {% endcomment %}
                     {% if pp.first_comment_status == "failed" %}
-                    <p class="text-[11px] text-amber-600 mt-1 max-w-[220px] truncate" title="{{ pp.first_comment_error }}">First comment failed</p>
+                    <p class="text-[11px] text-amber-600 mt-1 max-w-[220px] truncate" title="{{ pp.first_comment_error }}">{% translate "First comment failed" %}</p>
                     {% endif %}
                 </td>
                 <td class="px-4 py-3 text-xs text-stone-500 tabular-nums whitespace-nowrap">
@@ -107,8 +107,8 @@ Shows all published/partially_published platform posts. Loaded via HTMX into #ta
         <div class="w-16 h-16 mx-auto rounded-2xl bg-stone-100 flex items-center justify-center mb-4">
             <svg class="w-7 h-7 text-stone-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
         </div>
-        <p class="text-sm font-medium text-stone-500 mb-1">No sent posts yet</p>
-        <p class="text-xs text-stone-400 mb-5 max-w-[240px] mx-auto">Published posts will appear here after they go live</p>
+        <p class="text-sm font-medium text-stone-500 mb-1">{% translate "No sent posts yet" %}</p>
+        <p class="text-xs text-stone-400 mb-5 max-w-[240px] mx-auto">{% translate "Published posts will appear here after they go live" %}</p>
     </div>
     {% endif %}
     {% endif %}

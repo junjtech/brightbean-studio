@@ -1,11 +1,11 @@
-{% extends "layouts/workspace_settings.html" %}
-{% block page_title %}Social Accounts{% endblock %}
+{% extends "layouts/workspace_settings.html" %}{% load i18n %}
+{% block page_title %}{% translate "Social Accounts" %}{% endblock %}
 {% block content %}
 <div class="max-w-4xl">
     <!-- Header -->
     <div class="flex flex-wrap items-center justify-between gap-3 mb-6 sm:mb-8">
         <div>
-            <h2 class="text-xl font-semibold text-stone-900">Social Accounts</h2>
+            <h2 class="text-xl font-semibold text-stone-900">{% translate "Social Accounts" %}</h2>
             <p class="text-sm text-stone-500 mt-1">Manage connected social media accounts for this workspace.</p>
         </div>
         <a href="{% url 'social_accounts:connect' workspace_id=workspace_id %}"

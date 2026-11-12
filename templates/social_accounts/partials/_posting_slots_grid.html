@@ -1,4 +1,4 @@
-{% comment %}
+{% load i18n %}{% comment %}
 Weekly posting slots grid for a single social account.
 Shows 7 columns (Sun–Sat) with on/off toggle and time slots.
 Context: account (with prefetched posting_slots), workspace_id.
@@ -79,12 +79,12 @@ Context: account (with prefetched posting_slots), workspace_id.
                                            @keydown.escape="editing = false">
                                     <button type="submit"
                                             class="w-5 h-5 flex items-center justify-center text-green-600 hover:text-green-700 cursor-pointer"
-                                            title="Save">
+                                            title="{% translate 'Save' %}">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                                     </button>
                                     <button type="button" @click="editing = false"
                                             class="w-5 h-5 flex items-center justify-center text-stone-400 hover:text-stone-600 cursor-pointer"
-                                            title="Cancel">
+                                            title="{% translate 'Cancel' %}">
                                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
                                     </button>
                                 </form>
@@ -118,7 +118,7 @@ Context: account (with prefetched posting_slots), workspace_id.
                                 </button>
                                 <button type="button" @click="adding = false"
                                         class="w-5 h-5 flex items-center justify-center text-stone-400 hover:text-stone-600 cursor-pointer"
-                                        title="Cancel">
+                                        title="{% translate 'Cancel' %}">
                                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
                                 </button>
                             </form>
